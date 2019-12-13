@@ -17,8 +17,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-image: url(../assets/writing-sationary.jpg);
-    background-color: #00a1ff;
+    background-image: url(../assets/background.jpg);
+    background-color: #004F7D;
     background-blend-mode: soft-light;
     transition: background-color 1s;
     text-align: center;
@@ -317,6 +317,7 @@ ul, ol {
     padding-top: 30px;
 }
 
+
 .section-skills,
 .section-education,
 .section-footer,
@@ -424,9 +425,10 @@ ul, ol {
     border: 3px solid #bf0462;
     border-top: none;
     border-right: none;
-    position: absolute;
     bottom: -13px;
-    left: 35px
+    left: 35px;
+    position: absolute ;
+    z-index: -1;
 }
 
 .main-timeline .timeline-content:after {
