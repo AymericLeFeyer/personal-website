@@ -872,3 +872,20 @@ ul, ol {
         font-size:18px
     }
 }
+
+.reseaux {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.reseaux a:hover {
+    color: #00a1ff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.reseaux a{
+    color: black;
+    transition: 1s;
+}
