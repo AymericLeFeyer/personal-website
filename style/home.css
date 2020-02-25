@@ -12,6 +12,28 @@ body {
     padding: 30px;
 }
 
+#header {
+    width: 100%;
+
+}
+
+#header td {
+    text-align: center;
+    width: 30%;
+
+}
+
+#header a:hover {
+    color: #00a1ff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+#header a {
+    transition: 1s;
+    color: black;
+}
+
 .home {
     height: 100vh;
     background-repeat: no-repeat;
