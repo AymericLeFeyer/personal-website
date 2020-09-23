@@ -1365,16 +1365,16 @@ input[type='checkbox'] {
 
 /* Hover Animation */
 .filter .element-item {
-	position: relative;
-	float: left;
+	position: relative;	
 	overflow: hidden;
 	width: 50%;
-	background-color: #000; /* to hide 1px white margin in IE */
+	background-color: #ffffff; /* to hide 1px white margin in IE */
 }
 
 .filter .element-item img {
 	max-width: 100%;
-	margin: 0;
+	margin: auto;
+	padding: 20%;
 	transition: all 0.3s;
 }
 

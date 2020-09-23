@@ -109,6 +109,8 @@
         itemSelector: '.element-item',
         layoutMode: 'fitRows'
     });
+
+    $grid.isotope({ filter: ".front" });
     
     // filter items on button click
     $('.filters-button-group').on( 'click', 'a', function() {
