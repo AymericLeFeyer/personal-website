@@ -1220,7 +1220,7 @@ input[type='checkbox'] {
 }
 
 .slider .card-image {
-	width: 6rem;
+	/* width: 6rem; */
 	height: 6rem;
 	margin-right: auto;
 	margin-bottom: 0.25rem;
