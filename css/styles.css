@@ -1848,6 +1848,26 @@ a:hover.back-to-top {
 /*****************************/
 /*     21. Media Queries     */
 /*****************************/	
+
+@media (max-width: 600px) {
+	
+	.filter .element-item { 
+		width: 50%; 
+	}
+	
+	.filter .element-item .element-item-overlay { 
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	.filter .element-item:hover .element-item-overlay {
+		opacity: 0;
+	}
+}
+
+
+
+
 /* Min-width width 768px */
 @media (min-width: 768px) {
 	

@@ -110,13 +110,28 @@
         layoutMode: 'fitRows'
     });
 
+    var $grid_proj = $('.grid_proj').isotope({
+        // options
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows'
+    });
+
     $grid.isotope({ filter: ".front" });
     
     // filter items on button click
     $('.filters-button-group').on( 'click', 'a', function() {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
+        
     });
+
+    // filter items on button click
+    $('.filters-button-group2').on( 'click', 'a', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid_proj.isotope({ filter: filterValue });
+    });
+
+
 
     // change is-checked class on buttons
     $('.button-group').each( function( i, buttonGroup ) {
@@ -126,6 +141,9 @@
             $( this ).addClass('is-checked');
         });	
     });
+
+   
+    
     
 
     /* Counter - CountTo */
