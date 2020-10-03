@@ -26,18 +26,10 @@
             </div>
             <!-- end of button group -->
             <div class="grid">
-              <div class="element-item mobile front">
-                <a class="popup-with-move-anim" href="#skill-flutter"
-                  ><div class="element-item-overlay"><span>Flutter</span></div>
-                  <img src="images/skills/flutter.png" alt="flutter"
-                /></a>
-              </div>
-              <div class="element-item langage">
-                <a class="popup-with-move-anim" href="#skill-python"
-                  ><div class="element-item-overlay"><span>Python</span></div>
-                  <img src="images/skills/python.png" alt="python"
-                /></a>
-              </div>
+              
+            <?php include('skills/flutter.php'); ?>
+            <?php include('skills/android.php'); ?>
+
               <div class="element-item langage">
                 <a class="popup-with-move-anim" href="#skill-C"
                   ><div class="element-item-overlay"><span>C</span></div>
@@ -70,12 +62,7 @@
                   <img src="images/skills/js.png" alt="js"
                 /></a>
               </div>
-              <div class="element-item mobile">
-                <a class="popup-with-move-anim" href="#skill-android"
-                  ><div class="element-item-overlay"><span>Android</span></div>
-                  <img src="images/skills/android.png" alt="android"
-                /></a>
-              </div>
+              
               <div class="element-item front">
                 <a class="popup-with-move-anim" href="#skill-android"
                   ><div class="element-item-overlay"><span>ReactJS</span></div>
@@ -182,5 +169,3 @@
     </div>
     <!-- end of filter -->
     <!-- end of projects -->
-
-    <?php include('skills_box.php'); ?>

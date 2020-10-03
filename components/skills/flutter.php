@@ -1,3 +1,11 @@
+<!-- Item -->
+<div class="element-item mobile front">
+  <a class="popup-with-move-anim" href="#skill-flutter"
+    ><div class="element-item-overlay"><span>Flutter</span></div>
+    <img src="images/skills/flutter.png" alt="flutter"
+  /></a>
+</div>
+
 <!-- Lightbox -->
 <div id="skill-flutter" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
@@ -15,10 +23,10 @@
           </p>
           <p>
             C'est avec Flutter que j'ai pu réaliser mon premier vrai projet un
-            peu sérieux, j'ai nommé <a href="#"><strong>Bonap</strong></a
+            peu sérieux, j'ai nommé <a class="popup-with-move-anim" href="#project-bonap"><strong>Bonap</strong></a
             >. <br />
-            Avec mon coéquipier <a href="https://www.linkedin.com/in/quentincarry/" target="_blank">Quentin Carry</a>, nous avons su apprendre à
-            utiliser ce framwork, et en même temps à travailler en équipe. Nous
+            Avec mon coéquipier, nous avons su apprendre à
+            utiliser ce framework, et en même temps à travailler en équipe. Nous
             avons su livrer une solution propre dans le cadre du projet de fin
             de licence
           </p>
@@ -26,7 +34,7 @@
             Dans un cadre plus professionel, j'ai eu l'occasion de présenter
             cette techno à l'ensemble des collaborateurs de <a>Progress-IT</a>.
             Nous avons donc pris la décision de choisir cette techno pour le
-            projet <a><strong>FamilyBook</strong></a
+            projet <a class="popup-with-move-anim" href='#project-familybook'><strong>FamilyBook</strong></a
             >, projet sur lequel j'ai travaillé de nombreux mois. En outre mon
             premier vrai projet sérieux avec un client derrière. Présenter
             Flutter de manière professionelle à mes collègues est un chance de

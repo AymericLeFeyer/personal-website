@@ -1,3 +1,11 @@
+<!-- Item -->
+<div class="element-item ...">
+  <a class="popup-with-move-anim" href="#skill-TECH"
+    ><div class="element-item-overlay"><span>Tech</span></div>
+    <img src="images/skills/TECH.png" alt="TECH"
+  /></a>
+</div>
+
 <!-- Lightbox -->
 <div id="skill-TECH" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
@@ -8,7 +16,7 @@
         <div class="col-lg-12">
           <h3>tech_name</h3>
           <hr class="line-heading" />
-          <h6>level</h6>
+          <h6>level Level (number of serious projects) : (Débutant (1) / Intermédiaire (2-3) / Confirmé (3-5) / Expert (+5)) </h6>
           <p>
             description
           </p>
