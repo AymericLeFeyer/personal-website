@@ -64,13 +64,36 @@
               <div
                 class="element-item pro"
               >
-                <a class="popup-with-move-anim" href="#project-familybook"
+                <a class="popup-with-move-anim" href="#project-familyBOOK"
                   ><div class="element-item-overlay">
-                    <span>FamilyBook</span>
+                    <span>familyBOOK</span>
                   </div>
-                  <img src="images/projects/familybook.png" alt="familybook"
+                  <img src="images/projects/familyBOOK.png" alt="familyBOOK"
                 /></a>
               </div>
+              <!-- click and collect -->
+              <div
+                class="element-item perso"
+              >
+                <a class="popup-with-move-anim" href="#project-clickandcollect"
+                  ><div class="element-item-overlay">
+                    <span>Click and Collect</span>
+                  </div>
+                  <img src="images/projects/clickandcollect.png" alt="Click and Collect"
+                /></a>
+              </div>
+              <!-- listify -->
+              <div
+                class="element-item ecole"
+              >
+                <a class="popup-with-move-anim" href="#project-listify"
+                  ><div class="element-item-overlay">
+                    <span>Listify</span>
+                  </div>
+                  <img src="images/projects/listify.png" alt="listify"
+                /></a>
+              </div>
+              
             </div>
           </div>
           <!-- end of col -->
