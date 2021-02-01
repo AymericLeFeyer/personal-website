@@ -7,7 +7,7 @@
             <div class="card">
               <span class="fa-stack">
                 <span class="hexagon"></span>
-                <i class="fas fa-binoculars fa-stack-1x"></i>
+                <i class="fas fa-stopwatch fa-stack-1x"></i>
               </span>
               <div class="card-body">
                 <h4 class="card-title">Apprentissage rapide</h4>
@@ -24,14 +24,13 @@
             <div class="card">
               <span class="fa-stack">
                 <span class="hexagon"></span>
-                <i class="fas fa-list-alt fa-stack-1x"></i>
+                <i class="fas fa-users fa-stack-1x"></i>
               </span>
               <div class="card-body">
                 <h4 class="card-title">Travail en équipe</h4>
                 <p>
-                  Il est nécessaire de travailler ensemble pour un produit
-                  toujours plus complet, je sais me rendre disponible pour aider
-                  un membre de mon équipe en difficulté
+                  Il est nécessaire de travailler en équipe pour un produit
+                  toujours plus complet. Le partage de connaissances au sein d'un groupe est essentiel.
                 </p>
               </div>
             </div>
@@ -41,12 +40,12 @@
             <div class="card">
               <span class="fa-stack">
                 <span class="hexagon"></span>
-                <i class="fas fa-chart-pie fa-stack-1x"></i>
+                <i class="fas fa-laptop fa-stack-1x"></i>
               </span>
               <div class="card-body">
                 <h4 class="card-title">Déjà de l'experience</h4>
                 <p>
-                  Malgré mon jeune âge et mes petits diplômes, j'ai déjà
+                  Malgré mon jeune âge et mes diplômes, j'ai déjà
                   travaillé dans diverses entreprises, je vous laisse parcourir
                   mon site pour en savoir davantages
                 </p>

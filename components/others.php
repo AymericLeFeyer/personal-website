@@ -40,7 +40,7 @@
                       <div class="card-body">
                         <div class="testimonial-author">Donneur de sang</div>
                         <div class="testimonial-text">
-                          Je donne mon sang au maximum, et ce depuis mes 18 ans.
+                          Je donne mon sang au maximum depuis mes 18 ans.
                         </div>
                       </div>
                     </div>
@@ -56,7 +56,7 @@
                       <div class="card-body">
                         <div class="testimonial-author">Nuit de l'Info</div>
                         <div class="testimonial-text">
-                          Participation à la nuit de l'info 2019.
+                          Raclette en pleine nuit à la fac <br/>(Participation à la nuit de l'info 2019).
                         </div>
                       </div>
                     </div>
@@ -72,8 +72,7 @@
                       <div class="card-body">
                         <div class="testimonial-author">Jeedom</div>
                         <div class="testimonial-text">
-                          Domotisation complète et personnalisée d'une maison
-                          avec Jeedom.
+                          Domotisation personnalisée d'une maison avec Jeedom.
                         </div>
                       </div>
                     </div>
@@ -89,8 +88,7 @@
                       <div class="card-body">
                         <div class="testimonial-author">Jeux vidéos</div>
                         <div class="testimonial-text">
-                          J'aime beaucoup le domaine du jeu vidéo. Que ce soit
-                          en tant que développeur ou que joueur.
+                          J'adore les jeux indés ! Mais surtout invaincu sur Mario Kart
                         </div>
                       </div>
                     </div>
@@ -137,10 +135,9 @@
                     <div class="card">
                       <i class="fas fa-tv card-image"></i>
                       <div class="card-body">
-                        <div class="testimonial-author">Séries</div>
+                        <div class="testimonial-author">Pop Culture</div>
                         <div class="testimonial-text">
-                          Entre deux projets importants ou à la fin du grosse
-                          journée, une petite série est toujours la bienvenue.
+                          Pokémon, Game of Thrones, Harry Potter, Dragon Ball, Marvel ...
                         </div>
                       </div>
                     </div>

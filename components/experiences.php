@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">EXPÉRIENCES</div>
-            <h2>Ils m'ont fait confiance<br />Ils ont eu raison</h2>
+            <h2>C'est en développant qu'on devient développeur</h2>
           </div>
           <!-- end of col -->
         </div>
@@ -30,13 +30,19 @@
                   <li class="media">
                     <i class="fas fa-square"></i>
                     <div class="media-body">
-                      Stage de fin de Licence Informatique
+                      Développement d'applications web et mobile
                     </div>
                   </li>
                   <li class="media">
                     <i class="fas fa-square"></i>
                     <div class="media-body">
-                      Alternance pour le Master E-Services
+                      Montée en compétence sur de nombreuses technologies
+                    </div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-square"></i>
+                    <div class="media-body">
+                      Méthode agile, travail en équipe ..
                     </div>
                   </li>
                 </ul>

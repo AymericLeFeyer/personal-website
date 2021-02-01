@@ -4,12 +4,8 @@
     <div class="row">
       <div class="col-lg-12">
         <p class="p-small">
-          Copyright © 2020 - Aymeric LE FEYER <br />
-          <!-- <a
-            href="https://inovatik.com"
-            target="_blank"
-            >Template par Inovatik</a
-          > -->
+          Copyright © 2021 - Aymeric LE FEYER <br />
+
         </p>
       </div>
       <!-- end of col -->

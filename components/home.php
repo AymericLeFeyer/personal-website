@@ -16,8 +16,9 @@
     <!-- Body -->
     <?php include('header.php'); ?>
     <?php include('intro.php'); ?>
-    <?php include('studies.php'); ?>
+    
     <?php include('skills.php'); ?>
+    <?php include('studies.php'); ?>
     <?php include('experiences.php'); ?>
     <?php include('projects.php'); ?>
     <?php include('others.php'); ?>

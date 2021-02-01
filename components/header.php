@@ -43,17 +43,18 @@
         <li class="nav-item">
           <a class="nav-link page-scroll" href="#intro">INTRO</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="#services">FORMATION</a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link page-scroll" href="#skills">COMPÉTENCES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#services">FORMATION</a>
         </li>
         <li class="nav-item">
           <a class="nav-link page-scroll" href="#experiences">EXPÉRIENCES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link page-scroll" href="#projects">PROJETS</a>
+          <a class="nav-link page-scroll" href="#projects">PORTFOLIO</a>
         </li>
         <li class="nav-item">
           <a class="nav-link page-scroll" href="#contact">CONTACT</a>
@@ -76,10 +77,9 @@
                 <span id="js-rotating">MOBILE, FRONT-END, BACK-END</span>
               </h1>
               <p class="p-heading p-large">
-                Je suis un jeune développeur fullstack avec une perpétuelle
-                envie de progresser et une soif de connaissance inarrêtable
+                Es-tu prêt à découvrir le prochain développeur de ton équipe ?<br/> Prends ta meilleure souris, et scroll !
               </p>
-              <a class="btn-solid-lg page-scroll" href="#intro">DÉCOUVRIR</a>
+              <a class="btn-solid-lg page-scroll" href="#intro">C'est parti !</a>
             </div>
           </div>
           <!-- end of col -->

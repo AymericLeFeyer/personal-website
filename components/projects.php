@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="section-title">PROJETS</div>
+            <div class="section-title">PORTFOLIO</div>
             <h2>
               Personnels, professionels ou académiques<br />Ils m'ont permis
               d'obtenir des compétences
@@ -60,7 +60,7 @@
                   <img src="images/projects/rymia.png" alt="rymia"
                 /></a>
               </div>
-              <!-- FamilyBook -->
+              <!-- familyBOOK -->
               <div
                 class="element-item pro"
               >
