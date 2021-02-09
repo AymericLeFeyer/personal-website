@@ -7,7 +7,7 @@
 #timeline {
   height: 1px;
   width: 100%;
-  background-color: #aabbc4;
+  background-color: black;
   position: relative;
 }
 
@@ -27,6 +27,10 @@
 }
 
 /* Date */
+.date {
+  color: black;
+}
+
 .marker > .date {
   position: fixed;
   bottom: 0px;
@@ -60,7 +64,7 @@
   position: absolute;
   width: 100%;
   opacity: 1;
-  transition: all 300ms ease;
+  transition: all 800ms ease;
 }
 
 .subtitlePage {
@@ -68,7 +72,7 @@
   position: absolute;
   width: 100%;
   opacity: 1;
-  transition: all 300ms ease;
+  transition: all 800ms ease;
 }
 
 .marker:hover ~ .titlePage {
