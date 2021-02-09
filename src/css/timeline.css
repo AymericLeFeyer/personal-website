@@ -26,6 +26,21 @@
   transition: all 300ms ease;
 }
 
+/* Date */
+.marker > .date {
+  position: fixed;
+  bottom: 0px;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.marker:hover > .date {
+  position: fixed;
+  bottom: 50px;
+  opacity: 1;
+  transition: all 300ms ease;
+}
+
 .marker:hover {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -40,6 +55,34 @@
   transition: all 300ms ease;
 }
 
+.titlePage {
+  bottom: 50px;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  transition: all 300ms ease;
+}
+
+.subtitlePage {
+  top: 50px;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  transition: all 300ms ease;
+}
+
+.marker:hover ~ .titlePage {
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.marker:hover ~ .subtitlePage {
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+/* Icons */
+
 .timeline-icon.one {
   background-color: #3e4f88 !important;
 }
@@ -52,51 +95,51 @@
   background-color: #6976a2 !important;
 }
 
-.timeline-icon.four {
-  background-color: #7e8aaf !important;
-}
+/* Circles */
 
-.mfirst {
+.m1 {
   top: -25px;
 }
 
 .m2 {
   top: -25px;
-  left: 32.5%;
+  left: 50%;
 }
 
 .m3 {
   top: -25px;
-  left: 66%;
-}
-
-.mlast {
-  top: -25px;
   left: 100%;
 }
 
-.timeline-panel {
-  margin-top: 20%;
-  width: 500px;
-  height: 200px;
-  background-color: #cbd0df;
-  border-radius: 2px;
-  position: relative;
-  text-align: left;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 20px;
-  float: left;
+/* Content */
+.text {
+  position: fixed;
+  opacity: 0;
+
+  left: 0;
+  width: 100%;
+  transition: all 300ms ease;
 }
 
-.timeline-panel:after {
-  content: "";
-  position: absolute;
-  margin-top: -12%;
-  left: 10%;
-  width: 0;
-  height: 0;
-  border: 12px solid transparent;
-  border-bottom: 15px solid #cbd0df;
+.text.bottom {
+  bottom: 0px;
+}
+
+.text.top {
+  top: 00px;
+}
+
+.m1:hover ~ .text.one {
+  display: block;
+  opacity: 1;
+}
+.m2:hover ~ .text.two {
+  display: block;
+  opacity: 1;
+  transition: all 300ms ease;
+}
+.m3:hover ~ .text.three {
+  display: block;
+  opacity: 1;
+  transition: all 300ms ease;
 }
