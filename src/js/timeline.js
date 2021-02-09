@@ -8,8 +8,8 @@ var one = document.getElementsByClassName("text one");
 var two = document.getElementsByClassName("text two");
 var three = document.getElementsByClassName("text three");
 
-var title = document.getElementsByClassName("titlePage")[0];
-var subtitle = document.getElementsByClassName("subtitlePage")[0];
+var title = document.getElementsByClassName("titlePage formation")[0];
+var subtitle = document.getElementsByClassName("subtitlePage formation")[0];
 
 function events(m, texts) {
   m.onmouseover = function () {
