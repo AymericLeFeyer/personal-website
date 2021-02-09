@@ -5,3 +5,7 @@
 .content {
   margin: 50px;
 }
+body,
+html {
+  overflow: hidden !important;
+}

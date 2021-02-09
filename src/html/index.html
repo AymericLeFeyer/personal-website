@@ -7,19 +7,34 @@
     <!----- Styles ----->
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
     <!-- Fullpage -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+      crossorigin="anonymous"
+    />
+
     <!-- Timeline -->
     <link href="/src/css/timeline.css" rel="stylesheet" />
 
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+    />
+
     <!-- Main CSS -->
     <link href="/src/css/style.css" rel="stylesheet" />
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -28,68 +43,80 @@
   <!-- BODY -->
   <body>
     <div id="fullpage" class="fp-auto-height-responsive">
-        <!-- Home -->
-        <div class="section">Coucou</div>
-        <!-- Timeline -->
-        <div class="section">
-            <div id="timeline-wrap">
-                <div id="timeline"></div>
-                
-                <!-- This is the individual marker-->
-                <div class="marker mfirst timeline-icon one">
-                    <i class="fa fa-pencil"></i>
-                </div>
-                <!-- / marker -->
-              
-                <!-- This is the individual marker-->
-                <div class="marker m2 timeline-icon two">
-                    <i class="fa fa-star"></i>
-                </div>
-                <!-- / marker -->
-              
-                  
-                
-                <!-- This is the individual marker-->
-                <div class="marker m3 timeline-icon three">
-                  <i class="fa fa-list"></i>
-                </div>
-                <!-- / marker -->
-              
-                
-                <!-- This is the individual marker-->
-                <div class="marker mlast timeline-icon four">
-                  <i class="fa fa-check"></i>
-                </div>
-                <!-- / marker -->
-              
-              
-               
-              </div>
+      <!-- Home -->
+      <div class="section">Home</div>
+      <!-- Tech -->
+      <div class="section">Tech</div>
+      <!-- Portfolio -->
+      <div class="section">Portfolio</div>
+      <!-- Experiences -->
+      <div class="section">Experiences</div>
+      <!-- Studies -->
+      <div class="section">
+        Studies
+        <div class="content">
+          <div id="timeline-wrap">
+            <div id="timeline"></div>
+
+            <!-- This is the individual marker-->
+            <div
+              class="marker mfirst timeline-icon one wow animate__animated animate__zoomIn"
+            >
+              <i class="fa fa-pencil"></i>
+            </div>
+            <!-- / marker -->
+
+            <!-- This is the individual marker-->
+            <div
+              class="marker m2 timeline-icon two wow animate__animated animate__zoomIn"
+            >
+              <i class="fa fa-star"></i>
+            </div>
+            <!-- / marker -->
+
+            <!-- This is the individual marker-->
+            <div
+              class="marker m3 timeline-icon three wow animate__animated animate__zoomIn"
+            >
+              <i class="fa fa-list"></i>
+            </div>
+            <!-- / marker -->
+
+            <!-- This is the individual marker-->
+            <div
+              class="marker mlast timeline-icon four wow animate__animated animate__zoomIn"
+            >
+              <i class="fa fa-check"></i>
+            </div>
+            <!-- / marker -->
+          </div>
         </div>
-        <div class="section">
-          <div class="content">Three</div>
-        </div>
-        <div class="section">
-          <div class="content">Four</div>
       </div>
+      <!-- Others / Contact -->
+      <div class="section">Contact</div>
     </div>
 
     <!----- Scripts ----->
 
-   
-
     <!-- Fullpage -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
-    
- 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/js/fullpage.js"></script>
+
     <!-- Timeline -->
     <script src="/src/js/timeline.js"></script>
 
-    <!-- Main JS -->
-    <script src="/src/js/fullpage.js"></script>
+    <!-- WOW -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Main JS -->
     <script src="/src/js/app.js"></script>
-
-</body>
+  </body>
 </html>
