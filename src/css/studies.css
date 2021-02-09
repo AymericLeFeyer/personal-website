@@ -4,6 +4,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 600px) {
+  #timeline-wrap {
+    margin: 0% 0%;
+  }
+}
+
 #timeline {
   height: 1px;
   width: 100%;
@@ -28,7 +34,14 @@
 
 /* Date */
 .date {
-  color: black;
+  color: #536295;
+  width: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  .date {
+    left: -8px;
+  }
 }
 
 .marker > .date {
@@ -60,19 +73,22 @@
 }
 
 .titlePage {
-  bottom: 50px;
+  top: 8vh;
   position: absolute;
   width: 100%;
   opacity: 1;
   transition: all 800ms ease;
+  color: #536295;
 }
 
 .subtitlePage {
-  top: 50px;
+  bottom: 8vh;
   position: absolute;
   width: 100%;
   opacity: 1;
   transition: all 800ms ease;
+  color: #536295;
+  text-shadow: 2px 3px 5px rgba(255, 255, 255, 0.3);
 }
 
 .marker:hover ~ .titlePage {
@@ -108,11 +124,13 @@
 .m2 {
   top: -25px;
   left: 50%;
+  animation-delay: 0.5s;
 }
 
 .m3 {
   top: -25px;
   left: 100%;
+  animation-delay: 1s;
 }
 
 /* Content */
@@ -126,16 +144,23 @@
 }
 
 .text.bottom {
-  bottom: 0px;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%;
+  bottom: 5%;
+  color: #536295;
+  text-shadow: 2px 3px 5px rgba(255, 255, 255, 0.3);
 }
 
 .text.top {
-  top: 00px;
+  top: 5%;
+  color: #536295;
 }
 
-.m1:hover ~ .text.one {
+.m1:hover ~ text.one {
   display: block;
   opacity: 1;
+  transition: all 300ms ease;
 }
 .m2:hover ~ .text.two {
   display: block;
