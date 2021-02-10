@@ -1,0 +1,24 @@
+.titlePage.portfolio {
+  color: rgb(19, 19, 153);
+}
+
+.portfolio-text {
+  margin: 20% 20%;
+}
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent rgb(19, 19, 153) transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent rgb(19, 19, 153);
+}
+
+.fp-controlArrow {
+  transition: 0.5s ease;
+}
+
+.fp-controlArrow:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}

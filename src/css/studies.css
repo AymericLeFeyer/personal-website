@@ -75,7 +75,7 @@
 .titlePage {
   top: 8vh;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   opacity: 1;
   transition: all 800ms ease;
   color: #536295;
