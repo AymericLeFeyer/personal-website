@@ -55,6 +55,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- Home -->
+    <link href="/src/css/home.css" rel="stylesheet" />
+
     <!-- Studies -->
     <link href="/src/css/studies.css" rel="stylesheet" />
 
@@ -83,7 +86,14 @@
   <body>
     <div id="fullpage" class="fp-auto-height-responsive">
       <!-- Home -->
-      <div class="section">Home</div>
+      <div class="section">
+        <div class="titlePage home wow animate__animated animate__jackInTheBox">
+          <h1>Aymeric LE FEYER</h1>
+        </div>
+        <p class="typed-text">Je suis <span class="typed"></span></p>
+
+        <div class="mouse"></div>
+      </div>
       <!-- Tech -->
       <div class="section tech">
         <div
@@ -91,21 +101,45 @@
         >
           <h1>Technos</h1>
         </div>
-        <div class="avatar">
-          <img src="/res/flutter.png" alt="Flutter" />
-          <h4>Flutter</h4>
+        <div class="main-techs">
+          <div class="avatar">
+            <img src="/res/flutter.png" alt="Flutter" />
+            <h4>Flutter</h4>
+          </div>
+          <div class="avatar">
+            <img src="/res/android.png" alt="Android" />
+            <h4>Android</h4>
+          </div>
+          <div class="avatar">
+            <img src="/res/nodejs.png" alt="NodeJS" />
+            <h4>NodeJS</h4>
+          </div>
+          <div class="avatar">
+            <img src="/res/python.png" alt="Python" />
+            <h4>Python</h4>
+          </div>
         </div>
-        <div class="avatar">
-          <img src="/res/android.png" alt="Android" />
-          <h4>Android</h4>
-        </div>
-        <div class="avatar">
-          <img src="/res/nodejs.png" alt="NodeJS" />
-          <h4>NodeJS</h4>
-        </div>
-        <div class="avatar">
-          <img src="/res/python.png" alt="Python" />
-          <h4>Python</h4>
+        <div>
+          <div class="avatar small">
+            <img src="/res/flutter.png" alt="Flutter" />
+            <h4>Firebase</h4>
+          </div>
+          <div class="avatar small">
+            <img src="/res/android.png" alt="Android" />
+            <h4>VueJS</h4>
+          </div>
+          <div class="avatar small">
+            <img src="/res/python.png" alt="Python" />
+            <h4>Django</h4>
+          </div>
+          <div class="avatar small">
+            <img src="/res/nodejs.png" alt="NodeJS" />
+            <h4>Git</h4>
+          </div>
+          <div class="avatar small">
+            <img src="/res/python.png" alt="Python" />
+            <h4>Linux</h4>
+          </div>
         </div>
       </div>
       <!-- Portfolio -->
@@ -231,6 +265,9 @@
       integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
       crossorigin="anonymous"
     ></script>
+
+    <!-- Typed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
 
     <!-- Main JS -->
     <script src="/src/js/app.js"></script>

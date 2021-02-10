@@ -18,5 +18,4 @@ new fullpage("#fullpage", {
       refresh();
     }
   },
-  scrollHorizontally: true,
 });

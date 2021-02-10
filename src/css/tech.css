@@ -16,8 +16,8 @@
 .avatar {
   background-color: white;
   display: inline-block;
-  width: 250px;
-  height: 250px;
+  width: 25vh;
+  height: 25vh;
   object-fit: fill;
   box-sizing: border-box;
   border: 5px white solid;
@@ -29,9 +29,19 @@
   margin-right: 3vw;
 }
 
+.avatar.small {
+  width: 18vh;
+  height: 18vh;
+}
+
 .avatar img {
-  width: 220px;
-  height: 220px;
+  width: 22vh;
+  height: 22vh;
+}
+
+.avatar.small img {
+  width: 15vh;
+  height: 15vh;
 }
 
 .avatar h4 {
@@ -44,6 +54,10 @@
   background-color: white;
   padding-top: 35%;
   transition: 1s ease all;
+}
+
+.avatar.small > h4 {
+  font-size: 0.7em;
 }
 
 .avatar:hover > h4 {
@@ -64,11 +78,28 @@
     height: 120px;
   }
 
-  .section.tech {
-    padding-top: 12vh;
+  .avatar.small {
+    width: 60px;
+    height: 60px;
+  }
+
+  .avatar.small img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .avatar.small > h4 {
+    font-size: 0.4em;
+  }
+  .main-techs {
+    padding-top: 10vh;
   }
 }
 
 .titlePage.technos {
   color: white;
+}
+
+.section.tech {
+  padding-top: 5%;
 }
