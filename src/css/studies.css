@@ -87,6 +87,7 @@
   width: 100%;
   opacity: 1;
   transition: all 800ms ease;
+  margin: 10% 10%;
   color: #536295;
   text-shadow: 2px 3px 5px rgba(255, 255, 255, 0.3);
 }
