@@ -14,6 +14,16 @@
   border-color: transparent transparent transparent rgb(19, 19, 153);
 }
 
+@media screen and (max-width: 600px) {
+  .fp-controlArrow.fp-prev {
+    margin-top: 35vh;
+  }
+
+  .fp-controlArrow.fp-next {
+    margin-top: 35vh;
+  }
+}
+
 .fp-controlArrow {
   transition: 0.5s ease;
 }
@@ -21,4 +31,49 @@
 .fp-controlArrow:hover {
   transform: scale(1.2);
   transition: 0.5s ease;
+}
+
+.project-title {
+  width: 8em;
+}
+
+/* Tooltip container */
+.tooltip {
+  margin: 1vw;
+  position: relative;
+  display: inline;
+}
+
+.tooltip a {
+  color: black;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  opacity: 0;
+  font-size: 0.6em;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.5s ease;
+  pointer-events: none;
+  bottom: 0%;
+  left: 0%;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+  bottom: 110%;
+  transition: 0.5s ease;
+}
+
+.infos {
+  margin-top: 15vh;
 }

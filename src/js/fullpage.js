@@ -3,7 +3,7 @@ console.warn(
   "The following error has no sense cause the project is open source !"
 );
 new fullpage("#fullpage", {
-  anchors: ["home", "tech", "portfolio", "experiences", "studies", "contact"],
+  anchors: ["home", "tech", "projects", "experiences", "studies", "contact"],
   sectionsColor: [
     "#78C0E0",
     "#009DD1",
