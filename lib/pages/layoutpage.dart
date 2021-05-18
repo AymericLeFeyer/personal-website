@@ -1,7 +1,5 @@
-  
 import 'package:DeveloperFolio/configure/centeredview.dart';
 import 'package:DeveloperFolio/configure/navigation_service.dart';
-import 'package:DeveloperFolio/include/navbar/drawer/drawernav.dart';
 import 'package:DeveloperFolio/include/navbar/navigationbar.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -14,16 +12,10 @@ class LayoutTemplate extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
-        endDrawer: NavigationDrawer(),
         endDrawerEnableOpenDragGesture: false,
-        
         body: Column(
           children: <Widget>[
             NavigationBar(),
-
-
-
-
             Expanded(
               child: Navigator(
                 key: locator<NavigationService>().navigatorKey,

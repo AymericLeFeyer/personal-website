@@ -1,6 +1,4 @@
 import 'package:DeveloperFolio/configure/centeredview.dart';
-import 'package:DeveloperFolio/include/CenteringOfPages/Achievement.dart';
-import 'package:DeveloperFolio/include/CenteringOfPages/Blogcenter.dart';
 import 'package:DeveloperFolio/include/CenteringOfPages/ContactCenter.dart';
 import 'package:DeveloperFolio/include/CenteringOfPages/Education.dart';
 import 'package:DeveloperFolio/include/CenteringOfPages/skills_desk.dart';
@@ -50,12 +48,10 @@ class _HomeDesktopState extends State<HomeDesktop> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Flexible(
-                          child: ListView(
+                child: ListView(
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
-
                   children: [
-                     
                     Row(
                       children: <Widget>[
                         Expanded(child: WelcomePage()),
@@ -91,35 +87,26 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     SizedBox(
                       height: 75,
                     ),
-                    Row(
-                      children: [
-                        Expanded(child: AchievementDesk()),
-                      ],
+                    SizedBox(
+                      height: 75,
                     ),
-                     SizedBox(
+                    SizedBox(
                       height: 75,
                     ),
                     Row(
-                      children: [
-                        Expanded(child: BlogCenterDesk()),
-                      ],
-                    ),
-                     SizedBox(
-                      height: 75,
-                    ),
-                     Row(
-                      children: [
+                      children: <Widget>[
                         Expanded(child: ContactCenterDesk()),
-                        Expanded(child: FourDesk(),),
+                        Expanded(child: FourDesk()),
                       ],
                     ),
-                    SizedBox(height: 100,),
+                    SizedBox(
+                      height: 100,
+                    ),
                     Row(
                       children: [
                         Expanded(child: FooterPage()),
                       ],
                     ),
-                    
                   ],
                 ),
               ),
@@ -140,7 +127,7 @@ class HomeMobile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-                  child: ListView(
+            child: ListView(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
               children: <Widget>[
@@ -149,10 +136,10 @@ class HomeMobile extends StatelessWidget {
                 SkillsMob(),
                 ProgressPage(),
                 EducationMob(),
-                AchievementMob(),
-                BlogCenterMob(),
                 ContactCenterMob(),
-                SizedBox(height: 50,),
+                SizedBox(
+                  height: 50,
+                ),
                 FooterPage()
               ],
             ),
@@ -172,19 +159,19 @@ class HomeTab extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-                  child: ListView(   
-                    shrinkWrap: true,     
-                    physics: NeverScrollableScrollPhysics(),
+            child: ListView(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
               children: <Widget>[
                 WelcomePageTab(),
                 OneTab(),
                 SkillsTab(),
                 ProgressPage(),
                 EducationTab(),
-                AchievementTab(),
-                BlogCenterTab(),
                 ContactCenterTab(),
-                SizedBox(height: 50,),
+                SizedBox(
+                  height: 50,
+                ),
                 FooterMob(),
               ],
             ),
