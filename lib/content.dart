@@ -48,7 +48,7 @@ class ContentPage extends StatelessWidget {
                 portfolioTitle(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [bonapImage(), baggouImage()],
+                  children: [bonap(), baggou()],
                 ),
                 hobbiesTitle(),
                 hobbiesImage(),

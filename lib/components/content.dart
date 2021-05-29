@@ -2,7 +2,9 @@ import 'package:aymeric/components/aymeric_icons.dart';
 import 'package:aymeric/components/button.dart';
 import 'package:aymeric/components/image.dart';
 import 'package:aymeric/components/title.dart';
+import 'package:aymeric/url.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 // Title
 
@@ -15,10 +17,8 @@ Widget titleText() {
       title: "Moi c'est Aymeric",
       size: 30,
     ),
-    MyTitle(
-      title: "Ingénieur informatique",
-      size: 30,
-    )
+    Text("Ingénieur informatique", style: TextStyle(fontSize: 30)),
+    Text("Développeur Mobile & Web", style: TextStyle(fontSize: 30)),
   ]);
 }
 
@@ -147,12 +147,58 @@ Widget portfolioTitle() {
   );
 }
 
+Widget bonap() {
+  return Column(
+    children: [
+      bonapImage(),
+      bonapButton(),
+    ],
+  );
+}
+
 Widget bonapImage() {
   return image(asset: "bonap.gif");
 }
 
+Widget bonapButton() {
+  return MyButton(
+      content: Text("En savoir plus ...", style: TextStyle(fontSize: 30)),
+      onPress: () {
+        launchInBrowser(URL.bonap);
+      });
+}
+
+Widget bonapDialog() {
+  return Column(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      MyTitle(title: "Bonap"),
+      Text("Bonap est un gestionnaire de repas intelligent"),
+      Text(
+          "C'est un avant tout un projet de fin d'études réalisé avec Quentin Carry, en utilisant Flutter"),
+    ],
+  );
+}
+
+Widget baggou() {
+  return Column(
+    children: [
+      baggouImage(),
+      baggouButton(),
+    ],
+  );
+}
+
 Widget baggouImage() {
   return image(asset: "baggou.png");
+}
+
+Widget baggouButton() {
+  return MyButton(
+      content: Text("En savoir plus ...", style: TextStyle(fontSize: 30)),
+      onPress: () {
+        launchInBrowser(URL.baggou);
+      });
 }
 
 // Hobbies
@@ -179,7 +225,9 @@ Widget footer() {
                 "Contacte-moi !",
                 style: TextStyle(fontSize: 50),
               ),
-              onPress: () {})),
+              onPress: () {
+                launchInBrowser(URL.mail);
+              })),
       Container(
         height: 50,
       ),
@@ -192,7 +240,9 @@ Widget footer() {
             child: IconButton(
               icon: Icon(AymericIcons.github_circled),
               iconSize: 64,
-              onPressed: () {},
+              onPressed: () {
+                launchInBrowser(URL.github);
+              },
             ),
           ),
           Padding(
@@ -200,7 +250,9 @@ Widget footer() {
             child: IconButton(
               icon: Icon(AymericIcons.linkedin),
               iconSize: 64,
-              onPressed: () {},
+              onPressed: () {
+                launchInBrowser(URL.linkedin);
+              },
             ),
           ),
           Padding(
@@ -208,7 +260,9 @@ Widget footer() {
             child: IconButton(
               icon: Icon(AymericIcons.spotify),
               iconSize: 64,
-              onPressed: () {},
+              onPressed: () {
+                launchInBrowser(URL.spotify);
+              },
             ),
           ),
         ],
