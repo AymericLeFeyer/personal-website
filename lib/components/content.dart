@@ -22,8 +22,8 @@ Widget titleText() {
   ]);
 }
 
-Widget titleImage() {
-  return image(asset: "logo.png");
+Widget titleImage({size = 3}) {
+  return image(asset: "logo.png", size: size);
 }
 
 // Skills
@@ -37,17 +37,27 @@ Widget skillTitle() {
 Widget skillText() {
   return Column(
     children: [
-      Text(
-          "Ça ressemble à de la magie, pourtant ce ne sont que des lignes de code."),
-      Text(
-          "Mises bout à bout, elles permettent de réaliser de superbes projets."),
-      Text("Je n'ai pas été à Poudlard mais je connais un tas de sorts !"),
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text(
+            "Ça ressemble à de la magie, pourtant ce ne sont que des lignes de code."),
+      ),
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text(
+            "Mises bout à bout, elles permettent de réaliser de superbes projets."),
+      ),
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text(
+            "Je n'ai pas été à Poudlard mais je connais un tas de sorts !"),
+      ),
     ],
   );
 }
 
-Widget skillImage() {
-  return image(asset: "skills.png");
+Widget skillImage({size = 3}) {
+  return image(asset: "skills.png", size: size);
 }
 
 // Tools
@@ -58,8 +68,8 @@ Widget toolsTitle() {
   );
 }
 
-Widget toolsImage() {
-  return image(asset: "tools.png", size: 2);
+Widget toolsImage({size = 2}) {
+  return image(asset: "tools.png", size: size);
 }
 
 // Activities
@@ -75,38 +85,34 @@ Widget workText() {
     child: Column(
       children: [
         Padding(
-          padding: const EdgeInsets.only(bottom: 8.0),
+          padding: const EdgeInsets.all(8.0),
           child: MyTitle(
             title: "Développeur alternant chez Progress-IT",
             size: 30.0,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(bottom: 8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Text(
               "Progress-IT est une société de services dans l'IT. Audit, accompagnement, réalisation de projets et formation sont au coeur de Progress-IT. "),
         ),
         Padding(
-          padding: const EdgeInsets.only(bottom: 8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Text(
               "Développement mobile, web et backend. Je touche à tout chez Progress-IT, de la conception à la réalisation, je participe au développement d'applications intéressantes."),
         ),
         Padding(
-          padding: const EdgeInsets.only(bottom: 8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Text(
-              "La méthodologie agile est au cours de nos journées, j'apprends les ficelles du métier de Scrum Master et je fais tout pour que les projets se déroulent sans accrocs."),
+              "La méthodologie agile est au centre de nos journées, j'apprends les ficelles du métier de Scrum Master et je fais tout pour que les projets se déroulent sans accrocs."),
         ),
-        Padding(
-            padding: const EdgeInsets.only(bottom: 8.0),
-            child: Text(
-                "Je travaille actuellement sur familyBOOK, un produit ayant pour but d'aider les personnes atteintes d'illectronisme à passer des visios avec leurs familles, à l'aide d'une interface pensée pour eux et des fonctionnalités adaptées."))
       ],
     ),
   );
 }
 
-Widget workImage() {
-  return image(asset: "work.png", size: 3);
+Widget workImage({size = 3}) {
+  return image(asset: "work.png", size: size);
 }
 
 Widget studyText() {
@@ -117,7 +123,7 @@ Widget studyText() {
         size: 30.0,
       ),
       Padding(
-        padding: const EdgeInsets.only(bottom: 8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Text(
             "J'étudie actuellement l'informatique et plus spécialement le développeur web & mobile à l'Université de Lille dans le cadre du Master E-Services. "),
       ),
@@ -135,8 +141,8 @@ Widget studyText() {
   );
 }
 
-Widget studyImage() {
-  return image(asset: "school.png", size: 3);
+Widget studyImage({size = 3}) {
+  return image(asset: "school.png", size: size);
 }
 
 // Portfolio
@@ -147,17 +153,20 @@ Widget portfolioTitle() {
   );
 }
 
-Widget bonap() {
+Widget bonap({size = 3}) {
   return Column(
     children: [
-      bonapImage(),
-      bonapButton(),
+      bonapImage(size: size),
+      Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: bonapButton(),
+      ),
     ],
   );
 }
 
-Widget bonapImage() {
-  return image(asset: "bonap.gif");
+Widget bonapImage({size = 3}) {
+  return image(asset: "bonap.gif", size: size);
 }
 
 Widget bonapButton() {
@@ -168,29 +177,20 @@ Widget bonapButton() {
       });
 }
 
-Widget bonapDialog() {
+Widget baggou({size = 3}) {
   return Column(
-    mainAxisSize: MainAxisSize.min,
     children: [
-      MyTitle(title: "Bonap"),
-      Text("Bonap est un gestionnaire de repas intelligent"),
-      Text(
-          "C'est un avant tout un projet de fin d'études réalisé avec Quentin Carry, en utilisant Flutter"),
+      baggouImage(size: size),
+      Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: baggouButton(),
+      ),
     ],
   );
 }
 
-Widget baggou() {
-  return Column(
-    children: [
-      baggouImage(),
-      baggouButton(),
-    ],
-  );
-}
-
-Widget baggouImage() {
-  return image(asset: "baggou.png");
+Widget baggouImage({size = 3}) {
+  return image(asset: "baggou.png", size: size);
 }
 
 Widget baggouButton() {
@@ -209,8 +209,8 @@ Widget hobbiesTitle() {
   );
 }
 
-Widget hobbiesImage() {
-  return image(asset: "hobbies.png", size: 2);
+Widget hobbiesImage({size = 2}) {
+  return image(asset: "hobbies.png", size: size);
 }
 
 // Footer
