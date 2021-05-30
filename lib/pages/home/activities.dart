@@ -53,12 +53,12 @@ Widget workText() {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
-              "Progress-IT est une société de services dans l'IT. Audit, accompagnement, réalisation de projets et formation sont au coeur de Progress-IT. "),
+              "Progress-IT est une société de services dans l'informatique. Audit, accompagnement, réalisation de projets et formation sont au coeur de Progress-IT. "),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
-              "Développement mobile, web et backend. Je touche à tout chez Progress-IT, de la conception à la réalisation, je participe au développement d'applications intéressantes."),
+              "Développement mobile, web et backend. Je touche à tout, de la conception à la réalisation, je participe au développement d'applications pertinentes."),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -84,15 +84,15 @@ Widget studyText() {
       Padding(
         padding: const EdgeInsets.all(8.0),
         child: Text(
-            "J'étudie actuellement l'informatique et plus spécialement le développeur web & mobile à l'Université de Lille dans le cadre du Master E-Services. "),
+            "J'étudie actuellement l'informatique et plus spécialement le développement mobile & web à l'Université de Lille dans le cadre du Master E-Services. "),
       ),
       Padding(
-        padding: const EdgeInsets.only(bottom: 8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Text(
-            "C'est une occasion pour moi de finir l'apprentissage des notions basiques avant de rentrer à temps plein dans le monde du travail."),
+            "C'est une occasion pour moi de parfaire l'apprentissage des notions théoriques avant de rentrer à temps plein dans le monde du travail."),
       ),
       Padding(
-        padding: const EdgeInsets.only(bottom: 8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Text(
             "L'alternance est une chance et me conforte dans mon idée de devenir développeur."),
       )
