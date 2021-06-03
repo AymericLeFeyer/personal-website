@@ -5,6 +5,7 @@ class ThemeController extends GetxController {
   static ThemeController get to => Get.find();
 
   ThemeMode _themeMode;
+
   ThemeMode get themeMode => _themeMode;
 
   Future<void> setThemeMode(ThemeMode themeMode) async {

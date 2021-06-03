@@ -1,4 +1,4 @@
-package com.example.aymeric
+package fr.aypics.aymeric
 
 import io.flutter.embedding.android.FlutterActivity
 

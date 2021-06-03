@@ -1,5 +1,5 @@
 name: aymeric
-description: A new Flutter project.
+description: Portfolio Aymeric LE FEYER
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
@@ -16,6 +16,9 @@ dependencies:
   url_launcher: ^6.0.4
 
   cupertino_icons: ^1.0.2
+
+  flutter_web_plugins:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:

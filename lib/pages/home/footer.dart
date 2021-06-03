@@ -14,7 +14,8 @@ Widget footer() {
             child: MyButton(
                 content: Text(
                   "Contacte-moi !",
-                  style: TextStyle(fontSize: 50),
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 45),
                 ),
                 onPress: () {
                   launchInBrowser(URL.mail);
