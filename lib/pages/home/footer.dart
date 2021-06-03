@@ -1,6 +1,7 @@
 import 'package:aymeric/components/button.dart';
 import 'package:aymeric/url.dart';
 import 'package:aymeric/utils/aymeric_icons.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 Widget footer() {
@@ -8,14 +9,17 @@ Widget footer() {
     children: [
       Padding(
           padding: const EdgeInsets.all(8.0),
-          child: MyButton(
-              content: Text(
-                "Contacte-moi !",
-                style: TextStyle(fontSize: 50),
-              ),
-              onPress: () {
-                launchInBrowser(URL.mail);
-              })),
+          child: Tooltip(
+            message: "Envoie moi un mail",
+            child: MyButton(
+                content: Text(
+                  "Contacte-moi !",
+                  style: TextStyle(fontSize: 50),
+                ),
+                onPress: () {
+                  launchInBrowser(URL.mail);
+                }),
+          )),
       Container(
         height: 50,
       ),
@@ -56,5 +60,30 @@ Widget footer() {
         ],
       )
     ],
+  );
+}
+
+Widget credits(BuildContext context) {
+  return RichText(
+    text: new TextSpan(
+      children: [
+        new TextSpan(
+          text: 'Avec la participation graphique de ',
+          style: new TextStyle(
+              color: Theme.of(context).brightness == Brightness.dark
+                  ? Colors.white
+                  : Colors.black,
+              fontFamily: "Pangolin"),
+        ),
+        new TextSpan(
+          text: 'smola',
+          style: new TextStyle(color: Colors.blue, fontFamily: "Pangolin"),
+          recognizer: new TapGestureRecognizer()
+            ..onTap = () {
+              launchInBrowser(URL.smola);
+            },
+        ),
+      ],
+    ),
   );
 }

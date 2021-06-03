@@ -7,22 +7,14 @@ Widget bonap({size = 3}) {
   return Column(
     children: [
       bonapImage(size: size),
-      Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: bonapButton(),
-      ),
     ],
   );
 }
 
 Widget bonapImage({size = 3}) {
-  return image(asset: "bonap.gif", size: size);
-}
-
-Widget bonapButton() {
-  return MyButton(
-      content: Text("En savoir plus ...", style: TextStyle(fontSize: 30)),
-      onPress: () {
+  return InkWell(
+      onTap: () {
         launchInBrowser(URL.bonap);
-      });
+      },
+      child: image(asset: "bonap.png", size: size));
 }

@@ -1,19 +1,21 @@
 import 'package:aymeric/components/title.dart';
 import 'package:aymeric/pages/home/portfolio/baggou.dart';
 import 'package:aymeric/pages/home/portfolio/bonap.dart';
+import 'package:aymeric/pages/home/portfolio/dunfresh.dart';
 import 'package:flutter/widgets.dart';
 
 Widget portfolioDesktop() {
-  return Row(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    children: [bonap(), baggou()],
+  return Wrap(
+    spacing: 20,
+    runSpacing: 20,
+    children: [baggou(), bonap(), dunfresh()],
   );
 }
 
 Widget portfolioPhone() {
-  return Column(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    children: [bonap(size: 1), baggou(size: 1)],
+  return Wrap(
+    runSpacing: 50,
+    children: [baggou(size: 1), bonap(size: 1), dunfresh(size: 1)],
   );
 }
 

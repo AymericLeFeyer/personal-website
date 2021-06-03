@@ -3,7 +3,9 @@ import 'package:url_launcher/url_launcher.dart';
 class URL {
   static String bonap = "https://stelapix.github.io/BonapWeb/";
   static String baggou = "https://baggou.fr";
+  static String dunfresh = "https://www.conhexa.com/fr/sites/dunfresh";
   static String mail = "mailto:lefeyer.aymeric@gmail.com";
+  static String smola = "https://www.behance.net/smola_";
   static String github = "https://github.com/AymericLeFeyer";
   static String linkedin = "https://www.linkedin.com/in/aymericlefeyer/";
   static String spotify =

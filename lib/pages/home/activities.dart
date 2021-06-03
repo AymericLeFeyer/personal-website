@@ -53,7 +53,7 @@ Widget workText() {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
-              "Progress-IT est une société de services dans l'informatique. Audit, accompagnement, réalisation de projets et formation sont au coeur de Progress-IT. "),
+              "Progress-IT est une société de services dans l'informatique. Audit, accompagnement, réalisation de projets et formation sont au coeur de l'entreprise. "),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),

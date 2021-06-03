@@ -6,9 +6,10 @@ import 'package:aymeric/pages/home/portfolio.dart';
 import 'package:aymeric/pages/home/skills.dart';
 import 'package:aymeric/pages/home/title.dart';
 import 'package:aymeric/pages/home/tools.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-Widget content() {
+Widget content(BuildContext context) {
   return Column(
     children: [
       // Title Section
@@ -49,12 +50,13 @@ Widget content() {
       ResponsiveWidget(phone: hobbiesPhone(), desktop: hobbiesDesktop()),
 
       Container(
-        height: 100,
+        height: 50,
       ),
       footer(),
       Container(
-        height: 100,
+        height: 50,
       ),
+      credits(context),
     ],
   );
 }

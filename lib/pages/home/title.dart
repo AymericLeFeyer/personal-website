@@ -18,7 +18,13 @@ Widget titleDesktop() {
 
 Widget titlePhone() {
   return Column(
-    children: [titleText(), titleImage(size: 1.2)],
+    children: [
+      titleText(),
+      Container(
+        height: 20,
+      ),
+      titleImage(size: 1.2)
+    ],
   );
 }
 
