@@ -20,13 +20,16 @@ Widget hobbiesTitle() {
 Widget hobbiesImage({size = 6}) {
   return Container(
     width: Get.width,
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        image(asset: "games.png", size: size),
-        image(asset: "food.png", size: size),
-        image(asset: "music.png", size: size),
-      ],
+    child: Center(
+      child: Wrap(
+        spacing: 20,
+        runSpacing: 20,
+        children: [
+          image(asset: "games.png", size: size),
+          image(asset: "food.png", size: size),
+          image(asset: "music.png", size: size),
+        ],
+      ),
     ),
   );
 }

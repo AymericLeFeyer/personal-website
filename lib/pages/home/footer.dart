@@ -13,7 +13,7 @@ Widget footer() {
             message: "Envoie moi un mail",
             child: MyButton(
                 content: Text(
-                  "Contacte-moi !",
+                  "Contacte moi!",
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 45),
                 ),
