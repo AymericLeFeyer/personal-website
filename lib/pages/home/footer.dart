@@ -51,10 +51,10 @@ Widget footer() {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: IconButton(
-              icon: Icon(AymericIcons.spotify),
+              icon: Icon(AymericIcons.twitter),
               iconSize: 64,
               onPressed: () {
-                launchInBrowser(URL.spotify);
+                launchInBrowser(URL.twitter);
               },
             ),
           ),

@@ -11904,7 +11904,7 @@ case 2:F.amU()
 return P.a4(null,r)}})
 return P.a5($async$a27,r)}},N={
 amz:function(){var s=null,r=L.dE("Contacte moi!",A.fj(s,s,s,s,s,s,s,s,s,s,s,45,s,s,s,s,!0,s,s,s,s,s,s),C.h6),q=t.b
-return T.d5(H.b([new T.bP(C.E,S.a8L(new B.Ax(new N.a1L(),s,B.a7X(s,s,s,s,s,s,s,s,s,s,s,s,s,new Y.cD(C.d8,5,C.K),s,s,s),C.F,s,!1,new T.bP(C.E,r,s),s),"Envoie moi un mail"),s),M.dP(s,s,s,s,s,50,s,s,s),L.dE("Mes r\xe9seaux",s,s),T.t1(H.b([new T.bP(C.E,B.Pb(L.Pa(C.vx),64,new N.a1M(),s),s),new T.bP(C.E,B.Pb(L.Pa(C.vy),64,new N.a1N(),s),s),new T.bP(C.E,B.Pb(L.Pa(C.vA),64,new N.a1O(),s),s)],q),C.pF)],q),C.Y)},
+return T.d5(H.b([new T.bP(C.E,S.a8L(new B.Ax(new N.a1L(),s,B.a7X(s,s,s,s,s,s,s,s,s,s,s,s,s,new Y.cD(C.d8,5,C.K),s,s,s),C.F,s,!1,new T.bP(C.E,r,s),s),"Envoie moi un mail"),s),M.dP(s,s,s,s,s,50,s,s,s),L.dE("Mes r\xe9seaux",s,s),T.t1(H.b([new T.bP(C.E,B.Pb(L.Pa(C.vy),64,new N.a1M(),s),s),new T.bP(C.E,B.Pb(L.Pa(C.vz),64,new N.a1N(),s),s),new T.bP(C.E,B.Pb(L.Pa(C.vx),64,new N.a1O(),s),s)],q),C.pF)],q),C.Y)},
 amo:function(a){var s=null,r="Pangolin",q=A.fj(s,s,K.bf(a).av.cx===C.af?C.j:C.k,s,s,s,s,s,r,s,s,s,s,s,s,s,!0,s,s,s,s,s,s),p=A.fj(s,s,C.d8,s,s,s,s,s,r,s,s,s,s,s,s,s,!0,s,s,s,s,s,s),o=N.a8I(s)
 o.aR=new N.a1C()
 return T.a3P(s,s,C.h7,!0,s,new Q.ha(s,H.b([new Q.ha("Avec la participation graphique de ",s,s,q),new Q.ha("smola",s,o,p)],t.iD),s,s),C.aL,s,s,1,C.bN)},
@@ -33201,7 +33201,7 @@ j=T.xt(new T.bP(C.E,T.d5(H.b([q,new U.en("Comp\xe9tences",50,i),p,new U.en("Outi
 return new M.t5(Q.aiF(T.tB(C.he,H.b([new E.Cr(!0,j,i),new T.iQ(C.rQ,i,i,T.t1(H.b([new T.bP(C.E,B.Pb(new X.Aq(new T.LD(r),i),24,new T.LE(r),"Changer le th\xe8me"),i)],s),C.pE),i)],s),C.it),!0),i)}}
 T.LD.prototype={
 $0:function(){var s=this.a
-return L.Pa(J.d(s.gn(s),C.iw)?C.vv:C.vz)},
+return L.Pa(J.d(s.gn(s),C.iw)?C.vv:C.vA)},
 $C:"$0",
 $R:0,
 $S:124}
@@ -33248,7 +33248,7 @@ $C:"$0",
 $R:0,
 $S:1}
 N.a1O.prototype={
-$0:function(){F.fA("https://open.spotify.com/user/v3qrnw7xq5o64dgcc9ahofx33?si=e4e855ba19dc4741")},
+$0:function(){F.fA("https://twitter.com/Aymeric_Zepix")},
 $C:"$0",
 $R:0,
 $S:1}
@@ -54731,10 +54731,10 @@ C.lp=new E.qs("HitTestBehavior.deferToChild")
 C.bV=new E.qs("HitTestBehavior.opaque")
 C.iT=new E.qs("HitTestBehavior.translucent")
 C.vv=new X.hK(59392,"Aymeric")
-C.vx=new X.hK(61595,"Aymeric")
-C.vy=new X.hK(61665,"Aymeric")
-C.vz=new X.hK(61830,"Aymeric")
-C.vA=new X.hK(61884,"Aymeric")
+C.vx=new X.hK(61593,"Aymeric")
+C.vy=new X.hK(61595,"Aymeric")
+C.vz=new X.hK(61665,"Aymeric")
+C.vA=new X.hK(61830,"Aymeric")
 C.q=new P.I(3707764736)
 C.vB=new T.dS(C.q,null,null)
 C.lq=new T.dS(C.k,1,24)

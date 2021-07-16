@@ -1,5 +1,5 @@
-import 'package:aymeric/components/button.dart';
 import 'package:aymeric/components/image.dart';
+import 'package:aymeric/pages/home/portfolio.dart';
 import 'package:aymeric/url.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -15,7 +15,13 @@ Widget baggou({size = 3}) {
 Widget baggouImage({size = 3}) {
   return InkWell(
       onTap: () {
-        launchInBrowser(URL.baggou);
+        portfolioDialog(
+            title: "Baggou",
+            description: [
+              "Solution de covoiturage adaptée aux supporters.",
+            ],
+            technos: "Flutter - Firebase - NodeJS",
+            url: URL.baggou);
       },
       child: image(asset: "baggou.png", size: size));
 }
