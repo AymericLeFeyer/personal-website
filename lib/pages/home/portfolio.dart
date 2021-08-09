@@ -46,7 +46,7 @@ void portfolioDialog({title, description, url, technos}) {
               .map(
                 (e) => Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text(e),
+                  child: Text(e, textAlign: TextAlign.center),
                 ),
               )
               .toList(),
@@ -55,6 +55,7 @@ void portfolioDialog({title, description, url, technos}) {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               technos,
+              textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
             ),
           ),

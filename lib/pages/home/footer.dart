@@ -88,3 +88,14 @@ Widget credits(BuildContext context) {
     ),
   );
 }
+
+Widget company(BuildContext context) {
+  return SelectableText(
+    'SIRET : 90160025400014',
+    style: new TextStyle(
+        color: Theme.of(context).brightness == Brightness.dark
+            ? Colors.white
+            : Colors.black,
+        fontFamily: "Pangolin"),
+  );
+}

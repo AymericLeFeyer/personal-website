@@ -57,6 +57,10 @@ Widget content(BuildContext context) {
         height: 50,
       ),
       credits(context),
+      Container(
+        height: 20,
+      ),
+      // company(context),
     ],
   );
 }
