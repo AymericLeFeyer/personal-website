@@ -1603,17 +1603,31 @@ header .logo a {
   margin-top: 4.2rem;
   margin-right: -30px;
   margin-left: -30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
+
 .intro-info img {
-  height: 9rem;
-  width: 9rem;
-  border-radius: 50%;
-  margin: 0.9rem 0 0 0;
+  height: 100%;
+  width: 15rem;
+  margin: 1rem 0 2rem 0;
   float: left;
 }
 .intro-info .lead {
   text-align: left;
-  padding-left: 13rem;
+  padding-left: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro-info {
+    flex-direction: column;
+    margin-left: unset;
+  }
+  .intro-info img {
+    height: 15rem;
+    width: 15rem;
+  }
 }
 
 .about-content {
@@ -1677,10 +1691,6 @@ header .logo a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .intro-info img {
-    height: 7.8rem;
-    width: 7.8rem;
-  }
   .intro-info .lead {
     padding-left: 11rem;
   }
@@ -1704,12 +1714,7 @@ header .logo a {
     text-align: center;
     margin-top: 3rem;
   }
-  .intro-info img {
-    height: 6.6rem;
-    width: 6.6rem;
-    float: none;
-    display: inline-block;
-  }
+
   .intro-info .lead {
     padding-left: 0;
     text-align: center;
@@ -1901,6 +1906,11 @@ header .logo a {
   padding: 0;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  margin-bottom: 5rem;
+  width: 30rem;
+  align-self: center;
+  justify-self: center;
 }
 #portfolio .folio-item img {
   vertical-align: middle;
@@ -1909,6 +1919,8 @@ header .logo a {
   -webkit-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  height: 20rem;
+  object-fit: contain;
 }
 
 #portfolio .overlay {
@@ -1923,6 +1935,25 @@ header .logo a {
   -webkit-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.folio-container {
+  justify-content: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 960px) {
+  .folio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .folio-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 #portfolio .folio-item-table {
@@ -2003,6 +2034,8 @@ header .logo a {
 }
 .popup-modal .media {
   position: relative;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 .popup-modal img {
   vertical-align: bottom;
@@ -2712,3 +2745,41 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.modal__title {
+  font-weight: bold;
+}
+
+.modal__date {
+  font-size: small;
+  float: right;
+}
+
+.modal__company::after {
+  content: "/";
+}
+
+.modal__sector .modal__sector__tooltip {
+  opacity: 0;
+  width: 120px;
+  margin-top: 30px;
+  margin-left: -20px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  transition: 0.5s ease all;
+}
+
+.modal__sector:hover .modal__sector__tooltip {
+  opacity: 1;
+}
+
+.footer__link {
+  color: #6e6e6e;
+}
