@@ -46,6 +46,7 @@ export default {
   border-radius: 6px;
   margin: 10px;
   padding: 3px;
+  display: flex;
 }
 
 .hoverable:hover {

@@ -1,12 +1,17 @@
 <template>
   <div class="breadcrumb">
-    <div v-for="(item, index) in breadcrumbs" :key="index">
+    <div
+      v-for="(item, index) in breadcrumbs"
+      :key="index"
+      class="breadcrumb__item"
+    >
       <page-link
         :icon="item.icon"
         :name="item.text"
         :route="item.to"
         :disabled="item.to == null"
       />
+      <div v-if="index < breadcrumbs.length - 1" class="separator">/</div>
     </div>
   </div>
 </template>
@@ -35,5 +40,14 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   margin: 10px 0;
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  margin-top: 3px;
 }
 </style>

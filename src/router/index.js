@@ -5,6 +5,13 @@ import Portfolio from '../views/Portfolio.vue'
 import Resume from '../views/Resume.vue'
 import Contact from '../views/Contact.vue'
 
+const home = {
+  text: 'Aymeric Le Feyer',
+  icon: '🥸',
+  to: '/'
+
+}
+
 const routes = [
   {
     path: '/',
@@ -13,8 +20,8 @@ const routes = [
     meta: {
       breadcrumb: [
         {
-          text: 'Aymeric Le Feyer',
-          icon: 'o'
+          text: home.text,
+          icon: home.icon,
         }
       ]
     }
@@ -25,36 +32,55 @@ const routes = [
     component: Now,
     meta: {
       breadcrumb: [
-        {
-          text: 'Aymeric Le Feyer',
-          icon: 'o',
-          to: "/"
-        },
+        home,
         {
           text: 'Now',
-          icon: 'n'
+          icon: '👋'
         },
-        {
-          text: 'D',
-          icon: 'n'
-        }
       ]
     }
   },
   {
     path: '/portfolio',
     name: 'Portfolio',
-    component: Portfolio
+    component: Portfolio,
+    meta: {
+      breadcrumb: [
+        home,
+        {
+          text: 'Portfolio',
+          icon: '🚀'
+        },
+      ]
+    }
   },
   {
     path: '/resume',
     name: 'Resume',
-    component: Resume
+    component: Resume,
+    meta: {
+      breadcrumb: [
+        home,
+        {
+          text: 'Resume',
+          icon: '📜'
+        },
+      ]
+    }
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    component: Contact,
+    meta: {
+      breadcrumb: [
+        home,
+        {
+          text: 'Contact',
+          icon: '📞'
+        },
+      ]
+    }
   },
 ]
 
