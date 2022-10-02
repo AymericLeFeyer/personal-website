@@ -9,12 +9,37 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      breadcrumb: [
+        {
+          text: 'Aymeric Le Feyer',
+          icon: 'o'
+        }
+      ]
+    }
   },
   {
     path: '/now',
     name: 'Now',
-    component: Now
+    component: Now,
+    meta: {
+      breadcrumb: [
+        {
+          text: 'Aymeric Le Feyer',
+          icon: 'o',
+          to: "/"
+        },
+        {
+          text: 'Now',
+          icon: 'n'
+        },
+        {
+          text: 'D',
+          icon: 'n'
+        }
+      ]
+    }
   },
   {
     path: '/portfolio',

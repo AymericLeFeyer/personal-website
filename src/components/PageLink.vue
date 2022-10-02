@@ -1,19 +1,20 @@
 <template>
-  <div v-if="route">
-    <router-link :to="route" class="pagelink">
-      <span class="icon">{{ icon }}</span
-      ><span class="name">{{ name }}</span>
-    </router-link>
-  </div>
-  <div v-else>
-    <a :href="href" class="pagelink" target="_blank">
-      <span class="icon">{{ icon }}</span
-      ><span class="name">{{ name }}</span>
-    </a>
+  <div :class="activeClass">
+    <div v-if="route">
+      <router-link :to="route">
+        <icon-item :icon="icon" :name="name" />
+      </router-link>
+    </div>
+    <div v-else>
+      <a :href="href" target="_blank">
+        <icon-item :icon="icon" :name="name" />
+      </a>
+    </div>
   </div>
 </template>
 
 <script>
+import IconItem from "./IconItem.vue";
 export default {
   name: "PageLink",
   props: {
@@ -21,40 +22,37 @@ export default {
     name: String,
     icon: String,
     href: String,
+    fixedWidth: Boolean,
+    disabled: Boolean,
+  },
+  components: {
+    IconItem,
+  },
+  computed: {
+    activeClass() {
+      return (
+        "pagelink " +
+        (this.fixedWidth ? "fixedWidth " : "") +
+        (this.disabled ? "" : "hoverable ")
+      );
+    },
   },
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .pagelink {
   transition: 0.2s ease all;
-  padding: 3px;
   border-radius: 6px;
-  width: 100px;
   margin: 10px;
-  .icon {
-    margin-right: 3px;
-  }
+  padding: 3px;
+}
 
-  .name {
-    text-decoration: none;
-    position: relative;
+.hoverable:hover {
+  background-color: #00000029;
+}
 
-    &::after {
-      position: absolute;
-      content: "";
-      height: 1px;
-      bottom: -1px;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      width: 90%;
-      background: #00000029;
-    }
-  }
-
-  &:hover {
-    background-color: #00000029;
-  }
+.fixedWidth {
+  width: 100px;
 }
 </style>

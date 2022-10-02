@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1>Aymeric</h1>
     <div class="actions">
       <page-link route="/now" icon="👋" name="Now" />
       <page-link route="/portfolio" icon="🚀" name="Portfolio" />
