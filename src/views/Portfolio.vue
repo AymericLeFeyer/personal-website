@@ -1,5 +1,8 @@
 <template>
-  <h1>Portfolio</h1>
+  <div>
+    <h1>Portfolio</h1>
+    <span class="content__icon">🚀</span>
+  </div>
 </template>
 
 <script>

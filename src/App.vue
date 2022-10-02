@@ -1,6 +1,8 @@
 <template>
   <breadcrumb />
-  <router-view />
+  <div class="center">
+    <router-view class="content" />
+  </div>
 </template>
 
 <script>
@@ -15,4 +17,10 @@ export default {
 
 <style lang="scss">
 @import "styles/main.scss";
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

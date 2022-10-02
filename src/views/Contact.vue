@@ -1,5 +1,8 @@
 <template>
-  <h1>Contact</h1>
+  <div>
+    <h1>Contact</h1>
+    <span class="content__icon">📞</span>
+  </div>
 </template>
 
 <script>

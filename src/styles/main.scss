@@ -4,9 +4,57 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+  font-size: 1.1em;
+
   }
 
 a {
     text-decoration: none;
     color: black
+}
+
+.divider {
+  height: 1px;
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+}
+
+
+.link {
+  text-decoration: underline;
+  color: gray;
+  text-underline-offset: 3px;
+}
+
+
+body {
+  background-color: #e5e5e5;
+}
+
+.content {
+  background-color: #FFFFFF;
+  width: 700px;
+  border-radius: 20px;
+  position: relative;
+  padding: 40px 80px 20px 80px;
+  margin-top: 30px;
+  text-align: left;
+  overflow-wrap: break-word;
+
+  h1 {
+    position: absolute;
+    top: -55px;
+    left: 80px;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  .content__icon {
+    position: absolute;
+    top: -40px;
+    right: 80px;
+    font-size: 60px;
+    font-weight: bolder;
+
+  }
 }
