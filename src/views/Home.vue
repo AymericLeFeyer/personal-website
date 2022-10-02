@@ -1,18 +1,32 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="actions">
+      <page-link route="/now" icon="👋" name="Now" />
+      <page-link route="/portfolio" icon="🚀" name="Portfolio" />
+      <page-link href="http://blog.aymeric.lefeyer.fr/" icon="✏️" name="Blog" />
+      <page-link route="/resume" icon="📜" name="Resume" />
+      <page-link route="/contact" icon="📞" name="Contact" />
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import PageLink from "../components/PageLink.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    PageLink,
+  },
+};
 </script>
+
+<style lang="scss" scoped>
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+</style>
