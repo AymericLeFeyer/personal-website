@@ -1,20 +1,18 @@
 <template>
   <div class="home">
-    <h1>Aymeric</h1>
-    <hr />
-    <div id="home__routes">
-      <link-page-vue route="/portfolio" name="Portfolio" icon="🗂" />
-    </div>
-    <hr />
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import LinkPageVue from "../components/LinkPage.vue";
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
+
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
-    LinkPageVue,
-  },
-};
+    HelloWorld
+  }
+}
 </script>
