@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Portfolio</h1>
+    <h1>Hobbies</h1>
     <span class="content__icon"><custom-icon :icon="icon" size="70" /></span>
   </div>
 </template>

@@ -4,10 +4,11 @@ import Now from '../views/Now.vue'
 import Portfolio from '../views/Portfolio.vue'
 import Resume from '../views/Resume.vue'
 import Contact from '../views/Contact.vue'
+import Hobbies from '../views/Hobbies.vue'
 
 const home = {
   text: 'Aymeric Le Feyer',
-  icon: '🥸',
+  icon: 'aymeric',
   to: '/'
 
 }
@@ -35,7 +36,7 @@ const routes = [
         home,
         {
           text: 'Now',
-          icon: '👋'
+          icon: 'hand'
         },
       ]
     }
@@ -49,7 +50,7 @@ const routes = [
         home,
         {
           text: 'Portfolio',
-          icon: '🚀'
+          icon: 'rocket'
         },
       ]
     }
@@ -63,7 +64,21 @@ const routes = [
         home,
         {
           text: 'Resume',
-          icon: '📜'
+          icon: 'paper'
+        },
+      ]
+    }
+  },
+  {
+    path: '/hobbies',
+    name: 'Hobbies',
+    component: Hobbies,
+    meta: {
+      breadcrumb: [
+        home,
+        {
+          text: 'Hobbies',
+          icon: 'dice'
         },
       ]
     }
@@ -77,7 +92,7 @@ const routes = [
         home,
         {
           text: 'Contact',
-          icon: '📞'
+          icon: 'call'
         },
       ]
     }

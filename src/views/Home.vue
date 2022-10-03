@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>Aymeric Le Feyer</h1>
-    <span class="content__icon">🥸</span>
+    <span class="content__icon"><custom-icon icon="aymeric" size="100" /></span>
     <p>
       🇫🇷 French Web & Mobile developer. Currently collaborate with
       <a href="https://www.pit.fr" target="_blank" class="link">Pit</a> the day,
@@ -20,25 +20,33 @@
     <br />
     <div class="divider"></div>
     <div class="actions">
-      <page-link route="/now" icon="👋" name="Now" />
-      <page-link route="/portfolio" icon="🚀" name="Portfolio" />
-      <page-link href="http://blog.aymeric.lefeyer.fr/" icon="✏️" name="Blog" />
-      <page-link route="/resume" icon="📜" name="Resume" />
-      <page-link route="/contact" icon="📞" name="Contact" />
+      <page-link route="/now" icon="hand" name="Now" />
+      <page-link route="/portfolio" icon="rocket" name="Portfolio" />
+      <page-link
+        href="http://blog.aymeric.lefeyer.fr/"
+        icon="pencil"
+        name="Blog"
+      />
+      <page-link route="/resume" icon="paper" name="Resume" />
+      <page-link route="/hobbies" icon="dice" name="Hobbies" />
+      <page-link route="/contact" icon="call" name="Contact" />
     </div>
     <div class="divider"></div>
     <br />
+    <p class="footer">Homemade with ❤️</p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import PageLink from "../components/PageLink.vue";
+import CustomIcon from "../components/Icon.vue";
 
 export default {
   name: "Home",
   components: {
     PageLink,
+    CustomIcon,
   },
 };
 </script>
@@ -49,5 +57,15 @@ export default {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.content__icon {
+  margin-top: -15px;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
 }
 </style>
