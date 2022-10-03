@@ -1,20 +1,12 @@
 <template>
-  <div>
-    <h1>Resume</h1>
-    <span class="content__icon"><custom-icon :icon="icon" size="70" /></span>
-  </div>
+  <custom-content title="Resume" icon="paper"></custom-content>
 </template>
 
 <script>
-import CustomIcon from "../components/Icon.vue";
+import CustomContent from "../components/Content.vue";
 export default {
   components: {
-    CustomIcon,
-  },
-  computed: {
-    icon() {
-      return this.$route.meta.breadcrumb[1].icon;
-    },
+    CustomContent,
   },
 };
 </script>

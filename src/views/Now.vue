@@ -1,15 +1,122 @@
 <template>
-  <div>
-    <h1>Now</h1>
-    <span class="content__icon"><custom-icon :icon="icon" size="70" /></span>
-  </div>
+  <custom-content title="Now" icon="hand">
+    <div class="intro">
+      <img src="@/assets/selfie.jpg" alt="Photo of myself" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa mollitia
+        cumque impedit corporis excepturi qui maiores, quas eaque exercitationem
+        voluptate, esse quos neque ut accusamus beatae consectetur. Ab, tempora
+        similique!
+      </p>
+    </div>
+    <div class="divider"></div>
+    <h2>2022 - What's up this year ?</h2>
+    <ul>
+      <li>
+        <a class="link" href="https://www.pit.fr" target="_blank">Pit</a> gave
+        me the opportunity to present my first
+        <a
+          href="https://fellow.app/blog/meetings/brown-bag-meeting-what-it-is-and-how-it-benefits-your-team/"
+          target="_blank"
+          class="link"
+          >BBL</a
+        >, on the
+        <a
+          href="https://www.cloudamqp.com/blog/what-is-message-queuing.html"
+          class="link"
+          target="_blank"
+          >Message Queuing</a
+        >. It was exciting but so stressful because I wasn't used to speak in
+        front of an audience.
+      </li>
+      <li>
+        I discovered
+        <a href="https://threejs.org/" target="_blank" class="link">Three.JS</a
+        >, a 3D modelisation javascript library. I started to follow the
+        <a href="https://threejs-journey.com/" target="_blank" class="link"
+          >three.js journey</a
+        >, an online course given by
+        <a href="https://bruno-simon.com/" class="link" target="_blank"
+          >Bruno Simon</a
+        >.
+      </li>
+      <li>
+        Because I liked the first
+        <a
+          href="https://fellow.app/blog/meetings/brown-bag-meeting-what-it-is-and-how-it-benefits-your-team/"
+          target="_blank"
+          class="link"
+          >BBL</a
+        >, I gave another one on
+        <a
+          href="https://github.com/features/copilot"
+          target="_blank"
+          class="link"
+          >Github Copilot</a
+        >, again with
+        <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>. I
+        think this time it was better, but I still have a lot to learn to give a
+        good talk.
+      </li>
+      <li>
+        I attended to the
+        <a href="https://devfest.gdglille.org/" target="_blank" class="link"
+          >Devfest LILLE</a
+        >
+        with <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>.
+        We had the opportunity to watch a lot of talks about the latest
+        technologies, and to meet a lot of people from the community.
+      </li>
+      <li>
+        I obtained my master's degree in computer science at
+        <a href="https://www.univ-lille.fr/" target="_blank" class="link"
+          >Université de Lille</a
+        >. I'm so happy to have finished this long journey, and I'm proud of
+        myself.
+      </li>
+      <li>
+        I created my first
+        <a href="http://blog.aymeric.lefeyer.fr/" target="_blank" class="link"
+          >blog</a
+        >
+        to share my knowledge and my discoveries about web and mobile
+        technologies. I made it with
+        <a href="https://notion.so" class="link" target="_blank">Notion</a> to
+        have a nice design and to facilitate the writing and the maintenance.
+      </li>
+      <li>
+        I started a permanent contract at
+        <a class="link" href="https://www.pit.fr" target="_blank">Pit</a> as a
+        fullstack developer. I'm so happy to be part of this company, and I'm
+        looking forward to working with them as long as possible.
+      </li>
+    </ul>
+
+    <p class="caption">Last updated on October 2022</p>
+
+    <div class="divider"></div>
+
+    <h2>Previous years</h2>
+    <h3>2021</h3>
+    <ul>
+      <li>
+        I started my journey as a
+        <a
+          href="https://www.societe.com/societe/monsieur-aymeric-le-feyer-901600254.html"
+          >freelancer</a
+        >
+        to work on cool projects and to improve my skills beyond my daily
+        business. I worked on mobile projects during my free time.
+      </li>
+    </ul>
+  </custom-content>
 </template>
 
 <script>
-import CustomIcon from "../components/Icon.vue";
+import CustomContent from "../components/Content.vue";
 export default {
   components: {
-    CustomIcon,
+    CustomContent,
   },
   computed: {
     icon() {
@@ -19,4 +126,26 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.intro {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex: 1 1 0;
+  img {
+    width: 40%;
+  }
+  p {
+    margin-left: 20px;
+  }
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.caption {
+  font-style: italic;
+  color: gray;
+}
+</style>

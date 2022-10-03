@@ -33,7 +33,7 @@
     </div>
     <div class="divider"></div>
     <br />
-    <p class="footer">Homemade with ❤️</p>
+    <custom-footer />
   </div>
 </template>
 
@@ -41,12 +41,14 @@
 // @ is an alias to /src
 import PageLink from "../components/PageLink.vue";
 import CustomIcon from "../components/Icon.vue";
+import CustomFooter from "../components/Footer.vue";
 
 export default {
   name: "Home",
   components: {
     PageLink,
     CustomIcon,
+    CustomFooter,
   },
 };
 </script>
@@ -61,11 +63,5 @@ export default {
 
 .content__icon {
   margin-top: -15px;
-}
-
-.footer {
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
 }
 </style>
