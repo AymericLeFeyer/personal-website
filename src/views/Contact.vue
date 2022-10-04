@@ -1,14 +1,111 @@
 <template>
-  <custom-content title="Contact" icon="call"></custom-content>
+  <custom-content title="Contact" icon="call">
+    <div class="head-infos">
+      <img
+        src="@/assets/call.png"
+        alt="boy calling with his hands"
+        class="illustration-call"
+      />
+      <div class="actions">
+        <div class="title">
+          <h3>Keep in touch</h3>
+          <custom-icon icon="down" size="25" />
+        </div>
+        <div class="networks">
+          <callout
+            icon="postbox"
+            text="lefeyer.aymeric@gmail.com"
+            url="mailto:lefeyer.aymeric@gmail.com"
+          />
+          <callout
+            icon="pin"
+            text="Lille, France"
+            url="https://goo.gl/maps/s5ZMQzKJ9dLEhTdy5"
+          />
+          <callout
+            icon="linkedin"
+            text="LinkedIn"
+            url="https://www.linkedin.com/in/aymericlefeyer/"
+          />
+          <callout
+            icon="github"
+            text="Github"
+            url="https://github.com/AymericLeFeyer"
+          />
+          <callout
+            icon="stack"
+            text="StackOverflow"
+            url="https://stackoverflow.com/users/12142139/aymeric-le-feyer"
+          />
+          <callout icon="malt" text="Malt" url="https://www.google.com" />
+        </div>
+      </div>
+    </div>
+  </custom-content>
 </template>
 
 <script>
 import CustomContent from "../components/Content.vue";
+import Callout from "../components/Callout.vue";
+import CustomIcon from "../components/Icon.vue";
 export default {
   components: {
     CustomContent,
+    Callout,
+    CustomIcon,
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.head-infos {
+  display: flex;
+  margin-bottom: 40px;
+
+  .illustration-call {
+    object-fit: cover;
+    max-width: 25%;
+  }
+
+  .actions {
+    margin-left: 20px;
+    justify-content: center;
+    text-align: center;
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .networks {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .head-infos {
+    flex-direction: column;
+    align-items: center;
+
+    .illustration-call {
+      max-width: 60%;
+      margin-left: -60px;
+    }
+  }
+
+  .actions {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .callout {
+    width: 100%;
+  }
+}
+</style>

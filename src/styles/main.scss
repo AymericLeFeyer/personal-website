@@ -1,4 +1,4 @@
-$gray: #e5e5e5;
+@import "variables.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 * {
@@ -20,7 +20,7 @@ a {
     color: black
 }
 
-h2 {
+h2, h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -66,7 +66,7 @@ body {
   .content__icon {
     transition: 1s ease all;
     position: absolute;
-    top: -40px;
+    top: -50px;
     right: 80px;
     font-size: 60px;
     font-weight: bolder;
