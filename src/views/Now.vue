@@ -1,7 +1,11 @@
 <template>
   <custom-content title="Now" icon="hand">
     <div class="intro">
-      <img src="@/assets/selfie.jpg" alt="Photo of myself" class="photo" />
+      <img
+        src="@/assets/photos/selfie.jpg"
+        alt="Photo of myself"
+        class="photo"
+      />
       <div>
         <p>
           Here would be ideal to write something inspiring, which reflects my

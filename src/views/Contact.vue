@@ -2,7 +2,7 @@
   <custom-content title="Contact" icon="call">
     <div class="head-infos">
       <img
-        src="@/assets/call.png"
+        src="@/assets/illustrations/call.png"
         alt="boy calling with his hands"
         class="illustration-call"
       />
@@ -68,9 +68,10 @@ export default {
   }
 
   .actions {
-    margin-left: 20px;
+    margin-left: 60px;
     justify-content: center;
     text-align: center;
+    flex-grow: 1;
 
     .title {
       display: flex;
