@@ -11,13 +11,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    color: $text-color;
     font-size: 1.1em;
   }
 
 a {
     text-decoration: none;
-    color: black
+    color: $text-color
 }
 
 h2, h3 {
@@ -27,25 +27,25 @@ h2, h3 {
 
 .divider {
   height: 1px;
-  background-color: rgb(224, 224, 224);
+  background-color: $secondary-color;
   width: 100%;
 }
 
 
 .link {
   text-decoration: underline;
-  color: gray;
+  color: $link-color;
   text-underline-offset: 3px;
 }
 
 
 body {
-  background-color: $gray;
+  background-color: $background-color;
 }
 
 .content {
   transition: 1s ease all;
-  background-color: #FFFFFF;
+  background-color: $tile-background-color;
   width: 750px;
   border-radius: 20px;
   position: relative;
@@ -75,7 +75,7 @@ body {
 }
 
 .breadcrumb {
-  background-color: $gray;
+  background-color: $background-color;
 }
 
 .center {

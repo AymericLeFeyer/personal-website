@@ -29,7 +29,7 @@ export default {
 @import "../styles/variables.scss";
 
 .callout {
-  background-color: $gray;
+  background-color: $background-color;
   display: flex;
   justify-content: left;
   align-items: center;
