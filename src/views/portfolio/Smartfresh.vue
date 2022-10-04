@@ -1,5 +1,8 @@
 <template>
-  <custom-content title="Smartfresh" icon="smartfresh"></custom-content>
+  <custom-content
+    title="Smartfresh"
+    icon="projects/smartfresh"
+  ></custom-content>
 </template>
 
 <script>

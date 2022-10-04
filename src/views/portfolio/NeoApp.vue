@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="NeoApp" icon="neo"></custom-content>
+  <custom-content title="NeoApp" icon="projects/neo"></custom-content>
 </template>
 
 <script>

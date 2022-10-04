@@ -17,13 +17,13 @@ import Dunfast from '../views/portfolio/Dunfast.vue'
 
 const home = {
   text: 'Aymeric Le Feyer',
-  icon: 'aymeric',
+  icon: 'emojis/aymeric',
   to: '/'
 }
 
 const portfolio = {
   text: 'Portfolio',
-  icon: 'rocket',
+  icon: 'emojis/rocket',
   to: '/portfolio',
   component: Portfolio
 }
@@ -73,7 +73,7 @@ function routerItem(path, name, icon, component) {
         home,
         {
           text: name,
-          icon: icon
+          icon: `emojis/${icon}`
         },
       ]
     }
@@ -91,7 +91,7 @@ function portfolioProject(project, title, component) {
         portfolio,
         {
           text: title,
-          icon: project
+          icon: `projects/${project}`
         },
       ]
     }

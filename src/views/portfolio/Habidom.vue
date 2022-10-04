@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="Habidom" icon="habidom"></custom-content>
+  <custom-content title="Habidom" icon="projects/habidom"></custom-content>
 </template>
 
 <script>

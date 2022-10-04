@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="Bonap" icon="bonap"></custom-content>
+  <custom-content title="Bonap" icon="projects/bonap"></custom-content>
 </template>
 
 <script>

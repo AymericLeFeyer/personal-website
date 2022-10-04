@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="Contact" icon="call">
+  <custom-content title="Contact" icon="emojis/call">
     <div class="head-infos">
       <img
         src="@/assets/illustrations/call.png"
@@ -9,35 +9,39 @@
       <div class="actions">
         <div class="title">
           <h3>Keep in touch</h3>
-          <custom-icon icon="down" size="25" />
+          <custom-icon icon="emojis/down" size="25" />
         </div>
         <div class="networks">
           <callout
-            icon="postbox"
+            icon="emojis/postbox"
             text="lefeyer.aymeric@gmail.com"
             url="mailto:lefeyer.aymeric@gmail.com"
           />
           <callout
-            icon="pin"
+            icon="emojis/pin"
             text="Lille, France"
             url="https://goo.gl/maps/s5ZMQzKJ9dLEhTdy5"
           />
           <callout
-            icon="linkedin"
+            icon="networks/linkedin"
             text="LinkedIn"
             url="https://www.linkedin.com/in/aymericlefeyer/"
           />
           <callout
-            icon="github"
+            icon="networks/github"
             text="Github"
             url="https://github.com/AymericLeFeyer"
           />
           <callout
-            icon="stack"
+            icon="networks/stack"
             text="StackOverflow"
             url="https://stackoverflow.com/users/12142139/aymeric-le-feyer"
           />
-          <callout icon="malt" text="Malt" url="https://www.google.com" />
+          <callout
+            icon="networks/malt"
+            text="Malt"
+            url="https://www.google.com"
+          />
         </div>
       </div>
     </div>

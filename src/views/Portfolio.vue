@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="Portfolio" icon="rocket">
+  <custom-content title="Portfolio" icon="emojis/rocket">
     <div class="head-infos">
       <div class="message">
         <h3>Check out my works</h3>
@@ -17,49 +17,49 @@
     </div>
     <div class="projects">
       <thumbnail-item
-        icon="caroline-optique"
+        icon="projects/caroline-optique"
         title="Caroline Optique"
         image="caroline-optique.png"
         path="/portfolio/caroline-optique"
       />
       <thumbnail-item
-        icon="ocee"
+        icon="projects/ocee"
         title="Ocee"
         image="ocee.png"
         path="/portfolio/ocee"
       />
       <thumbnail-item
-        icon="neo"
+        icon="projects/neo"
         title="NeoApp"
         image="neo.png"
         path="/portfolio/neo"
       />
       <thumbnail-item
-        icon="baggou"
+        icon="projects/baggou"
         title="Baggou"
         image="baggou.png"
         path="/portfolio/baggou"
       />
       <thumbnail-item
-        icon="habidom"
+        icon="projects/habidom"
         title="Habidom"
         image="habidom.png"
         path="/portfolio/habidom"
       />
       <thumbnail-item
-        icon="bonap"
+        icon="projects/bonap"
         title="Bonap"
         image="bonap.png"
         path="/portfolio/bonap"
       />
       <thumbnail-item
-        icon="smartfresh"
+        icon="projects/smartfresh"
         title="Smartfresh"
         image="smartfresh.png"
         path="/portfolio/smartfresh"
       />
       <thumbnail-item
-        icon="dunfast"
+        icon="projects/dunfast"
         title="Dunfast"
         image="dunfast.png"
         path="/portfolio/dunfast"

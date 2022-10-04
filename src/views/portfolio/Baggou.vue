@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="Baggou" icon="baggou"></custom-content>
+  <custom-content title="Baggou" icon="projects/baggou"></custom-content>
 </template>
 
 <script>

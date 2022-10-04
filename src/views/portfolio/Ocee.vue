@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="Ocee" icon="ocee"></custom-content>
+  <custom-content title="Ocee" icon="projects/ocee"></custom-content>
 </template>
 
 <script>

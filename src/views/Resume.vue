@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="Resume" icon="paper"></custom-content>
+  <custom-content title="Resume" icon="emojis/paper"></custom-content>
 </template>
 
 <script>

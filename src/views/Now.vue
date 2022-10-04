@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="Now" icon="hand">
+  <custom-content title="Now" icon="emojis/hand">
     <div class="intro">
       <img
         src="@/assets/photos/selfie.jpg"

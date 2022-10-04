@@ -1,5 +1,5 @@
 <template>
-  <custom-content title="Hobbies" icon="dice"></custom-content>
+  <custom-content title="Hobbies" icon="emojis/dice"></custom-content>
 </template>
 
 <script>

@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <h1>Aymeric <span class="lastname">Le Feyer</span></h1>
-    <span class="content__icon"><custom-icon icon="aymeric" size="100" /></span>
+    <span class="content__icon"
+      ><custom-icon icon="emojis/aymeric" size="100"
+    /></span>
     <p>
       🇫🇷 French Web & Mobile developer. Currently collaborate with
       <a href="https://www.pit.fr" target="_blank" class="link">Pit</a> the day,
@@ -20,16 +22,16 @@
     <br />
     <div class="divider"></div>
     <div class="actions">
-      <page-link route="/now" icon="hand" name="Now" />
-      <page-link route="/portfolio" icon="rocket" name="Portfolio" />
+      <page-link route="/now" icon="emojis/hand" name="Now" />
+      <page-link route="/portfolio" icon="emojis/rocket" name="Portfolio" />
       <page-link
         href="http://blog.aymeric.lefeyer.fr/"
-        icon="pencil"
+        icon="emojis/pencil"
         name="Blog"
       />
-      <page-link route="/resume" icon="paper" name="Resume" />
-      <page-link route="/hobbies" icon="dice" name="Hobbies" />
-      <page-link route="/contact" icon="call" name="Contact" />
+      <page-link route="/resume" icon="emojis/paper" name="Resume" />
+      <page-link route="/hobbies" icon="emojis/dice" name="Hobbies" />
+      <page-link route="/contact" icon="emojis/call" name="Contact" />
     </div>
     <div class="divider"></div>
     <br />
