@@ -20,14 +20,50 @@
         icon="caroline-optique"
         title="Caroline Optique"
         image="caroline-optique.png"
+        path="/portfolio/caroline-optique"
       />
-      <thumbnail-item icon="ocee" title="Ocee" image="ocee.png" />
-      <thumbnail-item icon="neo" title="NeoApp" image="neo.png" />
-      <thumbnail-item icon="baggou" title="Baggou" image="baggou.png" />
-      <thumbnail-item icon="habidom" title="Habidom" image="habidom.png" />
-      <thumbnail-item icon="bonap" title="Bonap" image="bonap.png" />
-      <thumbnail-item icon="banana" title="Smartfresh" image="smartfresh.png" />
-      <thumbnail-item icon="dunfast" title="Dunfast" image="dunfast.png" />
+      <thumbnail-item
+        icon="ocee"
+        title="Ocee"
+        image="ocee.png"
+        path="/portfolio/ocee"
+      />
+      <thumbnail-item
+        icon="neo"
+        title="NeoApp"
+        image="neo.png"
+        path="/portfolio/neo"
+      />
+      <thumbnail-item
+        icon="baggou"
+        title="Baggou"
+        image="baggou.png"
+        path="/portfolio/baggou"
+      />
+      <thumbnail-item
+        icon="habidom"
+        title="Habidom"
+        image="habidom.png"
+        path="/portfolio/habidom"
+      />
+      <thumbnail-item
+        icon="bonap"
+        title="Bonap"
+        image="bonap.png"
+        path="/portfolio/bonap"
+      />
+      <thumbnail-item
+        icon="smartfresh"
+        title="Smartfresh"
+        image="smartfresh.png"
+        path="/portfolio/smartfresh"
+      />
+      <thumbnail-item
+        icon="dunfast"
+        title="Dunfast"
+        image="dunfast.png"
+        path="/portfolio/dunfast"
+      />
     </div>
   </custom-content>
 </template>

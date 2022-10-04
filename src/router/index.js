@@ -6,16 +6,31 @@ import Resume from '../views/Resume.vue'
 import Contact from '../views/Contact.vue'
 import Hobbies from '../views/Hobbies.vue'
 
+import CarolineOptique from '../views/portfolio/CarolineOptique.vue'
+import Ocee from '../views/portfolio/Ocee.vue'
+import NeoApp from '../views/portfolio/NeoApp.vue'
+import Baggou from '../views/portfolio/Baggou.vue'
+import Habidom from '../views/portfolio/Habidom.vue'
+import Bonap from '../views/portfolio/Bonap.vue'
+import Smartfresh from '../views/portfolio/Smartfresh.vue'
+import Dunfast from '../views/portfolio/Dunfast.vue'
+
 const home = {
   text: 'Aymeric Le Feyer',
   icon: 'aymeric',
   to: '/'
+}
 
+const portfolio = {
+  text: 'Portfolio',
+  icon: 'rocket',
+  to: '/portfolio',
+  component: Portfolio
 }
 
 const routes = [
   {
-    path: '/',
+    path: home.to,
     name: 'Home',
     component: Home,
     meta: {
@@ -27,81 +42,60 @@ const routes = [
       ]
     }
   },
-  {
-    path: '/now',
-    name: 'Now',
-    component: Now,
-    meta: {
-      breadcrumb: [
-        home,
-        {
-          text: 'Now',
-          icon: 'hand'
-        },
-      ]
-    }
-  },
-  {
-    path: '/portfolio',
-    name: 'Portfolio',
-    component: Portfolio,
-    meta: {
-      breadcrumb: [
-        home,
-        {
-          text: 'Portfolio',
-          icon: 'rocket'
-        },
-      ]
-    }
-  },
-  {
-    path: '/resume',
-    name: 'Resume',
-    component: Resume,
-    meta: {
-      breadcrumb: [
-        home,
-        {
-          text: 'Resume',
-          icon: 'paper'
-        },
-      ]
-    }
-  },
-  {
-    path: '/hobbies',
-    name: 'Hobbies',
-    component: Hobbies,
-    meta: {
-      breadcrumb: [
-        home,
-        {
-          text: 'Hobbies',
-          icon: 'dice'
-        },
-      ]
-    }
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact,
-    meta: {
-      breadcrumb: [
-        home,
-        {
-          text: 'Contact',
-          icon: 'call'
-        },
-      ]
-    }
-  },
+  routerItem('/now', 'Now', 'hand', Now),
+  routerItem('/portfolio', 'Portfolio', 'rocket', Portfolio),
+  routerItem('/resume', 'Resume', 'paper', Resume),
+  routerItem('/hobbies', 'Hobbies', 'dice', Hobbies),
+  routerItem('/contact', 'Contact', 'call', Contact),
+
+  portfolioProject("caroline-optique", "Caroline Optique", CarolineOptique),
+  portfolioProject("ocee", "Ocee", Ocee),
+  portfolioProject("neo", "NeoApp", NeoApp),
+  portfolioProject("baggou", "Baggou", Baggou),
+  portfolioProject("habidom", "Habidom", Habidom),
+  portfolioProject("bonap", "Bonap", Bonap),
+  portfolioProject("smartfresh", "Smartfresh", Smartfresh),
+  portfolioProject("dunfast", "Dunfast", Dunfast),
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
+function routerItem(path, name, icon, component) {
+  return {
+    path: path,
+    name: name,
+    component: component,
+    meta: {
+      breadcrumb: [
+        home,
+        {
+          text: name,
+          icon: icon
+        },
+      ]
+    }
+  };
+}
+
+function portfolioProject(project, title, component) {
+  return {
+    path: `${portfolio.to}/${project}`,
+    name: title,
+    component: component,
+    meta: {
+      breadcrumb: [
+        home,
+        portfolio,
+        {
+          text: title,
+          icon: project
+        },
+      ]
+    }
+  }
+}
 
 export default router

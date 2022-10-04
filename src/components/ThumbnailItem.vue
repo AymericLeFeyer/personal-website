@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/">
+  <router-link :to="path">
     <div class="thumbnail">
       <div class="image">
         <img :src="imagePath" />
@@ -28,6 +28,10 @@ export default {
       required: true,
     },
     icon: {
+      type: String,
+      required: true,
+    },
+    path: {
       type: String,
       required: true,
     },

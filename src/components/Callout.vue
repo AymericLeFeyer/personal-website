@@ -1,6 +1,6 @@
 <template>
   <div class="callout">
-    <custom-icon :icon="icon" :size="20" />
+    <custom-icon :icon="icon" size="20" />
     <a :href="url" class="link" target="_blank">{{ text }}</a>
   </div>
 </template>
