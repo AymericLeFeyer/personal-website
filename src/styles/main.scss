@@ -1,7 +1,9 @@
 $gray: #e5e5e5;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: Poppins, Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -35,7 +37,7 @@ body {
 
 .content {
   background-color: #FFFFFF;
-  width: 700px;
+  width: 750px;
   border-radius: 20px;
   position: relative;
   padding: 40px 80px 20px 80px;
@@ -45,7 +47,7 @@ body {
 
   h1 {
     position: absolute;
-    top: -55px;
+    top: -60px;
     left: 80px;
     font-size: 40px;
     font-weight: bolder;
