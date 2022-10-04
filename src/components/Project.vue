@@ -1,5 +1,6 @@
 <template>
   <custom-content :title="title" :icon="icon">
+    <slot name="result"></slot>
     <div class="project">
       <div class="main-infos">
         <div class="title">

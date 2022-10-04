@@ -5,6 +5,9 @@
     icon="projects/caroline-optique"
     :showCollaborators="false"
   >
+    <template #result>
+      <img src="@/assets/gif/caroline-optique.gif" />
+    </template>
     <template #overview>
       <ul>
         <li>
