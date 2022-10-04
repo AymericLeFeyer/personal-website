@@ -17,6 +17,12 @@
     </div>
     <div class="projects">
       <thumbnail-item
+        icon="projects/personal-website"
+        title="Personal Website"
+        image="caroline-optique.png"
+        path="/portfolio/personal-website"
+      />
+      <thumbnail-item
         icon="projects/caroline-optique"
         title="Caroline Optique"
         image="caroline-optique.png"
@@ -103,5 +109,16 @@ export default {
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .head-infos {
+    flex-direction: column;
+    .illustration-precious {
+      object-fit: cover;
+      max-width: 60%;
+      margin-left: 50px;
+    }
+  }
 }
 </style>

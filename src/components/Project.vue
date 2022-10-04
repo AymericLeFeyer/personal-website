@@ -1,6 +1,8 @@
 <template>
   <custom-content :title="title" :icon="icon">
-    <slot name="result"></slot>
+    <!-- <div class="result">
+      <slot name="result"></slot>
+    </div> -->
     <div class="project">
       <div class="main-infos">
         <div class="title">
@@ -103,11 +105,18 @@ export default {
 h3 {
   font-size: 1.3em;
 }
+.result {
+  width: 100px;
+}
 
 .project {
   display: flex;
   margin-bottom: 40px;
   gap: 20px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 
   .main-infos,
   .side-infos {

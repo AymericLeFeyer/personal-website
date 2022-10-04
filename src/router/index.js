@@ -6,6 +6,7 @@ import Resume from '../views/Resume.vue'
 import Contact from '../views/Contact.vue'
 import Hobbies from '../views/Hobbies.vue'
 
+import PersonalWebsite from '../views/portfolio/PersonalWebsite.vue'
 import CarolineOptique from '../views/portfolio/CarolineOptique.vue'
 import Ocee from '../views/portfolio/Ocee.vue'
 import NeoApp from '../views/portfolio/NeoApp.vue'
@@ -48,6 +49,7 @@ const routes = [
   routerItem('/hobbies', 'Hobbies', 'dice', Hobbies),
   routerItem('/contact', 'Contact', 'call', Contact),
 
+  portfolioProject("personal-website", "Personal Website", PersonalWebsite),
   portfolioProject("caroline-optique", "Caroline Optique", CarolineOptique),
   portfolioProject("ocee", "Ocee", Ocee),
   portfolioProject("neo", "NeoApp", NeoApp),

@@ -7,7 +7,7 @@
     >
       <page-link
         :icon="item.icon"
-        :name="item.text"
+        :name="name(item.text)"
         :route="item.to"
         :disabled="item.to == null"
       />
@@ -31,6 +31,12 @@ export default {
       return this.$route.meta.breadcrumb ?? [];
     },
   },
+  methods: {
+    name(text) {
+      var x = window.matchMedia("(max-width: 700px)");
+      return x.matches ? "" : text;
+    },
+  },
 };
 </script>
 
@@ -38,7 +44,7 @@ export default {
 .breadcrumb {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 999;
   display: flex;
   align-items: center;
@@ -53,5 +59,17 @@ export default {
 
 .separator {
   margin-top: 3px;
+}
+
+@media (max-width: 600px) {
+  .breadcrumb__item {
+    .pagelink {
+      div {
+        a {
+          color: blue;
+        }
+      }
+    }
+  }
 }
 </style>

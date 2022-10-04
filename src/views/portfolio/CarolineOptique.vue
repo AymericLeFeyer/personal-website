@@ -6,7 +6,7 @@
     :showCollaborators="false"
   >
     <template #result>
-      <img src="@/assets/gif/caroline-optique.gif" />
+      <img src="@/assets/gif/caroline-optique.gif" class="result-image" />
     </template>
     <template #overview>
       <ul>

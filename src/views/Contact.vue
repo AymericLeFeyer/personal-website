@@ -93,7 +93,7 @@ export default {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .head-infos {
     flex-direction: column;
     align-items: center;
@@ -102,11 +102,11 @@ export default {
       max-width: 60%;
       margin-left: -60px;
     }
-  }
 
-  .actions {
-    margin-top: 20px;
-    margin-left: 0px;
+    .actions {
+      margin-top: 20px;
+      margin-left: 0px;
+    }
   }
 
   .callout {
