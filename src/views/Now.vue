@@ -2,12 +2,26 @@
   <custom-content title="Now" icon="hand">
     <div class="intro">
       <img src="@/assets/selfie.jpg" alt="Photo of myself" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa mollitia
-        cumque impedit corporis excepturi qui maiores, quas eaque exercitationem
-        voluptate, esse quos neque ut accusamus beatae consectetur. Ab, tempora
-        similique!
-      </p>
+      <div>
+        <p>
+          Here would be ideal to write something inspiring, which reflects my
+          mindset and represents my personality.
+        </p>
+        <p>
+          But I have no idea what to write here. I still have a lot to learn,
+          the journey has only just begun.
+        </p>
+        <p>
+          Every day is a new adventure where I meet new people with whom I do
+          part of this ride.
+        </p>
+        <p>
+          However I am sure of one thing, life is short and you have to live
+          every moment as the last.
+        </p>
+        <br />
+        <p class="author">Aymeric Le Feyer</p>
+      </div>
     </div>
     <div class="divider"></div>
     <h2>2022 - What's up this year ?</h2>
@@ -147,5 +161,10 @@ li {
 .caption {
   font-style: italic;
   color: gray;
+}
+
+.author {
+  text-align: end;
+  font-weight: bold;
 }
 </style>
