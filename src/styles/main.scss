@@ -1,6 +1,10 @@
 $gray: #e5e5e5;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
 
 #app {
     font-family: Poppins, Avenir, Helvetica, Arial, sans-serif;
@@ -8,8 +12,7 @@ $gray: #e5e5e5;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-  font-size: 1.1em;
-
+    font-size: 1.1em;
   }
 
 a {
@@ -36,6 +39,7 @@ body {
 }
 
 .content {
+  transition: 1s ease all;
   background-color: #FFFFFF;
   width: 750px;
   border-radius: 20px;
@@ -46,14 +50,16 @@ body {
   overflow-wrap: break-word;
 
   h1 {
+    transition: 1s ease all;
     position: absolute;
-    top: -60px;
+    top: -35px;
     left: 80px;
     font-size: 40px;
     font-weight: bolder;
   }
 
   .content__icon {
+    transition: 1s ease all;
     position: absolute;
     top: -40px;
     right: 80px;
@@ -65,4 +71,33 @@ body {
 
 .breadcrumb {
   background-color: $gray;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+
+@media (max-width: 915px) {
+  .content {
+    width: 100%;
+    border-radius: 0px;
+    padding: 40px 40px 20px 40px;
+
+    .content__icon {
+      right: 20px;
+    }
+
+    h1 {
+      left: 20px;
+    }
+  }
+
+  .center {
+    margin-bottom: 0px;
+  }
 }
