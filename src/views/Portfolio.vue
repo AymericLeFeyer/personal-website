@@ -65,6 +65,7 @@ export default {
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 </style>
