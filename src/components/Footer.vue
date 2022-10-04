@@ -1,9 +1,17 @@
 <template>
-  <p class="footer">Homemade with ❤️</p>
+  <div class="footer">
+    <p>Homemade with</p>
+    <custom-icon icon="aymeric-heart" size="30" />
+  </div>
 </template>
 
 <script>
-export default {};
+import CustomIcon from "./Icon.vue";
+export default {
+  components: {
+    CustomIcon,
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -11,5 +19,9 @@ export default {};
   text-align: center;
   font-weight: bold;
   font-size: medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 </style>
