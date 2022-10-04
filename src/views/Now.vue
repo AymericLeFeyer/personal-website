@@ -1,7 +1,7 @@
 <template>
   <custom-content title="Now" icon="hand">
     <div class="intro">
-      <img src="@/assets/selfie.jpg" alt="Photo of myself" />
+      <img src="@/assets/selfie.jpg" alt="Photo of myself" class="photo" />
       <div>
         <p>
           Here would be ideal to write something inspiring, which reflects my
@@ -146,9 +146,6 @@ export default {
   margin-bottom: 30px;
   display: flex;
   flex: 1 1 0;
-  img {
-    width: 40%;
-  }
   p {
     margin-left: 20px;
   }
@@ -166,5 +163,31 @@ li {
 .author {
   text-align: end;
   font-weight: bold;
+}
+
+.photo {
+  object-fit: cover;
+  max-width: 40%;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    display: block;
+
+    p {
+      margin-left: 0px;
+    }
+  }
+
+  .photo {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 915px) {
+  li {
+    margin-left: 25px;
+  }
 }
 </style>
