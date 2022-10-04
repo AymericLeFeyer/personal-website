@@ -1,5 +1,9 @@
 <template>
-  <img :src="path" :alt="alt" :style="heigth" />
+  <span class="tooltip" v-if="tooltip"
+    ><img :src="path" :alt="alt" :style="heigth" />
+    <span class="tooltiptext">{{ tooltip }}</span>
+  </span>
+  <img v-else :src="path" :alt="alt" :style="heigth" />
 </template>
 
 <script>
@@ -10,6 +14,9 @@ export default {
       required: true,
     },
     size: {
+      type: String,
+    },
+    tooltip: {
       type: String,
     },
   },
@@ -29,4 +36,33 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped lang="scss">
+@import "@/styles/variables.scss";
+img {
+  height: 30px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  position: absolute;
+  visibility: hidden;
+  background-color: $background-color;
+  color: $text-color;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s;
+  top: 30px;
+  left: 0;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
