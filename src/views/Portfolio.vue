@@ -19,7 +19,7 @@
       <thumbnail-item
         icon="projects/personal-website"
         title="Personal Website"
-        image="caroline-optique.png"
+        image="personal-website.png"
         path="/portfolio/personal-website"
       />
       <thumbnail-item
