@@ -22,7 +22,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 100px;
 }
 </style>

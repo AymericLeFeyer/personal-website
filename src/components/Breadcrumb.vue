@@ -36,10 +36,14 @@ export default {
 
 <style lang="scss" scoped>
 .breadcrumb {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px 0;
+  width: 100%;
 }
 
 .breadcrumb__item {

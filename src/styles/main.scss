@@ -1,3 +1,5 @@
+$gray: #e5e5e5;
+
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -28,7 +30,7 @@ a {
 
 
 body {
-  background-color: #e5e5e5;
+  background-color: $gray;
 }
 
 .content {
@@ -57,4 +59,8 @@ body {
     font-weight: bolder;
 
   }
+}
+
+.breadcrumb {
+  background-color: $gray;
 }
