@@ -42,6 +42,14 @@
         <div class="infos" v-if="showOrganization">
           <slot name="organization"></slot>
         </div>
+
+        <div class="title" v-if="showCollaborators">
+          <custom-icon icon="emojis/pray" size="30" />
+          <h3>Collaborators</h3>
+        </div>
+        <div class="infos" v-if="showCollaborators">
+          <slot name="collaborators"></slot>
+        </div>
         <div class="title">
           <custom-icon icon="emojis/gear" size="30" />
           <h3>Tools</h3>
@@ -50,13 +58,6 @@
           <div class="tools">
             <slot name="tools"></slot>
           </div>
-        </div>
-        <div class="title" v-if="showCollaborators">
-          <custom-icon icon="emojis/pray" size="30" />
-          <h3>Collaborators</h3>
-        </div>
-        <div class="infos" v-if="showCollaborators">
-          <slot name="collaborators"></slot>
         </div>
         <div class="title">
           <custom-icon icon="emojis/link" size="30" />
