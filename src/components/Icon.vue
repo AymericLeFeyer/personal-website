@@ -49,8 +49,8 @@ img {
 .tooltip .tooltiptext {
   position: absolute;
   visibility: hidden;
-  background-color: $background-color;
-  color: $text-color;
+  background-color: var(--background-color);
+  color: var(--text-color);
   text-align: center;
   padding: 5px;
   border-radius: 5px;

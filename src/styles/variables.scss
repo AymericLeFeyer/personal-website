@@ -1,1 +1,40 @@
-@import "./light.theme.scss"
+* {
+    // Light colors
+    --light-background-color: #f3f3f3;
+    --light-tile-background-color: white;
+    --light-text-color: #2c3e50;
+    --light-secondary-color: rgb(224, 224, 224);
+    --light-shadow: rgba(0, 0, 0, 0.2);
+    --light-link-color: gray;
+
+    // Dark colors
+    --dark-background-color: #20211F;
+    --dark-tile-background-color: #19191A;
+    --dark-text-color: white;
+    --dark-secondary-color: rgb(224, 224, 224);
+    --dark-shadow: rgba(255, 255, 255, 0.2);
+    --dark-link-color: gray;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        --background-color: var(--dark-background-color);
+        --tile-background-color: var(--dark-tile-background-color);
+        --text-color: var(--dark-text-color);
+        --secondary-color: var(--dark-secondary-color);
+        --shadow: var(--dark-shadow);
+        --link-color: var(--dark-link-color);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    * {
+        --background-color: var(--light-background-color);
+        --tile-background-color: var(--light-tile-background-color);
+        --text-color: var(--light-text-color);
+        --secondary-color: var(--light-secondary-color);
+        --shadow: var(--light-shadow);
+        --link-color: var(--light-link-color);
+    }
+}

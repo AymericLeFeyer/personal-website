@@ -52,10 +52,10 @@ export default {
   width: 240px;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0 0 10px 0 $shadow;
+  box-shadow: 0 0 10px 0 var(--shadow);
 
   &:hover {
-    box-shadow: 0 0 20px 0 $shadow;
+    box-shadow: 0 0 20px 0 var(--shadow);
   }
   .image {
     img {

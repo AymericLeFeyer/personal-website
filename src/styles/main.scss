@@ -11,13 +11,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: $text-color;
+    color: var(--text-color);
     font-size: 1.1em;
   }
 
 a {
     text-decoration: none;
-    color: $text-color
+    color: var(--text-color)
 }
 
 h2, h3 {
@@ -27,25 +27,25 @@ h2, h3 {
 
 .divider {
   height: 1px;
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
   width: 100%;
 }
 
 
 .link {
   text-decoration: underline;
-  color: $link-color;
+  color: var(--link-color);
   text-underline-offset: 3px;
 }
 
 
 body {
-  background-color: $background-color;
+  background-color: var(--background-color);
 }
 
 .content {
   transition: 1s ease all;
-  background-color: $tile-background-color;
+  background-color: var(--tile-background-color);
   width: 750px;
   border-radius: 20px;
   position: relative;
@@ -75,7 +75,7 @@ body {
 }
 
 .breadcrumb {
-  background-color: $background-color;
+  background-color: var(--background-color);
 }
 
 .center {
@@ -83,7 +83,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 
