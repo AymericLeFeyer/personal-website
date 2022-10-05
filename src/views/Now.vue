@@ -126,6 +126,7 @@
         to work on cool projects and to improve my skills beyond my daily
         business. I worked on mobile projects during my free time.
       </li>
+      <li>I get my first certification in computer sciences : <a href="https://learn.microsoft.com/fr-fr/certifications/exams/az-900" target="_blank" class="link">Azure Fundamentals AZ-900</a>.</li>
     </ul>
   </custom-content>
 </template>

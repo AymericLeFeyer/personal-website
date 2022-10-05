@@ -27,7 +27,7 @@
         </li>
         <li>
           This project received a score of 18/20 and was one of the best of the
-          promotion
+          promotion.
         </li>
       </ul>
     </template>
@@ -54,7 +54,7 @@
     <template #collaborators>
       <ul>
         <li>
-          <a href="" target="_blank" class="link">Quentin Carry</a>, my Bonap
+          <a href="https://www.linkedin.com/in/quentincarry/" target="_blank" class="link">Quentin Carry</a>, my Bonap
           partner.
         </li>
       </ul>
