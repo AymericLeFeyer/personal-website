@@ -5,6 +5,9 @@
     icon="projects/personal-website"
     :showCollaborators="false"
   >
+  <template #result>
+    <p class="link">You are currently visiting it. Thanks a lot ! </p>
+  </template>
     <template #overview>
       <ul>
         <li>
@@ -43,7 +46,7 @@
     </template>
     <template #links>
       <a
-        href="https://www.aymeric.lefeyer.fr"
+        href="https://aymeric.lefeyer.fr"
         class="link"
         target="_blank"
         >aymeric.lefeyer.fr</a
