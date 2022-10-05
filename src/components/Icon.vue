@@ -58,6 +58,7 @@ img {
   opacity: 0;
   transition: opacity 0.6s;
   top: 30px;
+  width: 100px;
   left: 0;
 }
 

@@ -3,7 +3,7 @@
     title="Habidom"
     :showOrganization="true"
     icon="projects/habidom"
-    :showCollaborators="false"
+    :showCollaborators="true"
   >
   <template #result>
     <img src="@/assets/portfolio/habidom.png" class="portfolio-image"/>
@@ -49,6 +49,17 @@
     <template #organization>
       <ul>
         <li>Habidom</li>
+      </ul>
+    </template>
+    <template #collaborators>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/yann-delbecque-372032162/" target="_blank" class="link">Yann Delbecque</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/clement-verdois-010a551bb/" target="_blank" class="link">Clément Verdois</a>
+        </li>
+       
       </ul>
     </template>
     <template #tools>

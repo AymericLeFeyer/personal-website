@@ -57,8 +57,7 @@
     <template #collaborators>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/quentincarry/" target="_blank" class="link">Quentin Carry</a>, my Bonap
-          partner.
+          <a href="https://www.linkedin.com/in/quentincarry/" target="_blank" class="link">Quentin Carry</a>
         </li>
       </ul>
     </template>

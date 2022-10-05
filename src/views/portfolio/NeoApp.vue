@@ -3,7 +3,7 @@
     title="NeoApp"
     :showOrganization="true"
     icon="projects/neo"
-    :showCollaborators="false"
+    :showCollaborators="true"
   >
     <template #overview>
       <ul>
@@ -42,6 +42,14 @@
     <template #organization>
       <ul>
         <li>Neo</li>
+      </ul>
+    </template>
+    <template #collaborators>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/vincent-simon-ba128272/" target="_blank" class="link">Vincent Simon</a>
+        </li>
+       
       </ul>
     </template>
     <template #tools>
