@@ -114,7 +114,7 @@ h3 {
   margin-bottom: 40px;
   gap: 20px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     flex-direction: column;
   }
 
