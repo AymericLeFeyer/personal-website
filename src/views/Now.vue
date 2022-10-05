@@ -157,6 +157,7 @@ export default {
 
 li {
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .caption {
