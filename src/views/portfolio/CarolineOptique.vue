@@ -5,6 +5,9 @@
     icon="projects/caroline-optique"
     :showCollaborators="false"
   >
+  <template #result>
+    <img src="@/assets/portfolio/caroline-optique.png" class="portfolio-image"/>
+  </template>
     <template #overview>
       <ul>
         <li>
@@ -70,4 +73,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+
+.portfolio-image {
+  width: 100%;
+}
 </style>

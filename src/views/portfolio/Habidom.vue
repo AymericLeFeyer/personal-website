@@ -5,6 +5,9 @@
     icon="projects/habidom"
     :showCollaborators="false"
   >
+  <template #result>
+    <img src="@/assets/portfolio/habidom.png" class="portfolio-image"/>
+  </template>
     <template #overview>
       <ul>
         <li>
@@ -74,4 +77,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.portfolio-image {
+  width: 100%;
+}
 </style>

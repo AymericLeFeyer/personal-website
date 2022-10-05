@@ -5,6 +5,9 @@
     icon="projects/ocee"
     :showCollaborators="true"
   >
+  <template #result>
+    <iframe class="video" src="https://www.youtube.com/embed/ezg4brJWcIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </template>
     <template #overview>
       <ul>
         <li>
@@ -94,4 +97,14 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+
+.video {
+  width: 500px;
+  height: 280px;
+
+  @media (max-width: 600px) {
+    width: 300px;
+    height: 170px;
+  }
+}
 </style>

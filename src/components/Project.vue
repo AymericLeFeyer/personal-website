@@ -1,8 +1,8 @@
 <template>
   <custom-content :title="title" :icon="icon">
-    <!-- <div class="result">
+    <div class="result">
       <slot name="result"></slot>
-    </div> -->
+    </div>
     <div class="project">
       <div class="main-infos">
         <div class="title">
@@ -68,6 +68,9 @@
         </div>
       </div>
     </div>
+    <div class="result">
+      <slot class="end-image" name="end-image"></slot>
+    </div>
   </custom-content>
 </template>
 
@@ -107,7 +110,13 @@ h3 {
   font-size: 1.3em;
 }
 .result {
-  width: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.end-image {
+  width: 20px;
 }
 
 .project {

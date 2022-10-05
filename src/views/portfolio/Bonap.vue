@@ -5,6 +5,9 @@
     icon="projects/bonap"
     :showCollaborators="true"
   >
+  <template #result>
+    <img src="@/assets/portfolio/bonap.png" class="portfolio-image"/>
+  </template>
     <template #overview>
       <ul>
         <li>
@@ -92,6 +95,9 @@
         </li>
       </ul>
     </template>
+    <template #end-image>
+      <img src="@/assets/illustrations/bonap.png" class="portfolio-image"/>
+    </template>
   </project>
 </template>
 
@@ -108,4 +114,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.portfolio-image {
+  width: 100%;
+}
 </style>

@@ -55,6 +55,9 @@
         >conhexa.com</a
       >
     </template>
+    <template #end-image>
+      <img src="@/assets/illustrations/dunfresh.png" class="portfolio-image"/>
+    </template>
   </project>
 </template>
 
@@ -71,4 +74,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.portfolio-image {
+  width: 100%;
+}
 </style>
