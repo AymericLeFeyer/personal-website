@@ -36,7 +36,7 @@
     </template>
     <template #date>
       <ul>
-        <li>Angust 2021</li>
+        <li>August 2021</li>
       </ul>
     </template>
     <template #organization>
