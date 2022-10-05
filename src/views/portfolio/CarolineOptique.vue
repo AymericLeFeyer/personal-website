@@ -76,5 +76,10 @@ export default {
 
 .portfolio-image {
   width: 100%;
+
+  @media screen and (max-width: 400px) {
+    margin-top: 50px;
+    
+  }
 }
 </style>
