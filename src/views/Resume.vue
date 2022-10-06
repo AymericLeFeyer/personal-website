@@ -1,7 +1,7 @@
 <template>
-  <custom-content title="Resume" icon="emojis/paper">
+  <custom-content title="Resume" icon="emojis/paper" class="resume">
     <h4>Fullstack Developer / Front & Mobile Adept</h4>
-    <div class="divider"></div>
+    <div class="divider no-gutters"></div>
     <div class="section-title">
       <custom-icon icon="emojis/briefcase" size="30" />
       <h2>Work Experience</h2>
@@ -22,7 +22,7 @@
             >Pit</a
           >
         </h3>
-        <p class="date">June 2020 - Present</p>
+        <p class="date">June 2020 - Present • Lille, France</p>
         <h4>Fulltime Collaborator</h4>
         <ul>
           <li>Worked on a cashing application for a big French sports store</li>
@@ -76,7 +76,7 @@
             <custom-icon
               icon="tools/microservices"
               size="18"
-              tooltip="Architecture Microservices"
+              tooltip="Microservices"
             />
           </div>
           <li>
@@ -122,7 +122,7 @@
             >Dunfresh</a
           >
         </h3>
-        <p class="date">June 2019 - August 2019</p>
+        <p class="date">June 2019 - August 2019 • Loon-Plage, France</p>
         <h4>Temp Worker</h4>
         <ul>
           <li>Managed fruits containers in a warehouse with a pallet truck</li>
@@ -147,7 +147,7 @@
             >Lesieur</a
           >
         </h3>
-        <p class="date">July 2018</p>
+        <p class="date">July 2018 • Coudekerque-Branche, France</p>
         <h4>Temp Worker</h4>
         <ul>
           <li>
@@ -162,6 +162,86 @@
     <div class="section-title">
       <custom-icon icon="emojis/cap" size="30" />
       <h2>Education</h2>
+    </div>
+    <div class="resume--area">
+      <div class="logo">
+        <custom-icon icon="resume/univlille" size="100" />
+      </div>
+      <div class="history">
+        <h3>
+          Student at
+          <a
+            href="https://www.univ-lille.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >Université de Lille</a
+          >
+        </h3>
+        <p class="date">September 2020 - August 2022 • Lille, France</p>
+        <h4>Master's degree in computer sciences (E-Services)</h4>
+        <ul>
+          <li>
+            Attended computer science courses specializing in web and mobile
+            development
+          </li>
+          <li>Obtained a 16/20 global mark</li>
+        </ul>
+      </div>
+    </div>
+    <div class="resume--area">
+      <div class="logo">
+        <custom-icon icon="resume/uphf" size="100" />
+      </div>
+      <div class="history">
+        <h3>
+          Student at
+          <a
+            href="https://www.uphf.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >UPHF</a
+          >
+        </h3>
+        <p class="date">September 2017 - August 2020 • Valenciennes, France</p>
+        <h4>Bachelor's degree in computer sciences</h4>
+        <ul>
+          <li>Attended computer science courses (no specialization)</li>
+          <li>
+            Obtained a 18/20 mark for the
+            <a href="/portfolio/bonap" class="link" target="_blank"
+              >graduation project</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="resume--area">
+      <div class="logo">
+        <custom-icon icon="emojis/school" size="100" />
+      </div>
+      <div class="history">
+        <h3>
+          Student at
+          <a
+            href="https://val-de-lys-estaires.enthdf.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >Lycée Val de Lys</a
+          >
+        </h3>
+        <p class="date">September 2014 - August 2017 • Estaires, France</p>
+        <h4>Scientific baccalaureate specialized in mathematics</h4>
+        <ul>
+          <li>
+            Obtained a 20/20 mark in mathematics
+            <custom-icon icon="emojis/muscle" size="15" tooltip="So easy" />
+          </li>
+          <li>Obtained a 18/20 mark in physics and chemistry</li>
+        </ul>
+      </div>
     </div>
   </custom-content>
 </template>
@@ -239,5 +319,13 @@ h4 {
       margin-bottom: 0;
     }
   }
+}
+
+.divider {
+  margin-top: 60px;
+}
+
+.no-gutters {
+  margin-top: 20px;
 }
 </style>

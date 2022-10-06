@@ -59,6 +59,7 @@ img {
   transition: opacity 0.6s;
   top: 30px;
   width: auto;
+  min-width: 100px;
   left: 0;
 }
 
