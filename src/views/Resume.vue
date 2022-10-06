@@ -243,6 +243,49 @@
         </ul>
       </div>
     </div>
+
+    <div class="divider"></div>
+    <div class="section-title">
+      <custom-icon icon="emojis/page" size="30" />
+      <h2>Certifications</h2>
+    </div>
+
+    <div class="resume--area">
+      <div class="logo">
+        <custom-icon icon="tools/azure" size="100" />
+      </div>
+      <div class="history">
+        <h3>
+          Azure Fundamentals
+          <a
+            href="https://learn.microsoft.com/fr-fr/certifications/exams/az-900"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            >AZ-900</a
+          >
+        </h3>
+        <p class="date">August 2021</p>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="section-title">
+      <custom-icon icon="emojis/muscle" size="30" />
+      <h2>Arsenal</h2>
+    </div>
+
+    <div class="resume--area arsenal">
+      <p class="date">Tools of the trade I am proudly proficient with</p>
+      <div class="tools">
+        <custom-icon icon="tools/flutter" size="80" tooltip="Flutter" />
+        <custom-icon icon="tools/vuejs" size="80" tooltip="VueJS" />
+        <custom-icon icon="tools/nodejs" size="80" tooltip="NodeJS" />
+        <custom-icon icon="tools/firebase" size="80" tooltip="Firebase" />
+        <custom-icon icon="tools/python" size="80" tooltip="Python" />
+        <custom-icon icon="tools/notion" size="80" tooltip="Notion" />
+        <custom-icon icon="tools/figma" size="80" tooltip="Figma" />
+      </div>
+    </div>
   </custom-content>
 </template>
 
@@ -293,11 +336,6 @@ h4 {
       margin-bottom: 0;
     }
 
-    .date {
-      color: var(--link-color);
-      margin-bottom: 30px;
-    }
-
     ul {
       margin-left: 20px;
 
@@ -327,5 +365,29 @@ h4 {
 
 .no-gutters {
   margin-top: 20px;
+}
+
+.date {
+  color: var(--link-color);
+  margin-bottom: 30px;
+}
+
+.arsenal {
+  margin-top: 0;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  .date {
+    margin-bottom: 20px;
+  }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
 }
 </style>
