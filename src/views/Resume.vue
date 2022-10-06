@@ -277,13 +277,14 @@
     <div class="resume--area arsenal">
       <p class="date">Tools of the trade I am proudly proficient with</p>
       <div class="tools">
-        <custom-icon icon="tools/flutter" size="80" tooltip="Flutter" />
-        <custom-icon icon="tools/vuejs" size="80" tooltip="VueJS" />
-        <custom-icon icon="tools/nodejs" size="80" tooltip="NodeJS" />
-        <custom-icon icon="tools/firebase" size="80" tooltip="Firebase" />
-        <custom-icon icon="tools/python" size="80" tooltip="Python" />
-        <custom-icon icon="tools/notion" size="80" tooltip="Notion" />
-        <custom-icon icon="tools/figma" size="80" tooltip="Figma" />
+        <custom-icon icon="tools/flutter" size="60" tooltip="Flutter" />
+        <custom-icon icon="tools/vuejs" size="60" tooltip="VueJS" />
+        <custom-icon icon="tools/nodejs" size="60" tooltip="NodeJS" />
+        <custom-icon icon="tools/firebase" size="60" tooltip="Firebase" />
+        <custom-icon icon="tools/python" size="60" tooltip="Python" />
+        <custom-icon icon="tools/react" size="60" tooltip="ReactJS" />
+        <custom-icon icon="tools/notion" size="60" tooltip="Notion" />
+        <custom-icon icon="tools/figma" size="60" tooltip="Figma" />
       </div>
     </div>
   </custom-content>
@@ -321,12 +322,21 @@ h4 {
   flex-direction: row;
   gap: 40px;
   margin: 20px 0;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 0px;
+  }
   .logo {
     width: 100px;
     height: 100px;
     display: flex;
     align-items: center;
     margin-top: 10px;
+
+    @media (max-width: 600px) {
+      margin-top: 30px;
+    }
   }
   .history {
     margin-top: 20px;
@@ -334,6 +344,9 @@ h4 {
       font-weight: 700;
       margin-top: 0;
       margin-bottom: 0;
+      @media (max-width: 600px) {
+        font-weight: 900;
+      }
     }
 
     ul {
