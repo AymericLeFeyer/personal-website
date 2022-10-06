@@ -1,6 +1,7 @@
 @import "variables.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@
 
 #app {
     font-family: Poppins, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -20,10 +22,11 @@ a {
     color: var(--text-color)
 }
 
-h2, h3 {
+h2, h3, h4 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 
 .divider {
   height: 1px;
@@ -60,7 +63,7 @@ body {
     top: -35px;
     left: 80px;
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: 700;
     width: 70%;
     
   }
