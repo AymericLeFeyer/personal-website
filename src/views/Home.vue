@@ -14,7 +14,7 @@
         class="link"
         >freelancer</a
       >
-      at night. Graduate of E-Services Master at
+      at night. Graduated of E-Services Master at
       <a href="https://www.univ-lille.fr/" target="_blank" class="link"
         >Université de Lille</a
       >.
@@ -22,16 +22,37 @@
     <br />
     <div class="divider"></div>
     <div class="actions">
-      <page-link route="/now" icon="emojis/hand" name="Now" />
-      <page-link route="/portfolio" icon="emojis/rocket" name="Portfolio" />
+      <page-link route="/now" icon="emojis/hand" name="Now" class="home-item" />
+      <page-link
+        route="/portfolio"
+        icon="emojis/rocket"
+        name="Portfolio"
+        class="home-item"
+      />
+      <page-link
+        route="/resume"
+        icon="emojis/paper"
+        name="Resume"
+        class="home-item"
+      />
       <page-link
         href="http://blog.aymeric.lefeyer.fr/"
         icon="emojis/pencil"
         name="Blog"
+        class="home-item"
       />
-      <page-link route="/resume" icon="emojis/paper" name="Resume" />
-      <page-link route="/hobbies" icon="emojis/dice" name="Hobbies" />
-      <page-link route="/contact" icon="emojis/call" name="Contact" />
+      <page-link
+        route="/hobbies"
+        icon="emojis/dice"
+        name="Hobbies"
+        class="home-item"
+      />
+      <page-link
+        route="/contact"
+        icon="emojis/call"
+        name="Contact"
+        class="home-item"
+      />
     </div>
     <div class="divider"></div>
     <br />
@@ -62,7 +83,13 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
 }
+.home-item {
+  width: 25%;
 
+  @media (max-width: 600px) {
+    width: 40%;
+  }
+}
 .content__icon {
   margin-top: -15px;
 }

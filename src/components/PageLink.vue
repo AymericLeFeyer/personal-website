@@ -1,4 +1,4 @@
-<template>
+<template class="item">
   <div :class="activeClass">
     <div v-if="route">
       <router-link :to="route">
