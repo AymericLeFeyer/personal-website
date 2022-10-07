@@ -17,3 +17,4 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_AYMERIC_E53BB }}"
           projectId: aymeric-e53bb
+          channelId: '${{ github.event.number }}'
