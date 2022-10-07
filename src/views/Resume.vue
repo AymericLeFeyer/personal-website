@@ -258,7 +258,7 @@
         <h3>
           Azure Fundamentals
           <a
-            href="https://learn.microsoft.com/fr-fr/certifications/exams/az-900"
+            href="https://www.credly.com/badges/f558c2a6-3a29-44e4-bc1b-83cce1e0e5b7/public_url"
             target="_blank"
             rel="noopener noreferrer"
             class="link"
