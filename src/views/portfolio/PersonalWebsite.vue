@@ -5,30 +5,37 @@
     icon="projects/personal-website"
     :showCollaborators="false"
   >
-  <template #result>
-    <p class="link">You are currently visiting it. Thanks a lot ! </p>
-  </template>
+    <template #result>
+      <p class="link">You are currently visiting it. Thanks a lot !</p>
+    </template>
     <template #overview>
       <ul>
         <li>
-          To celebrate the end of my studies, I decided to create a nice website / portfolio in which I could add elements over time.
+          To celebrate the end of my studies, I decided to create a nice website
+          / portfolio in which I could add elements over time.
         </li>
         <li>
-          I decided to make it as minimalist as possible, with some inspirations from the <a href="https://notion.so" class="link" target="_blank">Notion</a> artistic direction.
+          I decided to make it as minimalist as possible, with some inspirations
+          from the
+          <a href="https://notion.so" class="link" target="_blank">Notion</a>
+          artistic direction.
         </li>
       </ul>
     </template>
     <template #outcome>
       <ul>
         <li>
-          I hope that this website will be a good showcase of my skills and my projects.
+          I hope that this website will be a good showcase of my skills and my
+          projects.
         </li>
+        <li>Tips : Try to update your system theme</li>
       </ul>
     </template>
     <template #role>
       <ul>
         <li>
-          It's a part of me, so it's a bit difficult to say who was in charge of what.
+          It's a part of me, so it's a bit difficult to say who was in charge of
+          what.
         </li>
       </ul>
     </template>
@@ -42,13 +49,14 @@
       <custom-icon icon="tools/html" size="25" tooltip="HTML" />
       <custom-icon icon="tools/css" size="25" tooltip="CSS" />
       <custom-icon icon="tools/javascript" size="25" tooltip="JavaScript" />
-      <custom-icon icon="tools/firebase" size="25" tooltip="Firebase (for hosting)" />
+      <custom-icon
+        icon="tools/firebase"
+        size="25"
+        tooltip="Firebase (for hosting)"
+      />
     </template>
     <template #links>
-      <a
-        href="https://aymeric.lefeyer.fr"
-        class="link"
-        target="_blank"
+      <a href="https://aymeric.lefeyer.fr" class="link" target="_blank"
         >aymeric.lefeyer.fr</a
       >
     </template>
