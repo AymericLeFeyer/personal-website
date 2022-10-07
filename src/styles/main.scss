@@ -91,6 +91,17 @@ body {
   margin-bottom: 60px;
 }
 
+.section-title {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-bottom: 6px;
+  }
+
+  gap: 10px;
+}
+
 
 @media (max-width: 915px) {
   .content {

@@ -304,16 +304,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
 
-.section-title {
-  display: flex;
-  align-items: center;
-
-  img {
-    margin-bottom: 6px;
-  }
-
-  gap: 10px;
-}
 h4 {
   margin-top: 0;
 }

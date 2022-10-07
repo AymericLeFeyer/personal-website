@@ -46,7 +46,7 @@ const routes = [
   routerItem('/now', 'Now', 'hand', Now),
   routerItem('/portfolio', 'Portfolio', 'rocket', Portfolio),
   routerItem('/resume', 'Resume', 'paper', Resume),
-  routerItem('/hobbies', 'Hobbies', 'dice', Hobbies),
+  routerItem('/hobbies', 'Hobbies', 'heart', Hobbies),
   routerItem('/contact', 'Contact', 'call', Contact),
 
   portfolioProject("personal-website", "Personal Website", PersonalWebsite),

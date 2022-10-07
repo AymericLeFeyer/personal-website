@@ -43,7 +43,7 @@
       />
       <page-link
         route="/hobbies"
-        icon="emojis/dice"
+        icon="emojis/heart"
         name="Hobbies"
         class="home-item"
       />

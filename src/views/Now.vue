@@ -28,7 +28,10 @@
       </div>
     </div>
     <div class="divider"></div>
-    <h2>2022 - What's up this year ?</h2>
+    <div class="section-title">
+      <custom-icon icon="emojis/rocket" size="30" />
+      <h2>2022 - What's up this year ?</h2>
+    </div>
     <ul>
       <li>
         <a class="link" href="https://www.pit.fr" target="_blank">Pit</a> gave
@@ -113,8 +116,10 @@
     <p class="caption">Last updated on October 2022</p>
 
     <div class="divider"></div>
-
-    <h2>Previous years</h2>
+    <div class="section-title">
+      <custom-icon icon="emojis/down" size="30" />
+      <h2>Previous years</h2>
+    </div>
     <h3>2021</h3>
     <ul>
       <li>
@@ -126,16 +131,26 @@
         to work on cool projects and to improve my skills beyond my daily
         business. I worked on mobile projects during my free time.
       </li>
-      <li>I get my first certification in computer sciences : <a href="https://learn.microsoft.com/fr-fr/certifications/exams/az-900" target="_blank" class="link">Azure Fundamentals AZ-900</a>.</li>
+      <li>
+        I get my first certification in computer sciences :
+        <a
+          href="https://learn.microsoft.com/fr-fr/certifications/exams/az-900"
+          target="_blank"
+          class="link"
+          >Azure Fundamentals AZ-900</a
+        >.
+      </li>
     </ul>
   </custom-content>
 </template>
 
 <script>
 import CustomContent from "../components/Content.vue";
+import CustomIcon from "../components/Icon.vue";
 export default {
   components: {
     CustomContent,
+    CustomIcon,
   },
   computed: {
     icon() {
