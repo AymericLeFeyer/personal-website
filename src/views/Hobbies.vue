@@ -1,0 +1,316 @@
+<template>
+  <custom-content title="Hobbies" icon="emojis/heart">
+    <img
+      src="@/assets/illustrations/love.png"
+      class="hobbies-illustration"
+      alt="illustration of a boy making a heart with his hands"
+    />
+    <div class="section-title">
+      <custom-icon icon="emojis/video-game" size="30" />
+      <h2>Video Games</h2>
+    </div>
+    <p>
+      I started playing video games when I was child (sorry for my mom) and I
+      still never stopped. I spent many hours playing on PC via
+      <a
+        href="https://steamcommunity.com/id/aypics/"
+        target="_blank"
+        class="link"
+        >Steam</a
+      >, where I have <span class="vocabulary">platinum*</span> my first games.
+      I love indies games. Favorite game in this platform are :
+    </p>
+    <ul>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/coffee" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/Cuphead"
+            target="_blank"
+            class="link"
+            >Cuphead</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/cry" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/The_Binding_of_Isaac"
+            target="_blank"
+            class="link"
+            >The Binding of Isaac</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/sunflower" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/Stardew_Valley"
+            target="_blank"
+            class="link"
+            >Stardew Valley</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/egg" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/Dofus"
+            target="_blank"
+            class="link"
+            >Dofus</a
+          >
+          (which isn't on Steam, but I spent too much hours to not mention it)
+        </div>
+      </li>
+    </ul>
+    <br />
+    <p>
+      I played a lot on Nintendo game consoles, starting by the
+      <span class="console">Game Boy Advance SP</span>, the
+      <span class="console">Nintendo DS</span> collection (from DS to 3DS XL),
+      the amazing <span class="console">Wii</span> and more recently the
+      unavoidable <span class="console">Nintendo Switch</span>. Nintendo games
+      are a big part of my gamer's life, my favorite licences are :
+    </p>
+    <ul>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/bolt" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/Pokemon"
+            target="_blank"
+            class="link"
+            >Pokemon</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/planet" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/Super_Mario_Galaxy"
+            target="_blank"
+            class="link"
+            >Mario Galaxy</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/tree" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/Animal_Crossing"
+            target="_blank"
+            class="link"
+            >Animal Crossing</a
+          >
+        </div>
+      </li>
+    </ul>
+    <br />
+    <p>
+      My father was involved in my video games education. The first video game I
+      saw was Ratchet & Clank on PS2, when I was 3 years old. He loved
+      Playstation game consoles, so we had all the consoles from
+      <span class="console">PS1</span> to
+      <span class="console">PS4</span> passing by
+      <span class="console">PSP</span> and <span class="console">PS Vita</span>.
+      Today I have my own home, with a gorgeous and powerfull
+      <span class="console">PS5</span>. You can find my PSN Profile
+      <a href="https://psnprofiles.com/Aypics" class="link" target="_blank"
+        >here</a
+      >
+      .If I need to choose few games, I would pick :
+    </p>
+    <ul>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/wrench" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/Ratchet_and_Clank"
+            target="_blank"
+            class="link"
+            >Ratchet & Clank</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/axe" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/God_of_War_(jeu_vid%C3%A9o,_2018)"
+            target="_blank"
+            class="link"
+            >God of War</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/spider" size="20" />
+          <a
+            href="https://fr.wikipedia.org/wiki/Marvel%27s_Spider-Man"
+            target="_blank"
+            class="link"
+            >Marvel's Spiderman</a
+          >
+        </div>
+      </li>
+    </ul>
+    <br />
+    <p>Platinum : Get all available achievements for a game, get the 100%.</p>
+    <div class="section-title">
+      <custom-icon icon="emojis/headphone" size="30" />
+      <h2>Music</h2>
+    </div>
+    <p>
+      I love listening music, some french rap or international pop and rock. I
+      like to discover new musical vibes. Here is my
+      <a
+        href="https://open.spotify.com/user/v3qrnw7xq5o64dgcc9ahofx33?si=jaIaUcUWTAiyZqPdONkgWA&nd=1"
+        class="link"
+        target="_blank"
+        >Spotify</a
+      >
+      profile.
+    </p>
+    <div class="section-title">
+      <custom-icon icon="emojis/dice" size="30" />
+      <h2>Board Games</h2>
+    </div>
+    <p>
+      When I don't play video games, I play board games (with real persons this
+      time !). I discovered the world of the board game in 2019 with
+      <a
+        href="https://boardgamegeek.com/boardgame/65244/forbidden-island"
+        class="link"
+        target="_blank"
+        >The forbidden island</a
+      >. Since then I have my own games. You can easily find my collection and
+      wishlist
+      <a
+        href="https://aymeric-le-feyer.notion.site/a1f5f1984ea843868bfa6aa6209ac228?v=25b6b60af9be4b1aadee35bce7856f8b"
+        class="link"
+        target="_blank"
+        >here</a
+      >. My top 3 games are :
+    </p>
+    <ul>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/rocket" size="20" />
+          <a
+            href="https://boardgamegeek.com/boardgame/284083/crew-quest-planet-nine"
+            target="_blank"
+            class="link"
+            >The Crew</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/spy" size="20" />
+          <a
+            href="https://boardgamegeek.com/boardgame/178900/codenames"
+            target="_blank"
+            class="link"
+            >Code Names</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="game-item">
+          <custom-icon icon="emojis/fireworks" size="20" />
+          <a
+            href="https://boardgamegeek.com/boardgame/98778/hanabi"
+            target="_blank"
+            class="link"
+            >Hanabi</a
+          >
+        </div>
+      </li>
+    </ul>
+    <div class="section-title">
+      <custom-icon icon="emojis/cinema" size="30" />
+      <h2>Cinema</h2>
+    </div>
+    <p>
+      I love to watch movies, especially movies with high expectation. I like to
+      watch them with friends because after the session we can talk some hours
+      of what we just seen. It opens debates and it's so fun.
+    </p>
+    <p>
+      My favorite movie series is
+      <a
+        href="https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe"
+        class="link"
+        target="_blank"
+        >Marvel</a
+      >'s one because they managed to make more than twenty movies (ans now
+      series) in the same universe with always twists and links with the past.
+    </p>
+    <p>
+      I love
+      <a
+        href="https://en.wikipedia.org/wiki/Harry_Potter"
+        class="link"
+        target="_blank"
+        >Harry Potter</a
+      >
+      a lot too. I'm not what is called a real potterhead, but I love the movies
+      and the universe.
+    </p>
+    <br />
+  </custom-content>
+</template>
+
+<script>
+import CustomContent from "../components/Content.vue";
+import CustomIcon from "../components/Icon.vue";
+export default {
+  components: {
+    CustomContent,
+    CustomIcon,
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.hobbies-illustration {
+  width: 30%;
+  display: flex;
+  margin: auto;
+
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+}
+
+.vocabulary {
+  font-style: italic;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.game-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.console {
+  font-weight: 500;
+}
+
+.section-title {
+  margin-top: 20px;
+}
+</style>
