@@ -167,8 +167,17 @@
       <custom-icon icon="emojis/headphone" size="30" />
       <h2>Music</h2>
     </div>
-    <p>I love listening music</p>
-    french rap and pop (nice headset), link to spotify
+    <p>
+      I love listening music, some french rap or international pop and rock. I
+      like to discover new musical vibes. Here is my
+      <a
+        href="https://open.spotify.com/user/v3qrnw7xq5o64dgcc9ahofx33?si=jaIaUcUWTAiyZqPdONkgWA&nd=1"
+        class="link"
+        target="_blank"
+        >Spotify</a
+      >
+      profile.
+    </p>
     <div class="section-title">
       <custom-icon icon="emojis/dice" size="30" />
       <h2>Board Games</h2>
@@ -256,9 +265,6 @@
       and the universe.
     </p>
     <br />
-    <p>TV Shows</p>
-    <br />
-    <p>Anime</p>
   </custom-content>
 </template>
 
