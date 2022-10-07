@@ -167,6 +167,8 @@
       <custom-icon icon="emojis/headphone" size="30" />
       <h2>Music</h2>
     </div>
+    <p>I love listening music</p>
+    french rap and pop (nice headset), link to spotify
     <div class="section-title">
       <custom-icon icon="emojis/dice" size="30" />
       <h2>Board Games</h2>
@@ -227,6 +229,36 @@
       <custom-icon icon="emojis/cinema" size="30" />
       <h2>Cinema</h2>
     </div>
+    <p>
+      I love to watch movies, especially movies with high expectation. I like to
+      watch them with friends because after the session we can talk some hours
+      of what we just seen. It opens debates and it's so fun.
+    </p>
+    <p>
+      My favorite movie series is
+      <a
+        href="https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe"
+        class="link"
+        target="_blank"
+        >Marvel</a
+      >'s one because they managed to make more than twenty movies (ans now
+      series) in the same universe with always twists and links with the past.
+    </p>
+    <p>
+      I love
+      <a
+        href="https://en.wikipedia.org/wiki/Harry_Potter"
+        class="link"
+        target="_blank"
+        >Harry Potter</a
+      >
+      a lot too. I'm not what is called a real potterhead, but I love the movies
+      and the universe.
+    </p>
+    <br />
+    <p>TV Shows</p>
+    <br />
+    <p>Anime</p>
   </custom-content>
 </template>
 
@@ -270,5 +302,9 @@ ul {
 
 .console {
   font-weight: 500;
+}
+
+.section-title {
+  margin-top: 20px;
 }
 </style>
