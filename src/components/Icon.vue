@@ -29,7 +29,7 @@ export default {
     },
     heigth() {
       if (this.size) {
-        return `height: ${this.size}px; width: ${this.size}px`;
+        return `height: ${this.size}px;`;
       }
     },
   },
