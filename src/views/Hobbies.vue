@@ -57,13 +57,15 @@
       <li>
         <div class="game-item">
           <custom-icon icon="emojis/egg" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/Dofus"
-            target="_blank"
-            class="link"
-            >Dofus</a
-          >
-          (which isn't on Steam, but I spent too much hours to not mention it)
+          <p>
+            <a
+              href="https://fr.wikipedia.org/wiki/Dofus"
+              target="_blank"
+              class="link"
+              >Dofus</a
+            >
+            (which isn't on Steam, but I spent too much hours to not mention it)
+          </p>
         </div>
       </li>
     </ul>
