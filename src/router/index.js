@@ -58,12 +58,10 @@ const routes = [
   portfolioProject("bonap", "Bonap", Bonap),
   portfolioProject("smartfresh", "Smartfresh", Smartfresh),
   portfolioProject("dunfast", "Dunfast", Dunfast),
-  { path: '*', redirect: '/' }
 ]
 
 const router = createRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+  history: createWebHistory(),
   routes
 })
 
