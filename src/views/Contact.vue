@@ -9,7 +9,7 @@
       <div class="actions">
         <div class="title">
           <h2>Keep in touch</h2>
-          <custom-icon icon="emojis/down" size="25" />
+          <custom-icon :square="true" icon="emojis/down" size="25" />
         </div>
         <div class="networks">
           <callout

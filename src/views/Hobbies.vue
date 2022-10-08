@@ -6,7 +6,7 @@
       alt="illustration of a boy making a heart with his hands"
     />
     <div class="section-title">
-      <custom-icon icon="emojis/video-game" size="30" />
+      <custom-icon :square="true" icon="emojis/video-game" size="30" />
       <h2>Video Games</h2>
     </div>
     <p>
@@ -23,7 +23,7 @@
     <ul>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/coffee" size="20" />
+          <custom-icon :square="true" icon="emojis/coffee" size="20" />
           <a
             href="https://fr.wikipedia.org/wiki/Cuphead"
             target="_blank"
@@ -34,7 +34,7 @@
       </li>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/cry" size="20" />
+          <custom-icon :square="true" icon="emojis/cry" size="20" />
           <a
             href="https://fr.wikipedia.org/wiki/The_Binding_of_Isaac"
             target="_blank"
@@ -45,7 +45,7 @@
       </li>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/sunflower" size="20" />
+          <custom-icon :square="true" icon="emojis/sunflower" size="20" />
           <a
             href="https://fr.wikipedia.org/wiki/Stardew_Valley"
             target="_blank"
@@ -56,7 +56,7 @@
       </li>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/egg" size="20" />
+          <custom-icon :square="true" icon="emojis/egg" size="20" />
           <p>
             <a
               href="https://fr.wikipedia.org/wiki/Dofus"
@@ -81,7 +81,7 @@
     <ul>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/bolt" size="20" />
+          <custom-icon :square="true" icon="emojis/bolt" size="20" />
           <a
             href="https://fr.wikipedia.org/wiki/Pokemon"
             target="_blank"
@@ -92,7 +92,7 @@
       </li>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/planet" size="20" />
+          <custom-icon :square="true" icon="emojis/planet" size="20" />
           <a
             href="https://fr.wikipedia.org/wiki/Super_Mario_Galaxy"
             target="_blank"
@@ -103,7 +103,7 @@
       </li>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/tree" size="20" />
+          <custom-icon :square="true" icon="emojis/tree" size="20" />
           <a
             href="https://fr.wikipedia.org/wiki/Animal_Crossing"
             target="_blank"
@@ -130,7 +130,7 @@
     <ul>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/wrench" size="20" />
+          <custom-icon :square="true" icon="emojis/wrench" size="20" />
           <a
             href="https://fr.wikipedia.org/wiki/Ratchet_and_Clank"
             target="_blank"
@@ -141,7 +141,7 @@
       </li>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/axe" size="20" />
+          <custom-icon :square="true" icon="emojis/axe" size="20" />
           <a
             href="https://fr.wikipedia.org/wiki/God_of_War_(jeu_vid%C3%A9o,_2018)"
             target="_blank"
@@ -152,7 +152,7 @@
       </li>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/spider" size="20" />
+          <custom-icon :square="true" icon="emojis/spider" size="20" />
           <a
             href="https://fr.wikipedia.org/wiki/Marvel%27s_Spider-Man"
             target="_blank"
@@ -165,7 +165,7 @@
     <br />
     <p>Platinum : Get all available achievements for a game, get the 100%.</p>
     <div class="section-title">
-      <custom-icon icon="emojis/dice" size="30" />
+      <custom-icon :square="true" icon="emojis/dice" size="30" />
       <h2>Board Games</h2>
     </div>
     <p>
@@ -187,7 +187,7 @@
     <ul>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/rocket" size="20" />
+          <custom-icon :square="true" icon="emojis/rocket" size="20" />
           <a
             href="https://boardgamegeek.com/boardgame/284083/crew-quest-planet-nine"
             target="_blank"
@@ -198,7 +198,7 @@
       </li>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/spy" size="20" />
+          <custom-icon :square="true" icon="emojis/spy" size="20" />
           <a
             href="https://boardgamegeek.com/boardgame/178900/codenames"
             target="_blank"
@@ -209,7 +209,7 @@
       </li>
       <li>
         <div class="game-item">
-          <custom-icon icon="emojis/fireworks" size="20" />
+          <custom-icon :square="true" icon="emojis/fireworks" size="20" />
           <a
             href="https://boardgamegeek.com/boardgame/98778/hanabi"
             target="_blank"
@@ -220,7 +220,7 @@
       </li>
     </ul>
     <div class="section-title">
-      <custom-icon icon="emojis/house" size="30" />
+      <custom-icon :square="true" icon="emojis/house" size="30" />
       <h2>Home Automation</h2>
     </div>
     <p>
@@ -239,7 +239,7 @@
     <img src="@/assets/hobbies/jeedom.png" alt="Jeedom" class="content-image" />
     <p>This the the dashboard used to control my whole home.</p>
     <div class="section-title">
-      <custom-icon icon="emojis/headphone" size="30" />
+      <custom-icon :square="true" icon="emojis/headphone" size="30" />
       <h2>Music</h2>
     </div>
     <p>
@@ -255,7 +255,7 @@
     </p>
 
     <div class="section-title">
-      <custom-icon icon="emojis/cinema" size="30" />
+      <custom-icon :square="true" icon="emojis/cinema" size="30" />
       <h2>Cinema</h2>
     </div>
     <p>

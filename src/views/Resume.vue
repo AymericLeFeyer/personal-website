@@ -3,7 +3,7 @@
     <h2>Fullstack Developer / Front & Mobile Adept</h2>
     <div class="divider no-gutters"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/briefcase" size="30" />
+      <custom-icon :square="true" icon="emojis/briefcase" size="30" />
       <h2>Work Experience</h2>
     </div>
 
@@ -143,7 +143,12 @@
           <li>
             Managed fruits containers in a warehouse with a pallet truck
             <div class="tools">
-              <custom-icon icon="emojis/gear" size="18" tooltip="CACES 1,3,5" />
+              <custom-icon
+                :square="true"
+                icon="emojis/gear"
+                size="18"
+                tooltip="CACES 1,3,5"
+              />
             </div>
           </li>
         </ul>
@@ -177,7 +182,7 @@
 
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/cap" size="30" />
+      <custom-icon :square="true" icon="emojis/cap" size="30" />
       <h2>Education</h2>
     </div>
     <div class="resume--area">
@@ -236,7 +241,7 @@
     </div>
     <div class="resume--area">
       <div class="logo">
-        <custom-icon icon="emojis/school" size="100" />
+        <custom-icon :square="true" icon="emojis/school" size="100" />
       </div>
       <div class="history">
         <h3>
@@ -254,7 +259,12 @@
         <ul>
           <li>
             Obtained a 20/20 mark in mathematics
-            <custom-icon icon="emojis/muscle" size="15" tooltip="So easy" />
+            <custom-icon
+              :square="true"
+              icon="emojis/muscle"
+              size="15"
+              tooltip="So easy"
+            />
           </li>
           <li>Obtained a 18/20 mark in physics and chemistry</li>
         </ul>
@@ -263,7 +273,7 @@
 
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/page" size="30" />
+      <custom-icon :square="true" icon="emojis/page" size="30" />
       <h2>Certifications</h2>
     </div>
 
@@ -287,7 +297,7 @@
     </div>
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/muscle" size="30" />
+      <custom-icon :square="true" icon="emojis/muscle" size="30" />
       <h2>Arsenal</h2>
     </div>
 
