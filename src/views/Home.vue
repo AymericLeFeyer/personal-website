@@ -2,7 +2,7 @@
   <div class="home">
     <h1>Aymeric <span class="lastname">Le Feyer</span></h1>
     <span class="content__icon"
-      ><custom-icon icon="emojis/aymeric" size="100"
+      ><custom-icon icon="emojis/aymeric" size="100" :square="true"
     /></span>
     <p>
       🇫🇷 French Web & Mobile developer. Currently collaborate with

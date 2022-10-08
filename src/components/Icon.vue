@@ -19,6 +19,10 @@ export default {
     tooltip: {
       type: String,
     },
+    square: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     path() {
@@ -29,7 +33,11 @@ export default {
     },
     heigth() {
       if (this.size) {
-        return `height: ${this.size}px;`;
+        if (this.square) {
+          return `height: ${this.size}px; width: ${this.size}px;`;
+        } else {
+          return `height: ${this.size}px;`;
+        }
       }
     },
   },
