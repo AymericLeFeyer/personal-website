@@ -62,6 +62,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .head-infos {
   display: flex;
   margin-bottom: 40px;
@@ -93,7 +94,7 @@ export default {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $breakpoint-medium) {
   .head-infos {
     flex-direction: column;
     align-items: center;

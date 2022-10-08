@@ -23,9 +23,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.margined {
-  margin: 10px;
-}
 .icon {
   margin-right: 3px;
   height: 30px;

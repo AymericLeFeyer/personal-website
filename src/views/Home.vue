@@ -22,36 +22,41 @@
     <br />
     <div class="divider"></div>
     <div class="actions">
-      <page-link route="/now" icon="emojis/hand" name="Now" class="home-item" />
+      <page-link
+        route="/now"
+        icon="emojis/hand"
+        name="Now"
+        class="home__item"
+      />
       <page-link
         route="/portfolio"
         icon="emojis/rocket"
         name="Portfolio"
-        class="home-item"
+        class="home__item"
       />
       <page-link
         route="/resume"
         icon="emojis/paper"
         name="Resume"
-        class="home-item"
+        class="home__item"
       />
       <page-link
         href="http://blog.aymeric.lefeyer.fr/"
         icon="emojis/pencil"
         name="Blog"
-        class="home-item"
+        class="home__item"
       />
       <page-link
         route="/hobbies"
         icon="emojis/heart"
         name="Hobbies"
-        class="home-item"
+        class="home__item"
       />
       <page-link
         route="/contact"
         icon="emojis/call"
         name="Contact"
-        class="home-item"
+        class="home__item"
       />
     </div>
     <div class="divider"></div>
@@ -77,16 +82,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .actions {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.home-item {
+.home__item {
   width: 25%;
 
-  @media (max-width: 600px) {
+  @media (max-width: $breakpoint-medium) {
     width: 40%;
   }
 }
@@ -96,10 +102,8 @@ export default {
 
 .lastname {
   transition: 1s ease all;
-}
 
-@media (max-width: 500px) {
-  .lastname {
+  @media (max-width: $breakpoint-small) {
     opacity: 0;
   }
 }

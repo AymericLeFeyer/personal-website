@@ -340,7 +340,7 @@ h4 {
   gap: 40px;
   margin: 20px 0;
 
-  @media (max-width: 600px) {
+  @media (max-width: $breakpoint-medium) {
     flex-direction: column;
     gap: 0px;
   }
@@ -351,7 +351,7 @@ h4 {
     align-items: center;
     margin-top: 10px;
 
-    @media (max-width: 600px) {
+    @media (max-width: $breakpoint-medium) {
       margin-top: 30px;
     }
   }
@@ -361,7 +361,7 @@ h4 {
       font-weight: 700;
       margin-top: 0;
       margin-bottom: 0;
-      @media (max-width: 600px) {
+      @media (max-width: $breakpoint-medium) {
         font-weight: 900;
       }
     }

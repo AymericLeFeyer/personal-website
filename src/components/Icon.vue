@@ -1,7 +1,7 @@
 <template>
   <span class="tooltip" v-if="tooltip"
-    ><img :src="path" :alt="alt" :style="heigth" />
-    <span class="tooltiptext">{{ tooltip }}</span>
+    ><img :src="path" :alt="alt" :style="heigth" class="icon" />
+    <span class="tooltip__text">{{ tooltip }}</span>
   </span>
   <img v-else :src="path" :alt="alt" :style="heigth" />
 </template>
@@ -46,7 +46,7 @@ export default {
 
 <style scoped lang="scss">
 @import "@/styles/variables.scss";
-img {
+.icon {
   height: 30px;
 }
 
@@ -54,7 +54,7 @@ img {
   position: relative;
   display: inline-block;
 }
-.tooltip .tooltiptext {
+.tooltip .tooltip__text {
   position: absolute;
   visibility: hidden;
   background-color: var(--background-color);
@@ -71,7 +71,7 @@ img {
   left: 0;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltip__text {
   visibility: visible;
   opacity: 1;
 }

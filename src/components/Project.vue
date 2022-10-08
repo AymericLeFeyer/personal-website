@@ -106,7 +106,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
 
-h3 {
+h2 {
   font-size: 1.3em;
 }
 .result {
@@ -124,7 +124,7 @@ h3 {
   margin-bottom: 40px;
   gap: 20px;
 
-  @media (max-width: 600px) {
+  @media (max-width: $breakpoint-medium) {
     flex-direction: column;
   }
 

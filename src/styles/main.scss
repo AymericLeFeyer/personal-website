@@ -1,25 +1,19 @@
 @import "variables.scss";
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&display=swap');
 
+// Global styles
 * {
   margin: 0;
   padding: 0;
 }
 
-#app {
-    font-family: Poppins, Avenir, Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: var(--text-color);
-    font-size: 1.1em;
-  }
+body {
+  background-color: var(--background-color);
+}
 
 a {
-    text-decoration: none;
-    color: var(--text-color)
+  text-decoration: none;
+  color: var(--text-color)
 }
 
 h2, h3, h4 {
@@ -27,6 +21,15 @@ h2, h3, h4 {
   margin-bottom: 20px;
 }
 
+#app {
+  font-family: Poppins, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.1em;
+}
 
 .divider {
   height: 1px;
@@ -41,88 +44,21 @@ h2, h3, h4 {
   text-underline-offset: 3px;
 }
 
-
-body {
-  background-color: var(--background-color);
-}
-
-.content {
-  transition: 1s ease all;
-  background-color: var(--tile-background-color);
-  width: 750px;
-  border-radius: 20px;
-  position: relative;
-  padding: 40px 80px 20px 80px;
-  margin-top: 30px;
-  text-align: left;
-  overflow-wrap: break-word;
-
-  h1 {
-    transition: 1s ease all;
-    position: absolute;
-    top: -35px;
-    left: 80px;
-    font-size: 40px;
-    font-weight: 700;
-    width: 70%;
-    
-  }
-
-  .content__icon {
-    transition: 1s ease all;
-    position: absolute;
-    top: -50px;
-    right: 80px;
-    font-size: 60px;
-    font-weight: bolder;
-
-  }
-}
-
-.breadcrumb {
-  background-color: var(--background-color);
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
-  margin-bottom: 60px;
-}
-
 .section-title {
   display: flex;
   align-items: center;
+  gap: 10px;
 
   img {
     margin-bottom: 6px;
   }
-
-  gap: 10px;
 }
 
-
-@media (max-width: 915px) {
-  .content {
-    width: 100%;
-    border-radius: 0px;
-    padding: 40px 40px 20px 40px;
-
-    .content__icon {
-      right: 20px;
-    }
-
-    h1 {
-      left: 20px;
-      font-size: 35px;
-      margin-top: 10px;
-    }
-  }
-
-  .center {
-    margin-bottom: 0px;
-    margin-top: 100px;
-  }
-
+.content__icon {
+  transition: 1s ease all;
+  position: absolute;
+  top: -50px;
+  right: 80px;
+  font-size: 60px;
+  font-weight: bolder;
 }

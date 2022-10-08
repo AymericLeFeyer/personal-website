@@ -193,7 +193,7 @@ li {
   max-width: 40%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $breakpoint-medium) {
   .intro {
     display: block;
 
@@ -208,7 +208,7 @@ li {
   }
 }
 
-@media (max-width: 915px) {
+@media (max-width: $breakpoint-large) {
   li {
     margin-left: 25px;
   }

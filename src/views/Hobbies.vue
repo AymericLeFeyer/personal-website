@@ -2,7 +2,7 @@
   <custom-content title="Hobbies" icon="emojis/heart">
     <img
       src="@/assets/illustrations/love.png"
-      class="hobbies-illustration"
+      class="hobbies__illustration"
       alt="illustration of a boy making a heart with his hands"
     />
     <div class="section-title">
@@ -61,11 +61,11 @@
     </div>
     <br />
     <p>
-      I played a lot on Nintendo game consoles, starting by the
-      <span class="console">Game Boy Advance SP</span>, the
-      <span class="console">Nintendo DS</span> collection (from DS to 3DS XL),
-      the amazing <span class="console">Wii</span> and more recently the
-      unavoidable <span class="console">Nintendo Switch</span>. Nintendo games
+      I played a lot on Nintendo game importants, starting by the
+      <span class="important">Game Boy Advance SP</span>, the
+      <span class="important">Nintendo DS</span> collection (from DS to 3DS XL),
+      the amazing <span class="important">Wii</span> and more recently the
+      unavoidable <span class="important">Nintendo Switch</span>. Nintendo games
       are a big part of my gamer's life, my favorite licences are :
     </p>
     <div class="game-item">
@@ -99,12 +99,13 @@
     <p>
       My father was involved in my video games education. The first video game I
       saw was Ratchet & Clank on PS2, when I was 3 years old. He loved
-      Playstation game consoles, so we had all the consoles from
-      <span class="console">PS1</span> to
-      <span class="console">PS4</span> passing by
-      <span class="console">PSP</span> and <span class="console">PS Vita</span>.
-      Today I have my own home, with a gorgeous and powerfull
-      <span class="console">PS5</span>. You can check my
+      Playstation game importants, so we had all the importants from
+      <span class="important">PS1</span> to
+      <span class="important">PS4</span> passing by
+      <span class="important">PSP</span> and
+      <span class="important">PS Vita</span>. Today I have my own home, with a
+      gorgeous and powerfull <span class="important">PS5</span>. You can check
+      my
       <a href="https://psnprofiles.com/Aypics" class="link" target="_blank"
         >PSN Profile</a
       >. If I need to choose few games, I would pick :
@@ -202,7 +203,11 @@
       I have set up practical scenarios to help me save energy, and to make my
       life easier (when everything works).
     </p>
-    <img src="@/assets/hobbies/jeedom.png" alt="Jeedom" class="content-image" />
+    <img
+      src="@/assets/hobbies/jeedom.png"
+      alt="Jeedom dashboard"
+      class="content__image"
+    />
     <p>This the the dashboard used to control my whole home.</p>
     <div class="section-title">
       <custom-icon :square="true" icon="emojis/headphone" size="30" />
@@ -266,12 +271,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hobbies-illustration {
+@import "@/styles/variables.scss";
+.hobbies__illustration {
   width: 30%;
   display: flex;
   margin: auto;
 
-  @media (max-width: 600px) {
+  @media (max-width: $breakpoint-medium) {
     width: 80%;
   }
 }
@@ -303,7 +309,7 @@ export default {
   }
 }
 
-.console {
+.important {
   font-weight: 500;
 }
 
@@ -311,7 +317,7 @@ export default {
   margin-top: 20px;
 }
 
-.content-image {
+.content__image {
   width: 100%;
 }
 </style>
