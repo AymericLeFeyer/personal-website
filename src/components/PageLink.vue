@@ -50,6 +50,9 @@ export default {
   margin: 10px;
   padding: 3px;
   display: flex;
+  div {
+    width: 100%;
+  }
 }
 
 .hoverable:hover {
