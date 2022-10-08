@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <span class="content__icon"><custom-icon :icon="icon" size="70" /></span>
+    <span class="content__icon"
+      ><custom-icon :icon="icon" size="70" :square="true"
+    /></span>
     <slot></slot>
     <custom-footer />
   </div>

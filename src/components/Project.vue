@@ -6,21 +6,21 @@
     <div class="project">
       <div class="main-infos">
         <div class="title">
-          <custom-icon icon="emojis/gem" size="30" />
+          <custom-icon icon="emojis/gem" size="30" :square="true" />
           <h2>Overview</h2>
         </div>
         <div class="infos">
           <slot name="overview"></slot>
         </div>
         <div class="title">
-          <custom-icon icon="emojis/party" size="30" />
+          <custom-icon icon="emojis/party" size="30" :square="true" />
           <h2>Outcome</h2>
         </div>
         <div class="infos">
           <slot name="outcome"></slot>
         </div>
         <div class="title">
-          <custom-icon icon="emojis/hey" size="30" />
+          <custom-icon icon="emojis/hey" size="30" :square="true" />
           <h2>My Role</h2>
         </div>
         <div class="infos">
@@ -29,14 +29,14 @@
       </div>
       <div class="side-infos">
         <div class="title">
-          <custom-icon icon="emojis/time" size="30" />
+          <custom-icon icon="emojis/time" size="30" :square="true" />
           <h2>Date</h2>
         </div>
         <div class="infos">
           <slot name="date"></slot>
         </div>
         <div class="title" v-if="showOrganization">
-          <custom-icon icon="emojis/star" size="30" />
+          <custom-icon icon="emojis/star" size="30" :square="true" />
           <h2>Organization</h2>
         </div>
         <div class="infos" v-if="showOrganization">
@@ -44,14 +44,14 @@
         </div>
 
         <div class="title" v-if="showCollaborators">
-          <custom-icon icon="emojis/pray" size="30" />
+          <custom-icon icon="emojis/pray" size="30" :square="true" />
           <h2>Collaborators</h2>
         </div>
         <div class="infos" v-if="showCollaborators">
           <slot name="collaborators"></slot>
         </div>
         <div class="title">
-          <custom-icon icon="emojis/gear" size="30" />
+          <custom-icon icon="emojis/gear" size="30" :square="true" />
           <h2>Tools</h2>
         </div>
         <div class="infos">
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="title">
-          <custom-icon icon="emojis/link" size="30" />
+          <custom-icon icon="emojis/link" size="30" :square="true" />
           <h2>Links</h2>
         </div>
         <div class="infos">

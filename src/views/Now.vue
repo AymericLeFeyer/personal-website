@@ -29,7 +29,7 @@
     </div>
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/rocket" size="30" />
+      <custom-icon icon="emojis/rocket" size="30" :square="true" />
       <h2>2022 - What's up this year ?</h2>
     </div>
     <ul>
@@ -117,7 +117,7 @@
 
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/down" size="30" />
+      <custom-icon icon="emojis/down" size="30" :square="true" />
       <h2>Previous years</h2>
     </div>
     <h3>2021</h3>
