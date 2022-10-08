@@ -3,7 +3,7 @@
     <div v-if="!disabled">
       <div v-if="route">
         <router-link :to="route">
-          <icon-item :icon="icon" :name="name" />
+          <icon-item :icon="icon" :name="name" size="30" />
         </router-link>
       </div>
       <div v-else>

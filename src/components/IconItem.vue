@@ -1,6 +1,6 @@
 <template>
   <div class="iconitem">
-    <custom-icon class="icon" :icon="icon" /><span class="name">{{
+    <custom-icon class="icon" :icon="icon" :size="size" /><span class="name">{{
       name
     }}</span>
   </div>
@@ -13,6 +13,7 @@ export default {
   props: {
     icon: String,
     name: String,
+    size: String,
   },
   components: {
     CustomIcon,
