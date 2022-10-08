@@ -56,7 +56,11 @@
       >
     </template>
     <template #end-image>
-      <img src="@/assets/illustrations/dunfresh.png" class="portfolio-image"/>
+      <img
+        src="@/assets/illustrations/dunfresh.png"
+        class="portfolio-image"
+        alt="illustration of a boy on a pallet truck, right next to the same boy on a computer"
+      />
     </template>
   </project>
 </template>

@@ -8,7 +8,7 @@
       />
       <div class="actions">
         <div class="title">
-          <h3>Keep in touch</h3>
+          <h2>Keep in touch</h2>
           <custom-icon icon="emojis/down" size="25" />
         </div>
         <div class="networks">

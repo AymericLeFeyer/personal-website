@@ -122,11 +122,10 @@
       <span class="console">PS4</span> passing by
       <span class="console">PSP</span> and <span class="console">PS Vita</span>.
       Today I have my own home, with a gorgeous and powerfull
-      <span class="console">PS5</span>. You can find my PSN Profile
+      <span class="console">PS5</span>. You can check my
       <a href="https://psnprofiles.com/Aypics" class="link" target="_blank"
-        >here</a
-      >
-      .If I need to choose few games, I would pick :
+        >PSN Profile</a
+      >. If I need to choose few games, I would pick :
     </p>
     <ul>
       <li>
@@ -177,13 +176,12 @@
         class="link"
         target="_blank"
         >The forbidden island</a
-      >. Since then I have my own games. You can easily find my collection and
-      wishlist
+      >. Since then I have my own games. You can easily find my
       <a
         href="https://aymeric-le-feyer.notion.site/a1f5f1984ea843868bfa6aa6209ac228?v=25b6b60af9be4b1aadee35bce7856f8b"
         class="link"
         target="_blank"
-        >here</a
+        >collection and wishlist</a
       >. My top 3 games are :
     </p>
     <ul>

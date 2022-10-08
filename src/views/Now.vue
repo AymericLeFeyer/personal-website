@@ -161,6 +161,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .intro {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -178,7 +179,8 @@ li {
 
 .caption {
   font-style: italic;
-  color: gray;
+  color: var(--link-color);
+  margin-bottom: 10px;
 }
 
 .author {

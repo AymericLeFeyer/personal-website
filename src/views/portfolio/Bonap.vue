@@ -5,9 +5,13 @@
     icon="projects/bonap"
     :showCollaborators="true"
   >
-  <template #result>
-    <img src="@/assets/portfolio/bonap.png" class="portfolio-image"/>
-  </template>
+    <template #result>
+      <img
+        src="@/assets/portfolio/bonap.png"
+        class="portfolio-image"
+        alt="screenshot of the mobile application bonap on the play store"
+      />
+    </template>
     <template #overview>
       <ul>
         <li>
@@ -57,7 +61,12 @@
     <template #collaborators>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/quentincarry/" target="_blank" class="link">Quentin Carry</a>
+          <a
+            href="https://www.linkedin.com/in/quentincarry/"
+            target="_blank"
+            class="link"
+            >Quentin Carry</a
+          >
         </li>
       </ul>
     </template>
@@ -95,7 +104,11 @@
       </ul>
     </template>
     <template #end-image>
-      <img src="@/assets/illustrations/bonap.png" class="portfolio-image"/>
+      <img
+        src="@/assets/illustrations/bonap.png"
+        class="portfolio-image"
+        alt="illustration of two boys eating a lot of food on a table, with a Bonap flag behind them"
+      />
     </template>
   </project>
 </template>

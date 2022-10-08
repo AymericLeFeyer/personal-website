@@ -1,15 +1,18 @@
 <template class="item">
   <div :class="activeClass">
-    <div v-if="route">
-      <router-link :to="route">
-        <icon-item :icon="icon" :name="name" />
-      </router-link>
+    <div v-if="!disabled">
+      <div v-if="route">
+        <router-link :to="route">
+          <icon-item :icon="icon" :name="name" />
+        </router-link>
+      </div>
+      <div v-else>
+        <a :href="href" target="_blank">
+          <icon-item :icon="icon" :name="name" />
+        </a>
+      </div>
     </div>
-    <div v-else>
-      <a :href="href" target="_blank">
-        <icon-item :icon="icon" :name="name" />
-      </a>
-    </div>
+    <icon-item v-else :icon="icon" :name="name" />
   </div>
 </template>
 

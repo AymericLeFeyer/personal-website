@@ -5,19 +5,29 @@
     icon="projects/baggou"
     :showCollaborators="true"
   >
-  <template #result>
-    <div class="baggou-images">
-      <img src="@/assets/portfolio/baggou.png" class="portfolio-image"/>
-      <img src="@/assets/portfolio/baggou-mobile.png" class="portfolio-image mobile"/>
-    </div>
-  </template>
+    <template #result>
+      <div class="baggou-images">
+        <img
+          src="@/assets/portfolio/baggou.png"
+          class="portfolio-image"
+          alt="screenshot of the website baggou.fr"
+        />
+        <img
+          src="@/assets/portfolio/baggou-mobile.png"
+          class="portfolio-image mobile"
+          alt="screenshot of the mobile application baggou"
+        />
+      </div>
+    </template>
     <template #overview>
       <ul>
         <li>
           Baggou is a carpooling service connecting drivers with sports fans.
         </li>
         <li>
-          I was approached to develop this app from scratch. I am really proud of this application, it's the best one I done today. I learned a lot during this project. 
+          I was approached to develop this app from scratch. I am really proud
+          of this application, it's the best one I done today. I learned a lot
+          during this project.
         </li>
         <li>In french "avoir le bagou" means have the gift of the gab.</li>
       </ul>
@@ -27,17 +37,20 @@
         <li>
           Users can find a driver to go to a sports event or to a concert.
         </li>
-        
-        <li>Each driver can propose a trip from a departure to a destination.</li>
+
         <li>
-          It's possible to pay the driver directly in the app.
+          Each driver can propose a trip from a departure to a destination.
         </li>
+        <li>It's possible to pay the driver directly in the app.</li>
       </ul>
     </template>
     <template #role>
       <ul>
-        <li>I developed the entire application, from the landing page to the mobile app.</li>
-        <li>I accompanied the client in the creation of the Baggou company. </li>
+        <li>
+          I developed the entire application, from the landing page to the
+          mobile app.
+        </li>
+        <li>I accompanied the client in the creation of the Baggou company.</li>
       </ul>
     </template>
     <template #date>
@@ -53,7 +66,12 @@
     <template #collaborators>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/jacques-diumbu-8671aa161/" target="_blank" class="link">Jacques Diumbu</a>
+          <a
+            href="https://www.linkedin.com/in/jacques-diumbu-8671aa161/"
+            target="_blank"
+            class="link"
+            >Jacques Diumbu</a
+          >
         </li>
       </ul>
     </template>
@@ -69,16 +87,11 @@
       <custom-icon icon="tools/stripe" size="25" tooltip="Stripe" />
       <custom-icon icon="tools/maps" size="25" tooltip="Google Maps API" />
       <custom-icon icon="tools/firestore" size="25" tooltip="Cloud Firestore" />
-
-
     </template>
     <template #links>
       <ul>
         <li>
-          <a
-            href="https://www.baggou.fr/"
-            class="link"
-            target="_blank"
+          <a href="https://www.baggou.fr/" class="link" target="_blank"
             >baggou.fr</a
           >
         </li>
@@ -101,7 +114,11 @@
       </ul>
     </template>
     <template #end-image>
-      <img src="@/assets/illustrations/baggou.png" class="illustration-car"/>
+      <img
+        src="@/assets/illustrations/baggou.png"
+        class="illustration-car"
+        alt="illustration of two persons in a car, supporting a sports team"
+      />
     </template>
   </project>
 </template>
