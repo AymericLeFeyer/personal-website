@@ -164,21 +164,6 @@
     <br />
     <p>Platinum : Get all available achievements for a game, get the 100%.</p>
     <div class="section-title">
-      <custom-icon icon="emojis/headphone" size="30" />
-      <h2>Music</h2>
-    </div>
-    <p>
-      I love listening music, some french rap or international pop and rock. I
-      like to discover new musical vibes. Here is my
-      <a
-        href="https://open.spotify.com/user/v3qrnw7xq5o64dgcc9ahofx33?si=jaIaUcUWTAiyZqPdONkgWA&nd=1"
-        class="link"
-        target="_blank"
-        >Spotify</a
-      >
-      profile.
-    </p>
-    <div class="section-title">
       <custom-icon icon="emojis/dice" size="30" />
       <h2>Board Games</h2>
     </div>
@@ -234,6 +219,41 @@
         </div>
       </li>
     </ul>
+    <div class="section-title">
+      <custom-icon icon="emojis/house" size="30" />
+      <h2>Home Automation</h2>
+    </div>
+    <p>
+      I love to automate my home. I have a lot of smart devices, and I'm always
+      on the lookout for new ones. I have my personal
+      <a href="https://www.jeedom.com/fr/" class="link" target="_blank"
+        >Jeedom</a
+      >
+      box on a raspberry pi, this makes it possible to connect all my connected
+      devices, regardless of the protocol used.
+    </p>
+    <p>
+      I have set up practical scenarios to help me save energy, and to make my
+      life easier (when everything works).
+    </p>
+    <img src="@/assets/hobbies/jeedom.png" alt="Jeedom" class="content-image" />
+    <p>This the the dashboard used to control my whole home.</p>
+    <div class="section-title">
+      <custom-icon icon="emojis/headphone" size="30" />
+      <h2>Music</h2>
+    </div>
+    <p>
+      I love listening music, some french rap or international pop and rock. I
+      like to discover new musical vibes. Here is my
+      <a
+        href="https://open.spotify.com/user/v3qrnw7xq5o64dgcc9ahofx33?si=jaIaUcUWTAiyZqPdONkgWA&nd=1"
+        class="link"
+        target="_blank"
+        >Spotify</a
+      >
+      profile.
+    </p>
+
     <div class="section-title">
       <custom-icon icon="emojis/cinema" size="30" />
       <h2>Cinema</h2>
@@ -312,5 +332,9 @@ ul {
 
 .section-title {
   margin-top: 20px;
+}
+
+.content-image {
+  width: 100%;
 }
 </style>
