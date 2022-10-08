@@ -20,55 +20,45 @@
       >, where I have <span class="vocabulary">platinum*</span> my first games.
       I love indies games. Favorite game in this platform are :
     </p>
-    <ul>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/coffee" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/Cuphead"
-            target="_blank"
-            class="link"
-            >Cuphead</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/cry" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/The_Binding_of_Isaac"
-            target="_blank"
-            class="link"
-            >The Binding of Isaac</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/sunflower" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/Stardew_Valley"
-            target="_blank"
-            class="link"
-            >Stardew Valley</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/egg" size="20" />
-          <p>
-            <a
-              href="https://fr.wikipedia.org/wiki/Dofus"
-              target="_blank"
-              class="link"
-              >Dofus</a
-            >
-            (which isn't on Steam, but I spent too much hours to not mention it)
-          </p>
-        </div>
-      </li>
-    </ul>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/coffee" size="20" />
+      <a
+        href="https://fr.wikipedia.org/wiki/Cuphead"
+        target="_blank"
+        class="link"
+        >Cuphead</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/cry" size="20" />
+      <a
+        href="https://fr.wikipedia.org/wiki/The_Binding_of_Isaac"
+        target="_blank"
+        class="link"
+        >The Binding of Isaac</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/sunflower" size="20" />
+      <a
+        href="https://fr.wikipedia.org/wiki/Stardew_Valley"
+        target="_blank"
+        class="link"
+        >Stardew Valley</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/egg" size="20" />
+      <p>
+        <a
+          href="https://fr.wikipedia.org/wiki/Dofus"
+          target="_blank"
+          class="link"
+          >Dofus</a
+        >
+        (which isn't on Steam, but I spent too much hours to not mention it)
+      </p>
+    </div>
     <br />
     <p>
       I played a lot on Nintendo game consoles, starting by the
@@ -78,41 +68,33 @@
       unavoidable <span class="console">Nintendo Switch</span>. Nintendo games
       are a big part of my gamer's life, my favorite licences are :
     </p>
-    <ul>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/bolt" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/Pokemon"
-            target="_blank"
-            class="link"
-            >Pokemon</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/planet" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/Super_Mario_Galaxy"
-            target="_blank"
-            class="link"
-            >Mario Galaxy</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/tree" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/Animal_Crossing"
-            target="_blank"
-            class="link"
-            >Animal Crossing</a
-          >
-        </div>
-      </li>
-    </ul>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/bolt" size="20" />
+      <a
+        href="https://fr.wikipedia.org/wiki/Pokemon"
+        target="_blank"
+        class="link"
+        >Pokemon</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/planet" size="20" />
+      <a
+        href="https://fr.wikipedia.org/wiki/Super_Mario_Galaxy"
+        target="_blank"
+        class="link"
+        >Mario Galaxy</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/tree" size="20" />
+      <a
+        href="https://fr.wikipedia.org/wiki/Animal_Crossing"
+        target="_blank"
+        class="link"
+        >Animal Crossing</a
+      >
+    </div>
     <br />
     <p>
       My father was involved in my video games education. The first video game I
@@ -127,41 +109,33 @@
         >PSN Profile</a
       >. If I need to choose few games, I would pick :
     </p>
-    <ul>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/wrench" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/Ratchet_and_Clank"
-            target="_blank"
-            class="link"
-            >Ratchet & Clank</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/axe" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/God_of_War_(jeu_vid%C3%A9o,_2018)"
-            target="_blank"
-            class="link"
-            >God of War</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/spider" size="20" />
-          <a
-            href="https://fr.wikipedia.org/wiki/Marvel%27s_Spider-Man"
-            target="_blank"
-            class="link"
-            >Marvel's Spiderman</a
-          >
-        </div>
-      </li>
-    </ul>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/wrench" size="20" />
+      <a
+        href="https://fr.wikipedia.org/wiki/Ratchet_and_Clank"
+        target="_blank"
+        class="link"
+        >Ratchet & Clank</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/axe" size="20" />
+      <a
+        href="https://fr.wikipedia.org/wiki/God_of_War_(jeu_vid%C3%A9o,_2018)"
+        target="_blank"
+        class="link"
+        >God of War</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/spider" size="20" />
+      <a
+        href="https://fr.wikipedia.org/wiki/Marvel%27s_Spider-Man"
+        target="_blank"
+        class="link"
+        >Marvel's Spiderman</a
+      >
+    </div>
     <br />
     <p>Platinum : Get all available achievements for a game, get the 100%.</p>
     <div class="section-title">
@@ -184,41 +158,33 @@
         >collection and wishlist</a
       >. My top 3 games are :
     </p>
-    <ul>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/rocket" size="20" />
-          <a
-            href="https://boardgamegeek.com/boardgame/284083/crew-quest-planet-nine"
-            target="_blank"
-            class="link"
-            >The Crew</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/spy" size="20" />
-          <a
-            href="https://boardgamegeek.com/boardgame/178900/codenames"
-            target="_blank"
-            class="link"
-            >Code Names</a
-          >
-        </div>
-      </li>
-      <li>
-        <div class="game-item">
-          <custom-icon :square="true" icon="emojis/fireworks" size="20" />
-          <a
-            href="https://boardgamegeek.com/boardgame/98778/hanabi"
-            target="_blank"
-            class="link"
-            >Hanabi</a
-          >
-        </div>
-      </li>
-    </ul>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/rocket" size="20" />
+      <a
+        href="https://boardgamegeek.com/boardgame/284083/crew-quest-planet-nine"
+        target="_blank"
+        class="link"
+        >The Crew</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/spy" size="20" />
+      <a
+        href="https://boardgamegeek.com/boardgame/178900/codenames"
+        target="_blank"
+        class="link"
+        >Code Names</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/fireworks" size="20" />
+      <a
+        href="https://boardgamegeek.com/boardgame/98778/hanabi"
+        target="_blank"
+        class="link"
+        >Hanabi</a
+      >
+    </div>
     <div class="section-title">
       <custom-icon :square="true" icon="emojis/house" size="30" />
       <h2>Home Automation</h2>
@@ -314,16 +280,27 @@ export default {
   font-style: italic;
 }
 
-ul {
-  margin-left: 20px;
-}
-
 .game-item {
   display: flex;
   align-items: center;
   gap: 5px;
   position: relative;
   top: 2px;
+  width: auto;
+  margin-top: 5px;
+
+  &:before {
+    content: "";
+    background-color: #ccc;
+    display: inline-block;
+    position: relative;
+    height: 6px;
+    width: 6px;
+    border-radius: 6px;
+    margin-right: 4px;
+    margin-top: 4px;
+    top: -1px;
+  }
 }
 
 .console {
