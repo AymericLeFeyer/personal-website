@@ -7,7 +7,7 @@
   >
     <template #result>
       <img
-        src="@/assets/portfolio/caroline-optique.png"
+        src="@/assets/portfolio/details/caroline-optique.png"
         class="portfolio-image"
         alt="screenshot of the website caroline-optique.fr"
       />

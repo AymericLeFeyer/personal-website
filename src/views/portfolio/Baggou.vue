@@ -8,12 +8,12 @@
     <template #result>
       <div class="baggou-images">
         <img
-          src="@/assets/portfolio/baggou.png"
+          src="@/assets/portfolio/details/baggou.png"
           class="portfolio-image"
           alt="screenshot of the website baggou.fr"
         />
         <img
-          src="@/assets/portfolio/baggou-mobile.png"
+          src="@/assets/portfolio/details/baggou-mobile.png"
           class="portfolio-image mobile"
           alt="screenshot of the mobile application baggou"
         />

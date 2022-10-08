@@ -7,7 +7,7 @@
   >
     <template #result>
       <img
-        src="@/assets/portfolio/bonap.png"
+        src="@/assets/portfolio/details/bonap.png"
         class="portfolio-image"
         alt="screenshot of the mobile application bonap on the play store"
       />

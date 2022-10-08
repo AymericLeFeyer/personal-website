@@ -7,7 +7,7 @@
   >
     <template #result>
       <img
-        src="@/assets/portfolio/habidom.png"
+        src="@/assets/portfolio/details/habidom.png"
         class="portfolio-image"
         alt="screenshot of the website habidom.fr"
       />
