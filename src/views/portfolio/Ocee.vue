@@ -5,9 +5,16 @@
     icon="projects/ocee"
     :showCollaborators="true"
   >
-  <template #result>
-    <iframe class="video" src="https://www.youtube.com/embed/ezg4brJWcIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </template>
+    <template #result>
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/ezg4brJWcIk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </template>
     <template #overview>
       <ul>
         <li>
@@ -16,15 +23,19 @@
           the heart of this project.
         </li>
         <li>
-          We decided to develop a web application to help companies check the progress of their progress in a second.
+          We decided to develop a web application to help companies check the
+          progress of their progress in a second.
         </li>
-        <li>Ocee is the acronym of "Où Ça En Est" meaning "Where are we now".</li>
+        <li>
+          Ocee is the acronym of "Où Ça En Est" meaning "Where are we now".
+        </li>
       </ul>
     </template>
     <template #outcome>
       <ul>
         <li>
-          Users could manage their projects easily and check the progress of any steps in a second.
+          Users could manage their projects easily and check the progress of any
+          steps in a second.
         </li>
         <li>
           This project received a good score and was one of the best of the
@@ -35,11 +46,11 @@
     <template #role>
       <ul>
         <li>I worked on the front part of the application.</li>
-        <li>I developped a small mobile application, in read only for users.</li>
-        <li>I designed the mockups.</li>
         <li>
-          I was in charge of the video trailer of the project.
+          I developped a small mobile application, in read only for users.
         </li>
+        <li>I designed the mockups.</li>
+        <li>I was in charge of the video trailer of the project.</li>
         <li>I made the landing page of the project, not available anymore.</li>
       </ul>
     </template>
@@ -51,10 +62,20 @@
     <template #collaborators>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/adrien-holvoet-6a5130172/" target="_blank" class="link">Adrien Holvoet</a>
+          <a
+            href="https://www.linkedin.com/in/adrien-holvoet-6a5130172/"
+            target="_blank"
+            class="link"
+            >Adrien Holvoet</a
+          >
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/alexyledain/" target="_blank" class="link">Alexy Ledain</a>
+          <a
+            href="https://www.linkedin.com/in/alexyledain/"
+            target="_blank"
+            class="link"
+            >Alexy Ledain</a
+          >
         </li>
       </ul>
     </template>
@@ -64,7 +85,6 @@
       <custom-icon icon="tools/figma" size="25" tooltip="Figma" />
       <custom-icon icon="tools/flutter" size="25" tooltip="Flutter" />
       <custom-icon icon="tools/azure" size="25" tooltip="Azure" />
-
     </template>
     <template #links>
       <ul>
@@ -77,7 +97,10 @@
           >
         </li>
         <li>
-          <p>Unfortunately <span class="link">ocee.fr</span> is no longer in production today.</p>
+          <p>
+            Unfortunately <span class="link">ocee.fr</span> is no longer in
+            production today.
+          </p>
         </li>
       </ul>
     </template>
@@ -102,7 +125,7 @@ export default {
   width: 500px;
   height: 280px;
 
-  @media (max-width: 600px) {
+  @media (max-width: $breakpoint-medium) {
     width: 300px;
     height: 170px;
   }

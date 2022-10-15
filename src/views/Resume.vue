@@ -1,9 +1,9 @@
 <template>
   <custom-content title="Resume" icon="emojis/paper" class="resume">
-    <h4>Fullstack Developer / Front & Mobile Adept</h4>
+    <h2>Fullstack Developer / Front & Mobile Adept</h2>
     <div class="divider no-gutters"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/briefcase" size="30" />
+      <custom-icon :square="true" icon="emojis/briefcase" size="30" />
       <h2>Work Experience</h2>
     </div>
 
@@ -25,85 +25,100 @@
         <p class="date">June 2020 - Present • Lille, France</p>
         <h4>Fulltime Collaborator</h4>
         <ul>
-          <li>Worked on a cashing application for a big French sports store</li>
-          <div class="tools">
-            <custom-icon icon="tools/flutter" size="18" tooltip="Flutter" />
-            <custom-icon icon="tools/firebase" size="18" tooltip="Firebase" />
-            <custom-icon icon="tools/figma" size="18" tooltip="Figma" />
-            <custom-icon icon="tools/bitrise" size="18" tooltip="Bitrise" />
-          </div>
+          <li>
+            Worked on a cashing application for a big French sports store
+            <div class="tools">
+              <custom-icon icon="tools/flutter" size="18" tooltip="Flutter" />
+              <custom-icon icon="tools/firebase" size="18" tooltip="Firebase" />
+              <custom-icon icon="tools/figma" size="18" tooltip="Figma" />
+              <custom-icon icon="tools/bitrise" size="18" tooltip="Bitrise" />
+            </div>
+          </li>
         </ul>
         <h4>Internship</h4>
         <ul>
           <li>
             Collaborated on a computer software that helps employees quickly
             transcribe the content of subscription documents
+
+            <div class="tools">
+              <custom-icon
+                icon="tools/dotnet"
+                size="18"
+                tooltip=".NETCore WPF"
+              />
+            </div>
           </li>
-          <div class="tools">
-            <custom-icon icon="tools/dotnet" size="18" tooltip=".NETCore WPF" />
-          </div>
           <li>
             Participated to the development of a web application that allows to
             find the best internet provider and offer for a given address
+
+            <div class="tools">
+              <custom-icon
+                icon="tools/nodejs"
+                size="18"
+                tooltip="NodeJS / ExpressJS"
+              />
+              <custom-icon icon="tools/angular" size="18" tooltip="Angular" />
+              <custom-icon
+                icon="tools/postgres"
+                size="18"
+                tooltip="PostgreSQL"
+              />
+            </div>
           </li>
-          <div class="tools">
-            <custom-icon
-              icon="tools/nodejs"
-              size="18"
-              tooltip="NodeJS / ExpressJS"
-            />
-            <custom-icon icon="tools/angular" size="18" tooltip="Angular" />
-            <custom-icon icon="tools/postgres" size="18" tooltip="PostgreSQL" />
-          </div>
           <li>
             Invested in the development of a web application that monitors the
             health of any website or service
+
+            <div class="tools">
+              <custom-icon
+                icon="tools/nodejs"
+                size="18"
+                tooltip="NodeJS / ExpressJS"
+              />
+              <custom-icon icon="tools/vuejs" size="18" tooltip="VueJS" />
+              <custom-icon icon="tools/mongodb" size="18" tooltip="MongoDB" />
+              <custom-icon
+                icon="tools/docker"
+                size="18"
+                tooltip="Docker / Compose"
+              />
+              <custom-icon icon="tools/rabbitmq" size="18" tooltip="RabbitMQ" />
+              <custom-icon
+                icon="tools/microservices"
+                size="18"
+                tooltip="Microservices"
+              />
+            </div>
           </li>
-          <div class="tools">
-            <custom-icon
-              icon="tools/nodejs"
-              size="18"
-              tooltip="NodeJS / ExpressJS"
-            />
-            <custom-icon icon="tools/vuejs" size="18" tooltip="VueJS" />
-            <custom-icon icon="tools/mongodb" size="18" tooltip="MongoDB" />
-            <custom-icon
-              icon="tools/docker"
-              size="18"
-              tooltip="Docker / Compose"
-            />
-            <custom-icon icon="tools/rabbitmq" size="18" tooltip="RabbitMQ" />
-            <custom-icon
-              icon="tools/microservices"
-              size="18"
-              tooltip="Microservices"
-            />
-          </div>
           <li>
             Created a connector between an ATS (Applicant Tracking System) and a
             recruitment platform to spread job offers on multiple platforms
+
+            <div class="tools">
+              <custom-icon icon="tools/dotnet" size="18" tooltip=".NET Core" />
+              <custom-icon icon="tools/docker" size="18" tooltip="Docker" />
+            </div>
           </li>
-          <div class="tools">
-            <custom-icon icon="tools/dotnet" size="18" tooltip=".NET Core" />
-            <custom-icon icon="tools/docker" size="18" tooltip="Docker" />
-          </div>
         </ul>
         <h4>Traineeship</h4>
         <ul>
           <li>
             Collaborated to a mobile application to help elders to keep contact
             with their families during Covid-19
+
+            <div class="tools">
+              <custom-icon
+                icon="tools/android"
+                size="16"
+                tooltip="Android Java"
+              />
+              <custom-icon icon="tools/nodejs" size="18" tooltip="ExpressJS" />
+              <custom-icon icon="tools/mongodb" size="18" tooltip="MongoDB" />
+              <custom-icon icon="tools/vuejs" size="18" tooltip="VueJS" />
+            </div>
           </li>
-          <div class="tools">
-            <custom-icon
-              icon="tools/android"
-              size="16"
-              tooltip="Android Java"
-            />
-            <custom-icon icon="tools/nodejs" size="18" tooltip="ExpressJS" />
-            <custom-icon icon="tools/mongodb" size="18" tooltip="MongoDB" />
-            <custom-icon icon="tools/vuejs" size="18" tooltip="VueJS" />
-          </div>
         </ul>
       </div>
     </div>
@@ -125,10 +140,17 @@
         <p class="date">June 2019 - August 2019 • Loon-Plage, France</p>
         <h4>Temp Worker</h4>
         <ul>
-          <li>Managed fruits containers in a warehouse with a pallet truck</li>
-          <div class="tools">
-            <custom-icon icon="emojis/gear" size="18" tooltip="CACES 1,3,5" />
-          </div>
+          <li>
+            Managed fruits containers in a warehouse with a pallet truck
+            <div class="tools">
+              <custom-icon
+                :square="true"
+                icon="emojis/gear"
+                size="18"
+                tooltip="CACES 1,3,5"
+              />
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -160,7 +182,7 @@
 
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/cap" size="30" />
+      <custom-icon :square="true" icon="emojis/cap" size="30" />
       <h2>Education</h2>
     </div>
     <div class="resume--area">
@@ -219,7 +241,7 @@
     </div>
     <div class="resume--area">
       <div class="logo">
-        <custom-icon icon="emojis/school" size="100" />
+        <custom-icon :square="true" icon="emojis/school" size="100" />
       </div>
       <div class="history">
         <h3>
@@ -237,7 +259,12 @@
         <ul>
           <li>
             Obtained a 20/20 mark in mathematics
-            <custom-icon icon="emojis/muscle" size="15" tooltip="So easy" />
+            <custom-icon
+              :square="true"
+              icon="emojis/muscle"
+              size="15"
+              tooltip="So easy"
+            />
           </li>
           <li>Obtained a 18/20 mark in physics and chemistry</li>
         </ul>
@@ -246,7 +273,7 @@
 
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/page" size="30" />
+      <custom-icon :square="true" icon="emojis/page" size="30" />
       <h2>Certifications</h2>
     </div>
 
@@ -270,7 +297,7 @@
     </div>
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/muscle" size="30" />
+      <custom-icon :square="true" icon="emojis/muscle" size="30" />
       <h2>Arsenal</h2>
     </div>
 
@@ -313,7 +340,7 @@ h4 {
   gap: 40px;
   margin: 20px 0;
 
-  @media (max-width: 600px) {
+  @media (max-width: $breakpoint-medium) {
     flex-direction: column;
     gap: 0px;
   }
@@ -324,7 +351,7 @@ h4 {
     align-items: center;
     margin-top: 10px;
 
-    @media (max-width: 600px) {
+    @media (max-width: $breakpoint-medium) {
       margin-top: 30px;
     }
   }
@@ -334,7 +361,7 @@ h4 {
       font-weight: 700;
       margin-top: 0;
       margin-bottom: 0;
-      @media (max-width: 600px) {
+      @media (max-width: $breakpoint-medium) {
         font-weight: 900;
       }
     }

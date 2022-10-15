@@ -1,8 +1,9 @@
 <template>
   <div class="iconitem">
-    <custom-icon class="icon" :icon="icon" /><span class="name">{{
-      name
-    }}</span>
+    <custom-icon class="icon" :icon="icon" :size="size" :square="true" /><span
+      class="name"
+      >{{ name }}</span
+    >
   </div>
 </template>
 
@@ -13,6 +14,7 @@ export default {
   props: {
     icon: String,
     name: String,
+    size: String,
   },
   components: {
     CustomIcon,
@@ -21,9 +23,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.margined {
-  margin: 10px;
-}
 .icon {
   margin-right: 3px;
   height: 30px;

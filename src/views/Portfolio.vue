@@ -2,7 +2,7 @@
   <custom-content title="Portfolio" icon="emojis/rocket">
     <div class="head-infos">
       <div class="message">
-        <h3>Check out my works</h3>
+        <h2>Check out my works</h2>
         <p>Take a look on some projects I have been involved in.</p>
         <p>
           Only personal projects are displayed. Some professional projects are
@@ -86,6 +86,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .head-infos {
   display: flex;
   margin-bottom: 40px;
@@ -111,7 +112,7 @@ export default {
   margin-top: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $breakpoint-medium) {
   .head-infos {
     flex-direction: column;
     .illustration-precious {

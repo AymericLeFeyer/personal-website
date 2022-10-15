@@ -8,8 +8,8 @@
       />
       <div class="actions">
         <div class="title">
-          <h3>Keep in touch</h3>
-          <custom-icon icon="emojis/down" size="25" />
+          <h2>Keep in touch</h2>
+          <custom-icon :square="true" icon="emojis/down" size="25" />
         </div>
         <div class="networks">
           <callout
@@ -62,6 +62,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .head-infos {
   display: flex;
   margin-bottom: 40px;
@@ -93,7 +94,7 @@ export default {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $breakpoint-medium) {
   .head-infos {
     flex-direction: column;
     align-items: center;

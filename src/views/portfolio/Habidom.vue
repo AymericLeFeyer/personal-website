@@ -5,9 +5,13 @@
     icon="projects/habidom"
     :showCollaborators="true"
   >
-  <template #result>
-    <img src="@/assets/portfolio/habidom.png" class="portfolio-image"/>
-  </template>
+    <template #result>
+      <img
+        src="@/assets/portfolio/details/habidom.png"
+        class="portfolio-image"
+        alt="screenshot of the website habidom.fr"
+      />
+    </template>
     <template #overview>
       <ul>
         <li>
@@ -54,12 +58,21 @@
     <template #collaborators>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/yann-delbecque-372032162/" target="_blank" class="link">Yann Delbecque</a>
+          <a
+            href="https://www.linkedin.com/in/yann-delbecque-372032162/"
+            target="_blank"
+            class="link"
+            >Yann Delbecque</a
+          >
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/clement-verdois-010a551bb/" target="_blank" class="link">Clément Verdois</a>
+          <a
+            href="https://www.linkedin.com/in/clement-verdois-010a551bb/"
+            target="_blank"
+            class="link"
+            >Clément Verdois</a
+          >
         </li>
-       
       </ul>
     </template>
     <template #tools>

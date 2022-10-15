@@ -5,9 +5,13 @@
     icon="projects/caroline-optique"
     :showCollaborators="false"
   >
-  <template #result>
-    <img src="@/assets/portfolio/caroline-optique.png" class="portfolio-image"/>
-  </template>
+    <template #result>
+      <img
+        src="@/assets/portfolio/details/caroline-optique.png"
+        class="portfolio-image"
+        alt="screenshot of the website caroline-optique.fr"
+      />
+    </template>
     <template #overview>
       <ul>
         <li>
@@ -79,7 +83,6 @@ export default {
 
   @media screen and (max-width: 400px) {
     margin-top: 50px;
-    
   }
 }
 </style>

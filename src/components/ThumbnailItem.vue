@@ -2,7 +2,7 @@
   <router-link :to="path">
     <div class="thumbnail">
       <div class="image">
-        <img :src="imagePath" />
+        <img :src="imagePath" :alt="alt" />
       </div>
       <div class="title">
         <custom-icon :icon="icon" size="20" />
@@ -39,6 +39,9 @@ export default {
   computed: {
     imagePath() {
       return require(`@/assets/portfolio/${this.image}`);
+    },
+    alt() {
+      return `Image project for ${this.title}`;
     },
   },
 };

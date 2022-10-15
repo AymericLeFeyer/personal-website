@@ -29,7 +29,7 @@
     </div>
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/rocket" size="30" />
+      <custom-icon :square="true" icon="emojis/rocket" size="30" />
       <h2>2022 - What's up this year ?</h2>
     </div>
     <ul>
@@ -117,7 +117,7 @@
 
     <div class="divider"></div>
     <div class="section-title">
-      <custom-icon icon="emojis/down" size="30" />
+      <custom-icon :square="true" icon="emojis/down" size="30" />
       <h2>Previous years</h2>
     </div>
     <h3>2021</h3>
@@ -161,6 +161,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .intro {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -178,7 +179,8 @@ li {
 
 .caption {
   font-style: italic;
-  color: gray;
+  color: var(--link-color);
+  margin-bottom: 10px;
 }
 
 .author {
@@ -191,7 +193,7 @@ li {
   max-width: 40%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $breakpoint-medium) {
   .intro {
     display: block;
 
@@ -206,7 +208,7 @@ li {
   }
 }
 
-@media (max-width: 915px) {
+@media (max-width: $breakpoint-large) {
   li {
     margin-left: 25px;
   }

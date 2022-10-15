@@ -41,7 +41,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .breadcrumb {
+  background-color: var(--background-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -55,14 +57,8 @@ export default {
 .breadcrumb__item {
   display: flex;
   align-items: center;
-}
 
-.separator {
-  margin-top: 3px;
-}
-
-@media (max-width: 600px) {
-  .breadcrumb__item {
+  @media (max-width: $breakpoint-medium) {
     .pagelink {
       div {
         a {
@@ -71,5 +67,9 @@ export default {
       }
     }
   }
+}
+
+.separator {
+  margin-top: 3px;
 }
 </style>

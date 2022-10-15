@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <p>Homemade with</p>
-    <custom-icon icon="emojis/aymeric-heart" size="30" />
+    <custom-icon :square="true" icon="emojis/aymeric-heart" size="30" />
   </div>
 </template>
 
