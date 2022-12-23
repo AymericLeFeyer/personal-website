@@ -2,7 +2,7 @@
 
 The website is available at [aymeric.lefeyer.fr](https://aymeric.lefeyer.fr)
 
-![de](src/assets/illustrations/love.png)
+![illustration of a boy making an heart with his hands](src/assets/illustrations/love.png)
 
 # Context
 
