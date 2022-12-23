@@ -17,6 +17,12 @@
     </div>
     <div class="projects">
       <thumbnail-item
+        icon="projects/concept-beaute"
+        title="Concept Beauté"
+        image="concept-beaute.png"
+        path="/portfolio/concept-beaute"
+      />
+      <thumbnail-item
         icon="projects/personal-website"
         title="Personal Website"
         image="personal-website.png"
