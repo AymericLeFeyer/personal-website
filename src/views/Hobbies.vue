@@ -157,8 +157,26 @@
         class="link"
         target="_blank"
         >collection and wishlist</a
-      >. My top 3 games are :
+      >. My top games are :
     </p>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/swords" size="20" />
+      <a
+        href="https://boardgamegeek.com/boardgame/68448/7-wonders"
+        target="_blank"
+        class="link"
+        >7 Wonders Duel</a
+      >
+    </div>
+    <div class="game-item">
+      <custom-icon :square="true" icon="emojis/gem" size="20" />
+      <a
+        href="https://boardgamegeek.com/boardgame/293296/splendor-marvel"
+        target="_blank"
+        class="link"
+        >Splendor Marvel</a
+      >
+    </div>
     <div class="game-item">
       <custom-icon :square="true" icon="emojis/rocket" size="20" />
       <a
