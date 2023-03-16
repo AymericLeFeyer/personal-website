@@ -30,10 +30,56 @@
     <div class="divider"></div>
     <div class="section-title">
       <custom-icon :square="true" icon="emojis/rocket" size="30" />
-      <h2>2022 - What's up this year ?</h2>
+      <h2>2023 - What's up this year ?</h2>
     </div>
     <ul>
       <li>
+        🤝 Still with
+        <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>, I
+        started giving technical interviews to candidates, and I'm in charge of
+        my first intern.
+      </li>
+      <li>
+        🗣️ I organized a new
+        <a
+          href="https://fellow.app/blog/meetings/brown-bag-meeting-what-it-is-and-how-it-benefits-your-team/"
+          target="_blank"
+          class="link"
+          >BBL</a
+        >
+        within
+        <a class="link" href="https://www.pit.fr" target="_blank">Pit</a> on the
+        theme of
+        <a class="link" href="https://www.notion.so" target="_blank">Notion</a>.
+        This time, the invitations were open to external.
+      </li>
+      <!-- <li>🇹🇳 I visited Hammamet for the first time.</li> -->
+      <!--<li>
+        🧑‍🏫 I attended to the
+        <a href="https://devfest.gdglille.org/" target="_blank" class="link"
+          >Devfest LILLE</a
+        >
+        with <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>.
+        this year again. The week after the event, I attented to the
+        <a href="https://flutterconnection.io/" target="_blank" class="link"
+          >Flutter Connection</a
+        >, a conference based on
+        <a href="https://flutter.dev/" target="_blank" class="link">Flutter</a>,
+        a cross-platform mobile development framework.
+      </li>-->
+    </ul>
+
+    <p class="caption">Last updated on Mars 2023</p>
+
+    <div class="divider"></div>
+    <div class="section-title">
+      <custom-icon :square="true" icon="emojis/down" size="30" />
+      <h2>Previous years</h2>
+    </div>
+    <h3>2022</h3>
+    <ul>
+      <li>
+        🗣️
         <a class="link" href="https://www.pit.fr" target="_blank">Pit</a> gave
         me the opportunity to present my first
         <a
@@ -51,7 +97,7 @@
         front of an audience.
       </li>
       <li>
-        I discovered
+        🧑‍💻 I discovered
         <a href="https://threejs.org/" target="_blank" class="link">Three.JS</a
         >, a 3D modelisation javascript library. I started to follow the
         <a href="https://threejs-journey.com/" target="_blank" class="link"
@@ -61,8 +107,10 @@
           >Bruno Simon</a
         >.
       </li>
+      <li>🇧🇪 I visited Bruxelles for the first time.</li>
+      <li>🇫🇷 I visited Paris for the first time.</li>
       <li>
-        Because I liked the first
+        🗣️ Because I liked the first
         <a
           href="https://fellow.app/blog/meetings/brown-bag-meeting-what-it-is-and-how-it-benefits-your-team/"
           target="_blank"
@@ -80,7 +128,7 @@
         good talk.
       </li>
       <li>
-        I attended to the
+        🧑‍🏫 I attended to the
         <a href="https://devfest.gdglille.org/" target="_blank" class="link"
           >Devfest LILLE</a
         >
@@ -89,14 +137,14 @@
         technologies, and to meet a lot of people from the community.
       </li>
       <li>
-        I obtained my master's degree in computer science at
+        🎓 I obtained my master's degree in computer science at
         <a href="https://www.univ-lille.fr/" target="_blank" class="link"
           >Université de Lille</a
         >. I'm so happy to have finished this long journey, and I'm proud of
         myself.
       </li>
       <li>
-        I created my first
+        ✏️ I created my first
         <a href="http://blog.aymeric.lefeyer.fr/" target="_blank" class="link"
           >blog</a
         >
@@ -105,25 +153,27 @@
         <a href="https://notion.so" class="link" target="_blank">Notion</a> to
         have a nice design and to facilitate the writing and the maintenance.
       </li>
+      <li>🇪🇸 I visited Mallorca for the first time.</li>
       <li>
-        I started a permanent contract at
+        🎓 I followed a training on
+        <a class="link" href="https://kubernetes.io/fr/" target="_blank"
+          >Kubernetes</a
+        >
+        within
+        <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>.
+      </li>
+      <li>
+        📄 I started a permanent contract at
         <a class="link" href="https://www.pit.fr" target="_blank">Pit</a> as a
         fullstack developer. I'm so happy to be part of this company, and I'm
         looking forward to working with them as long as possible.
       </li>
     </ul>
-
-    <p class="caption">Last updated on October 2022</p>
-
-    <div class="divider"></div>
-    <div class="section-title">
-      <custom-icon :square="true" icon="emojis/down" size="30" />
-      <h2>Previous years</h2>
-    </div>
     <h3>2021</h3>
     <ul>
+      <li>🇳🇱 I visited Amsterdam for the first time.</li>
       <li>
-        I started my journey as a
+        💸 I started my journey as a
         <a
           href="https://www.societe.com/societe/monsieur-aymeric-le-feyer-901600254.html"
           >freelancer</a
@@ -132,7 +182,7 @@
         business. I worked on mobile projects during my free time.
       </li>
       <li>
-        I get my first certification in computer sciences :
+        🎓 I get my first certification in computer sciences :
         <a
           href="https://learn.microsoft.com/fr-fr/certifications/exams/az-900"
           target="_blank"
