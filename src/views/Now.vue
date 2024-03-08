@@ -30,8 +30,33 @@
     <div class="divider"></div>
     <div class="section-title">
       <custom-icon :square="true" icon="emojis/rocket" size="30" />
-      <h2>2023 - What's up this year ?</h2>
+      <h2>2024 - What's up this year ?</h2>
     </div>
+
+    <ul>
+      <li>
+        🎙️ I'm now in charge of the meetups inside
+        <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>.
+      </li>
+      <!-- <li>🇷🇪 I visited La Réunion for the first time.</li> -->
+      <!-- <li>
+        🧑‍🏫 I attended to the
+        <a href="https://devfest.gdglille.org/" target="_blank" class="link"
+          >Devfest LILLE</a
+        >
+        with <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>.
+        this year again.
+      </li> -->
+    </ul>
+
+    <p class="caption">Last updated on March 2024</p>
+
+    <div class="divider"></div>
+    <div class="section-title">
+      <custom-icon :square="true" icon="emojis/down" size="30" />
+      <h2>Previous years</h2>
+    </div>
+    <h3>2023</h3>
     <ul>
       <li>
         🤝 Still with
@@ -53,8 +78,21 @@
         <a class="link" href="https://www.notion.so" target="_blank">Notion</a>.
         This time, the invitations were open to external.
       </li>
-      <!-- <li>🇹🇳 I visited Hammamet for the first time.</li> -->
-      <!--<li>
+      <li>
+        🗣️ Thanks to the popularity of the previous talk, I was contacted by
+        <a class="link" href="https://fr.ippon.tech/" target="_blank">Ippon</a>
+        to make the
+        <a class="link" href="https://www.notion.so" target="_blank">Notion</a>
+        talk in their agency. It was the very first time I talked in front of
+        ~30 unknown people. The replay is available on
+        <a
+          target="_blank"
+          href="https://www.youtube.com/watch?v=9wrsKP8_G88&list=PLDDkw4lJz2_lRZJtfPsGPTKsvcPl2HvwV&index=1"
+          >their Youtube channel</a
+        >.
+      </li>
+      <li>🇹🇳 I visited Hammamet for the first time.</li>
+      <li>
         🧑‍🏫 I attended to the
         <a href="https://devfest.gdglille.org/" target="_blank" class="link"
           >Devfest LILLE</a
@@ -66,16 +104,29 @@
         >, a conference based on
         <a href="https://flutter.dev/" target="_blank" class="link">Flutter</a>,
         a cross-platform mobile development framework.
-      </li>-->
+      </li>
+      <li>🏠 I bought my first house with my wife.</li>
+      <li>
+        🗣️ I organized a new
+        <a
+          href="https://fellow.app/blog/meetings/brown-bag-meeting-what-it-is-and-how-it-benefits-your-team/"
+          target="_blank"
+          class="link"
+          >BBL</a
+        >
+        within
+        <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>
+        on
+        <a class="link" href="https://flutter.dev/" target="_blank">Flutter</a>.
+      </li>
+      <li>
+        🧑‍💻 I get a role of CTO in
+        <a class="link" href="https://www.pit.fr" target="_blank">Pit</a> with
+        two others colleagues. We're making the circle of CTO's. We are in
+        charge of the technical choices, and the technical strategy of the
+        company.
+      </li>
     </ul>
-
-    <p class="caption">Last updated on Mars 2023</p>
-
-    <div class="divider"></div>
-    <div class="section-title">
-      <custom-icon :square="true" icon="emojis/down" size="30" />
-      <h2>Previous years</h2>
-    </div>
     <h3>2022</h3>
     <ul>
       <li>
@@ -161,6 +212,11 @@
         >
         within
         <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>.
+      </li>
+      <li>
+        I started working at
+        <a class="link" href="https://www.decathlon.fr">Decathlon</a> as a
+        Mobile Software Engineer
       </li>
       <li>
         📄 I started a permanent contract at
