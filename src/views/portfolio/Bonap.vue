@@ -55,7 +55,7 @@
     </template>
     <template #date>
       <ul>
-        <li>September 2019 - May 2020</li>
+        <p>September 2019 - May 2020</p>
       </ul>
     </template>
     <template #collaborators>

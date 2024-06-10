@@ -56,7 +56,7 @@
     </template>
     <template #date>
       <ul>
-        <li>September 2021 - December 2021</li>
+        <p>September 2021 - December 2021</p>
       </ul>
     </template>
     <template #collaborators>

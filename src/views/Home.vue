@@ -41,9 +41,9 @@
         class="home__item"
       />
       <page-link
-        href="http://blog.aymeric.lefeyer.fr/"
-        icon="emojis/pencil"
-        name="Blog"
+        route="/talks"
+        icon="emojis/mic"
+        name="Talks"
         class="home__item"
       />
       <page-link

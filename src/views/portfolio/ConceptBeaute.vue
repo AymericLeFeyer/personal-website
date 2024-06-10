@@ -43,12 +43,12 @@
     </template>
     <template #date>
       <ul>
-        <li>November 2022</li>
+        <p>November 2022</p>
       </ul>
     </template>
     <template #organization>
       <ul>
-        <li>Formation Concept Beauté</li>
+        <p>Formation Concept Beauté</p>
       </ul>
     </template>
     <template #tools>

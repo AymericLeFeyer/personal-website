@@ -41,7 +41,7 @@
     </template>
     <template #date>
       <ul>
-        <li>October 2022</li>
+        <p>October 2022</p>
       </ul>
     </template>
     <template #tools>

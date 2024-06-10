@@ -9,9 +9,10 @@
       <custom-icon :square="true" icon="emojis/video-game" size="30" />
       <h2>Video Games</h2>
     </div>
+
     <p>
-      I started playing video games when I was child (sorry for my mom) and I
-      still never stopped. I spent many hours playing on PC via
+      I started playing video games when I was child and I still never stopped.
+      I spent many hours playing on PC via
       <a
         href="https://steamcommunity.com/id/aypics/"
         target="_blank"
@@ -139,6 +140,9 @@
     </div>
     <br />
     <p>Platinum : Get all available achievements for a game, get the 100%.</p>
+    <a href="https://psnprofiles.com/Aypics"
+      ><img src="https://card.psnprofiles.com/2/Aypics.png" border="0"
+    /></a>
     <div class="section-title">
       <custom-icon :square="true" icon="emojis/dice" size="30" />
       <h2>Board Games</h2>
@@ -204,6 +208,16 @@
         >Hanabi</a
       >
     </div>
+    <div class="section-title">
+      <custom-icon :square="true" icon="emojis/plane" size="30" />
+      <h2>Trips</h2>
+    </div>
+    <p>Sometimes I go out and take photos of what I saw.</p>
+    <img
+      src="@/assets/photos/insta.jpg"
+      alt="My Instagram"
+      class="content__image-insta"
+    />
     <div class="section-title">
       <custom-icon :square="true" icon="emojis/house" size="30" />
       <h2>Home Automation</h2>
@@ -337,5 +351,8 @@ export default {
 
 .content__image {
   width: 100%;
+}
+.content__image-insta {
+  width: 50%;
 }
 </style>

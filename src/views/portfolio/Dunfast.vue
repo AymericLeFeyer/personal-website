@@ -36,12 +36,12 @@
     </template>
     <template #date>
       <ul>
-        <li>September 2019</li>
+        <p>September 2019</p>
       </ul>
     </template>
     <template #organization>
       <ul>
-        <li>Dunfresh, Conhexa</li>
+        <p>Dunfresh, Conhexa</p>
       </ul>
     </template>
     <template #tools>

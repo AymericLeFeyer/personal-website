@@ -38,9 +38,9 @@
             url="https://stackoverflow.com/users/12142139/aymeric-le-feyer"
           />
           <callout
-            icon="networks/malt"
-            text="Malt"
-            url="https://www.google.com"
+            icon="networks/dev"
+            text="Dev.to"
+            url="https://dev.to/aymericlefeyer"
           />
         </div>
       </div>

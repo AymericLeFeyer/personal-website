@@ -36,20 +36,24 @@
     </template>
     <template #date>
       <ul>
-        <li>August 2021</li>
+        <p>August 2021</p>
       </ul>
     </template>
     <template #organization>
       <ul>
-        <li>Neo</li>
+        <p>Neo</p>
       </ul>
     </template>
     <template #collaborators>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/vincent-simon-ba128272/" target="_blank" class="link">Vincent Simon</a>
+          <a
+            href="https://www.linkedin.com/in/vincent-simon-ba128272/"
+            target="_blank"
+            class="link"
+            >Vincent Simon</a
+          >
         </li>
-       
       </ul>
     </template>
     <template #tools>
