@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import Now from "../views/Now.vue";
 import Portfolio from "../views/Portfolio.vue";
 import Resume from "../views/Resume.vue";
+import Talks from "../views/Talks.vue";
 import Contact from "../views/Contact.vue";
 import Hobbies from "../views/Hobbies.vue";
 
@@ -47,6 +48,7 @@ const routes = [
   routerItem("/now", "Now", "hand", Now),
   routerItem("/portfolio", "Portfolio", "rocket", Portfolio),
   routerItem("/resume", "Resume", "paper", Resume),
+  routerItem("/talks", "Talks", "mic", Talks),
   routerItem("/hobbies", "Hobbies", "heart", Hobbies),
   routerItem("/contact", "Contact", "call", Contact),
 

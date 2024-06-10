@@ -3,6 +3,25 @@
     <h2>Fullstack Developer / Front & Mobile Adept</h2>
     <div class="divider no-gutters"></div>
     <div class="section-title">
+      <custom-icon :square="true" icon="emojis/muscle" size="30" />
+      <h2>Arsenal</h2>
+    </div>
+
+    <div class="resume--area arsenal">
+      <p class="date">Tools of the trade I am proudly proficient with</p>
+      <div class="tools">
+        <custom-icon icon="tools/flutter" size="60" tooltip="Flutter" />
+        <custom-icon icon="tools/vuejs" size="60" tooltip="VueJS" />
+        <custom-icon icon="tools/nodejs" size="60" tooltip="NodeJS" />
+        <custom-icon icon="tools/firebase" size="60" tooltip="Firebase" />
+        <custom-icon icon="tools/python" size="60" tooltip="Python" />
+        <custom-icon icon="tools/react" size="60" tooltip="ReactJS" />
+        <custom-icon icon="tools/notion" size="60" tooltip="Notion" />
+        <custom-icon icon="tools/figma" size="60" tooltip="Figma" />
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="section-title">
       <custom-icon :square="true" icon="emojis/briefcase" size="30" />
       <h2>Work Experience</h2>
     </div>
@@ -293,25 +312,6 @@
           >
         </h3>
         <p class="date">August 2021</p>
-      </div>
-    </div>
-    <div class="divider"></div>
-    <div class="section-title">
-      <custom-icon :square="true" icon="emojis/muscle" size="30" />
-      <h2>Arsenal</h2>
-    </div>
-
-    <div class="resume--area arsenal">
-      <p class="date">Tools of the trade I am proudly proficient with</p>
-      <div class="tools">
-        <custom-icon icon="tools/flutter" size="60" tooltip="Flutter" />
-        <custom-icon icon="tools/vuejs" size="60" tooltip="VueJS" />
-        <custom-icon icon="tools/nodejs" size="60" tooltip="NodeJS" />
-        <custom-icon icon="tools/firebase" size="60" tooltip="Firebase" />
-        <custom-icon icon="tools/python" size="60" tooltip="Python" />
-        <custom-icon icon="tools/react" size="60" tooltip="ReactJS" />
-        <custom-icon icon="tools/notion" size="60" tooltip="Notion" />
-        <custom-icon icon="tools/figma" size="60" tooltip="Figma" />
       </div>
     </div>
   </custom-content>

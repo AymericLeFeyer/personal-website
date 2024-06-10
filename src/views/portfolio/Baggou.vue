@@ -55,12 +55,12 @@
     </template>
     <template #date>
       <ul>
-        <li>January 2021 - August 2021</li>
+        <p>January 2021 - August 2021</p>
       </ul>
     </template>
     <template #organization>
       <ul>
-        <li>Baggou</li>
+        <p>Baggou</p>
       </ul>
     </template>
     <template #collaborators>

@@ -47,12 +47,12 @@
     </template>
     <template #date>
       <ul>
-        <li>July 2020</li>
+        <p>July 2020</p>
       </ul>
     </template>
     <template #organization>
       <ul>
-        <li>Habidom</li>
+        <p>Habidom</p>
       </ul>
     </template>
     <template #collaborators>

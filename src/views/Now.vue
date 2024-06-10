@@ -1,11 +1,6 @@
 <template>
   <custom-content title="Now" icon="emojis/hand">
     <div class="intro">
-      <img
-        src="@/assets/photos/selfie.jpg"
-        alt="Photo of myself"
-        class="photo"
-      />
       <div>
         <p>
           Here would be ideal to write something inspiring, which reflects my
@@ -26,6 +21,11 @@
         <br />
         <p class="author">Aymeric Le Feyer</p>
       </div>
+      <img
+        src="@/assets/photos/selfie.png"
+        alt="Photo of myself"
+        class="photo"
+      />
     </div>
     <div class="divider"></div>
     <div class="section-title">
@@ -38,18 +38,18 @@
         🎙️ I'm now in charge of the meetups inside
         <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>.
       </li>
-      <!-- <li>🇷🇪 I visited La Réunion for the first time.</li> -->
-      <!-- <li>
+      <li>🇷🇪 I visited La Réunion for the first time.</li>
+      <li>
         🧑‍🏫 I attended to the
         <a href="https://devfest.gdglille.org/" target="_blank" class="link"
-          >Devfest LILLE</a
+          >Devfest LILLE 2024</a
         >
         with <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>.
         this year again.
-      </li> -->
+      </li>
     </ul>
 
-    <p class="caption">Last updated on March 2024</p>
+    <p class="caption">Last updated on June 2024</p>
 
     <div class="divider"></div>
     <div class="section-title">
@@ -274,7 +274,7 @@ export default {
   display: flex;
   flex: 1 1 0;
   p {
-    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 

@@ -12,32 +12,33 @@
           containers from exotic countries, mainly bananas.
         </li>
         <li>
-          To stop print containers informations on paper, the company asked me to develop a web application that allows employees to see in real time the containers informations.
+          To stop print containers informations on paper, the company asked me
+          to develop a web application that allows employees to see in real time
+          the containers informations.
         </li>
       </ul>
     </template>
     <template #outcome>
       <ul>
         <li>
-          Due to a lack of resources on the part of the company, the project has not been put into production.
+          Due to a lack of resources on the part of the company, the project has
+          not been put into production.
         </li>
       </ul>
     </template>
     <template #role>
       <ul>
-        <li>
-          I was in charge of the development of the web application.
-        </li>
+        <li>I was in charge of the development of the web application.</li>
       </ul>
     </template>
     <template #date>
       <ul>
-        <li>January 2020 - April 2020</li>
+        <p>January 2020 - April 2020</p>
       </ul>
     </template>
     <template #organization>
       <ul>
-        <li>Dunfresh, Conhexa</li>
+        <p>Dunfresh, Conhexa</p>
       </ul>
     </template>
     <template #tools>
