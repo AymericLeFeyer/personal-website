@@ -37,6 +37,15 @@ h2, h3, h4 {
   width: 100%;
 }
 
+.small-divider {
+  height: 1px;
+  background-color: var(--secondary-color);
+  width: 50%;
+  margin-top: 16px !important;
+  // Center
+  margin: 0 auto;
+}
+
 
 .link {
   text-decoration: underline;
