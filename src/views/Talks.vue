@@ -7,6 +7,17 @@
           It's the story of a shy guy who likes to speak in front of an audience
           to present things ...
         </p>
+        <br />
+        <p>In addition to talks, I also make videos on YouTube.</p><p>
+          ➡️ You can find all my videos on my
+          <a
+            class="link"
+            href="https://www.youtube.com/channel/UClCAe7FyrIwpkt9H56XRndA"
+            target="_blank"
+            >YouTube channel</a
+          >
+          (in French)
+        </p>
       </div>
       <img
         src="@/assets/illustrations/shy.png"
@@ -37,6 +48,8 @@
       class="talk__picture"
     />
 
+    <div class="small-divider"></div>
+
     <h3>📝 Notion</h3>
     <i>March 2023</i>
     <p>
@@ -65,6 +78,8 @@
       />
     </div>
 
+    <div class="small-divider"></div>
+
     <h3>🧑‍💻 Github Copilot</h3>
     <i>June 2022</i>
     <p>
@@ -79,6 +94,8 @@
       alt="Github Copilot talk, Aymeric presenting Github Copilot"
       class="talk__picture"
     />
+
+    <div class="small-divider"></div>
 
     <h3>💬 Message Queuing</h3>
     <i>February 2022</i>
