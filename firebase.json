@@ -7,6 +7,13 @@
         "destination": "/index.html"
       }
     ],
+    "redirects": [
+      {
+        "source": "/youtube",
+        "destination": "https://www.youtube.com/channel/UClCAe7FyrIwpkt9H56XRndA",
+        "type": 301
+      }
+    ],
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }
