@@ -12,6 +12,52 @@
         "source": "/youtube",
         "destination": "https://www.youtube.com/channel/UClCAe7FyrIwpkt9H56XRndA",
         "type": 301
+      },
+      {
+        "source": "/stack-overflow",
+        "destination": "https://stackoverflow.com/users/12142139/aymeric-le-feyer",
+        "type": 301
+      },
+      {
+        "source": "/linkedin",
+        "destination": "https://www.linkedin.com/in/aymericlefeyer/",
+        "type": 301
+      },
+      {
+        "source": "/github",
+        "destination": "https://github.com/AymericLeFeyer",
+        "type": 301
+      },
+      {
+        "source": "/instagram",
+        "destination": "https://www.instagram.com/aymeric.lefeyer",
+        "type": 301
+      },
+      {
+        "source": "/instagram-travels",
+        "destination": "https://www.instagram.com/aymeric.travels",
+        "type": 301
+      },
+      {
+        "source": "/blog",
+        "destination": "https://dev.to/aymericlefeyer",
+        "type": 301
+      },
+      {
+        "source": "/daily-dev",
+        "destination": "https://app.daily.dev/aymericlefeyer",
+        "type": 301
+      },
+
+      {
+        "source": "/get-daily-dev",
+        "destination": "https://dly.to/NhrWVhEG1Qi",
+        "type": 301
+      },
+      {
+        "source": "/get-arc",
+        "destination": "https://arc.net/gift/344cd956",
+        "type": 301
       }
     ],
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]

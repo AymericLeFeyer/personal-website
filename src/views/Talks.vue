@@ -13,7 +13,7 @@
           ➡️ You can find all my videos on my
           <a
             class="link"
-            href="https://www.youtube.com/channel/UClCAe7FyrIwpkt9H56XRndA"
+            href="https://aymeric.lefeyer.fr/youtube"
             target="_blank"
             >YouTube channel</a
           >

@@ -25,22 +25,22 @@
           <callout
             icon="networks/linkedin"
             text="LinkedIn"
-            url="https://www.linkedin.com/in/aymericlefeyer/"
+            url="https://aymeric.lefeyer.fr/linkedin"
           />
           <callout
             icon="networks/github"
             text="Github"
-            url="https://github.com/AymericLeFeyer"
+            url="https://aymeric.lefeyer.fr/github"
           />
           <callout
             icon="networks/stack"
             text="StackOverflow"
-            url="https://stackoverflow.com/users/12142139/aymeric-le-feyer"
+            url="https://aymeric.lefeyer.fr/stack-overflow"
           />
           <callout
             icon="networks/dev"
             text="Dev.to"
-            url="https://dev.to/aymericlefeyer"
+            url="https://aymeric.lefeyer.fr/blog"
           />
         </div>
       </div>
