@@ -5,6 +5,10 @@
       {
         "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/youtube",
+        "destination": "https://www.youtube.com/channel/UClCAe7FyrIwpkt9H56XRndA"
       }
     ],
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
