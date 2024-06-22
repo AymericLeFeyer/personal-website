@@ -8,7 +8,8 @@
           to present things ...
         </p>
         <br />
-        <p>In addition to talks, I also make videos on YouTube.</p><p>
+        <p>In addition to talks, I also make videos on YouTube.</p>
+        <p>
           ➡️ You can find all my videos on my
           <a
             class="link"
