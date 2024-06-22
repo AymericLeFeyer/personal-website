@@ -3,10 +3,6 @@
     "public": "dist",
     "rewrites": [
       {
-        "source": "/youtube",
-        "destination": "https://www.youtube.com/channel/UClCAe7FyrIwpkt9H56XRndA"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }
