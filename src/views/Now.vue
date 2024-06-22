@@ -35,6 +35,17 @@
 
     <ul>
       <li>
+        🎥 I've started a
+        <a
+          class="link"
+          href="https://aymeric.lefeyer.fr/youtube"
+          target="_blank"
+          >YouTube channel</a
+        >
+        on which I share the things I love related to IT (productivity, tech,
+        dev).
+      </li>
+      <li>
         🎙️ I'm now in charge of the meetups inside
         <a class="link" href="https://www.pit.fr" target="_blank">Pit</a>.
       </li>

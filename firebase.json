@@ -3,12 +3,12 @@
     "public": "dist",
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
-      },
-      {
         "source": "/youtube",
         "destination": "https://www.youtube.com/channel/UClCAe7FyrIwpkt9H56XRndA"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
     ],
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
