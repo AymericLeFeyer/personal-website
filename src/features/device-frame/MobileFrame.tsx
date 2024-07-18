@@ -12,7 +12,7 @@ export const MobileFrame = (props: MobileFrameProps) => {
         height: "100vh",
       }}
     >
-      <div>{props.children}</div>
+      {props.children}
     </div>
   );
 };

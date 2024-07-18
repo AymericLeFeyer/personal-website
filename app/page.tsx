@@ -1,6 +1,8 @@
 import { AppFolder } from "@/src/features/apps/AppFolder";
 import { AppIcon, PictureIcon } from "@/src/features/apps/AppIcon";
+import { AppShortcuts } from "@/src/features/apps/AppShortcuts";
 import { MobileFrame } from "@/src/features/device-frame/MobileFrame";
+import { Search } from "@/src/features/search/Search";
 
 export default function Home() {
   const appTileWidth = 80;
@@ -9,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <MobileFrame width={appTileWidth * 8}>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 flex-grow">
           <div className="flex gap-4">
             <PictureIcon
               name="Aymeric"
@@ -189,6 +191,36 @@ export default function Home() {
             />
           </div>
         </div>
+        <Search />
+        <AppShortcuts
+          size={appTileWidth}
+          apps={[
+            {
+              name: "",
+              image: "/logos/baraque.png",
+              backgroundColor: "#FA23E1",
+              link: "Test",
+            },
+            {
+              name: "",
+              image: "/emojis/game-die.png",
+              backgroundColor: "#FA23E1",
+              link: "Test",
+            },
+            {
+              name: "",
+              image: "/emojis/airplane.png",
+              backgroundColor: "#FA23E1",
+              link: "Test",
+            },
+            {
+              name: "",
+              image: "/emojis/airplane.png",
+              backgroundColor: "#FA23E1",
+              link: "Test",
+            },
+          ]}
+        />
       </MobileFrame>
     </main>
   );
