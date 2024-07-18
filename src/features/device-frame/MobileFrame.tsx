@@ -7,7 +7,10 @@ export type MobileFrameProps = PropsWithChildren<{
 export const MobileFrame = (props: MobileFrameProps) => {
   return (
     <div
-      className={`h-[800px] w-[${props.width}px] bg-gray-200 pt-4 flex flex-col gap-2 items-center`}
+      className={` bg-gray-200 pt-4 flex flex-col gap-2 items-center`}
+      style={{
+        height: "100vh",
+      }}
     >
       <div>{props.children}</div>
     </div>

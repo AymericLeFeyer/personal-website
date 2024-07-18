@@ -30,7 +30,7 @@ export const AppIcon = (props: AppIconProps) => {
       <Link href={props.link}>
         <Tilt
           options={defaultOptions}
-          className={cn(`bg-gray-100`, "p-4 rounded-xl shadow-md")}
+          className={cn(`bg-gray-100`, " p-4 rounded-xl shadow-md")}
           style={{ aspectRatio: "1 / 1" }}
         >
           <Image
@@ -41,7 +41,25 @@ export const AppIcon = (props: AppIconProps) => {
           />
         </Tilt>
       </Link>
-      <p className="text-sm">{props.name}</p>
+      <p className="text-sm">{props.name} </p>
+    </div>
+  );
+};
+
+export const SmallAppIcon = (props: AppIconProps) => {
+  return (
+    <div className="flex flex-col items-center">
+      <div
+        className={cn(`bg-gray-100`, "p-1 rounded-md shadow-md", {})}
+        style={{ aspectRatio: "1 / 1" }}
+      >
+        <Image
+          src={props.image}
+          alt={props.name}
+          width={(props.width - 28) / 4}
+          height={props.height ?? props.width}
+        />
+      </div>
     </div>
   );
 };
