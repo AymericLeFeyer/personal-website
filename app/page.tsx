@@ -102,7 +102,7 @@ export default function Home() {
                   link: "Test",
                 },
                 {
-                  name: "Jeux de société",
+                  name: "Jeux société",
                   image: "/emojis/game-die.png",
                   backgroundColor: "#FA23E1",
                   link: "Test",
@@ -132,7 +132,7 @@ export default function Home() {
                   link: "Test",
                 },
                 {
-                  name: "Domotique",
+                  name: "Bricolage",
                   image: "/emojis/house.png",
                   backgroundColor: "#FA23E1",
                   link: "Test",
