@@ -65,7 +65,6 @@ export const PictureIcon = (props: AppIconProps) => {
         width={props.width}
         height={props.height}
       />
-      <p className="text-xs">{props.name}</p>
     </div>
   );
 };

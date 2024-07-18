@@ -139,6 +139,54 @@ export default function Home() {
                 },
               ]}
             />
+            <AppFolder
+              size={appTileWidth}
+              name="Réseaux"
+              apps={[
+                {
+                  name: "GitHub",
+                  image: "/logos/github.png",
+                  backgroundColor: "#FA23E1",
+                  link: "Test",
+                },
+                {
+                  name: "LinkedIn",
+                  image: "/logos/linkedin.png",
+                  backgroundColor: "#FA23E1",
+                  link: "Test",
+                },
+                {
+                  name: "Mail",
+                  image: "/emojis/envelope.png",
+                  backgroundColor: "#FA23E1",
+                  link: "Test",
+                },
+                {
+                  name: "Daily.dev",
+                  image: "/logos/daily-dev.png",
+                  backgroundColor: "#FA23E1",
+                  link: "Test",
+                },
+                {
+                  name: "Stk Overflow",
+                  image: "/logos/stack-overflow.png",
+                  backgroundColor: "#FA23E1",
+                  link: "Test",
+                },
+                {
+                  name: "Dev.to",
+                  image: "/logos/dev-to.png",
+                  backgroundColor: "#FA23E1",
+                  link: "Test",
+                },
+                {
+                  name: "Discord",
+                  image: "/emojis/house.png",
+                  backgroundColor: "#FA23E1",
+                  link: "Test",
+                },
+              ]}
+            />
           </div>
         </div>
       </MobileFrame>
