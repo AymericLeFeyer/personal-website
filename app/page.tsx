@@ -35,7 +35,7 @@ export default function Home() {
                   name="Hello"
                   image="/emojis/waving-hand.png"
                   backgroundColor="#FA23E1"
-                  link="Test"
+                  link="now"
                   width={appTileWidth}
                 />
                 <AppIcon
