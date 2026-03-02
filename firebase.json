@@ -48,7 +48,6 @@
         "destination": "https://app.daily.dev/aymericlefeyer",
         "type": 301
       },
-
       {
         "source": "/get-daily-dev",
         "destination": "https://dly.to/NhrWVhEG1Qi",
@@ -60,6 +59,10 @@
         "type": 301
       }
     ],
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }
