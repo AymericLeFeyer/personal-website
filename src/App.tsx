@@ -40,9 +40,9 @@ function App() {
         <div className="cv-container">
           <Header profile={profile} />
           <main>
+            <MissionsSection missions={profile.missions} />
             <ExperienceSection companies={profile.companies} />
             <EducationSection education={profile.education} />
-            <MissionsSection missions={profile.missions} />
             <ProjectsSection missions={profile.missions} />
             <EventsSection events={profile.events} />
           </main>
