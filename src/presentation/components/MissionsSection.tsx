@@ -10,7 +10,7 @@ import {
   DialogContent,
   DialogTitle,
   DialogDescription,
-} from '../../components/ui/dialog'
+} from './ui/dialog'
 
 interface Props {
   missions: Mission[]
