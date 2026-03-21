@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Colors */
+  --color-primary: #3b82f6;
+  --color-primary-foreground: #ffffff;
+
+  /* Dark theme (default) */
+  --color-background: #0a0a0f;
+  --color-surface: #111118;
+  --color-card: #111118;
+  --color-card-foreground: #f0f0f5;
+  --color-foreground: #f0f0f5;
+  --color-muted: #8888a0;
+  --color-muted-foreground: #8888a0;
+  --color-border: #1e1e2e;
+  --color-accent: #1e1e2e;
+  --color-accent-foreground: #f0f0f5;
+}
+
+/* Dark mode */
+:root {
+  --background: #0a0a0f;
+  --surface: #111118;
+  --card: #111118;
+  --foreground: #f0f0f5;
+  --muted: #1e1e2e;
+  --muted-foreground: #8888a0;
+  --border: #1e1e2e;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --accent: #1e1e2e;
+  --accent-foreground: #f0f0f5;
+}
+
+/* Light mode */
+[data-theme="light"] {
+  --background: #fafafa;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --foreground: #0a0a0f;
+  --muted: #f0f0f5;
+  --muted-foreground: #60607a;
+  --border: #e5e5f0;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --accent: #f0f0f5;
+  --accent-foreground: #0a0a0f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tailwind semantic color mappings */
+.bg-background { background-color: var(--background); }
+.bg-surface { background-color: var(--surface); }
+.bg-card { background-color: var(--card); }
+.bg-muted { background-color: var(--muted); }
+.bg-accent { background-color: var(--accent); }
+.bg-primary { background-color: var(--primary); }
+.bg-primary\/10 { background-color: color-mix(in srgb, var(--primary) 10%, transparent); }
+.bg-primary\/20 { background-color: color-mix(in srgb, var(--primary) 20%, transparent); }
+
+.text-foreground { color: var(--foreground); }
+.text-muted-foreground { color: var(--muted-foreground); }
+.text-primary { color: var(--primary); }
+.text-primary-foreground { color: var(--primary-foreground); }
+.text-card-foreground { color: var(--card); }
+.text-accent-foreground { color: var(--accent-foreground); }
+
+.border-border { border-color: var(--border); }
+.border-primary\/20 { border-color: color-mix(in srgb, var(--primary) 20%, transparent); }
+.border-primary\/40 { border-color: color-mix(in srgb, var(--primary) 40%, transparent); }
+.border-primary\/50 { border-color: color-mix(in srgb, var(--primary) 50%, transparent); }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) translateX(-50%); }
+  50% { transform: translateY(-8px) translateX(-50%); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease both;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease both;
+}
+
+.animate-fade-in-up.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-fade-in-up.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+/* Selection */
+::selection {
+  background-color: color-mix(in srgb, var(--primary) 30%, transparent);
+  color: var(--foreground);
+}
+
+/* Line clamp */
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}

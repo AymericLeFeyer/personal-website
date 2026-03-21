@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "services": "Services",
+    "missions": "Missions",
+    "about": "À propos",
+    "contact": "Contact",
+    "cta": "Me contacter"
+  },
+  "hero": {
+    "badge": "Disponible pour de nouvelles missions",
+    "title": "Je conçois des solutions numériques qui font la différence.",
+    "subtitle": "Software Engineer & Développeur Freelance. Je transforme vos idées en produits web et mobile robustes, du prototype au déploiement.",
+    "cta_missions": "Voir mes missions",
+    "cta_contact": "Me contacter"
+  },
+  "services": {
+    "title": "Ce que je fais",
+    "subtitle": "Des solutions adaptées à chaque besoin, du projet ponctuel à l'accompagnement long terme.",
+    "items": {
+      "digital": {
+        "title": "Solutions numériques",
+        "description": "Applications web, mobile et logicielles sur mesure, pensées pour vos utilisateurs."
+      },
+      "design_dev": {
+        "title": "Conception & développement",
+        "description": "De l'idée au produit livré — architecture, code, déploiement."
+      },
+      "showcase": {
+        "title": "Sites vitrines",
+        "description": "Présence en ligne moderne, rapide et optimisée SEO pour mettre en valeur votre activité."
+      },
+      "missions": {
+        "title": "Projets courts & longs",
+        "description": "Missions ponctuelles ou accompagnement durable, je m'adapte à votre rythme."
+      },
+      "consulting": {
+        "title": "Écoute & conseil",
+        "description": "Comprendre votre besoin avant de coder. Cadrage, architecture, recommandations techniques."
+      },
+      "aycore": {
+        "title": "AyCore",
+        "description": "Ma structure freelance pour un cadre clair, des contrats solides et une collaboration sereine."
+      }
+    }
+  },
+  "missions": {
+    "title": "Mes missions récentes",
+    "subtitle": "Des projets variés, des technologies modernes, une vraie valeur ajoutée.",
+    "filters": {
+      "all": "Tous",
+      "side_project": "Projets perso",
+      "pro": "Pro"
+    },
+    "badge_side_project": "Projet perso",
+    "see_more": "Voir toutes les missions",
+    "see_less": "Voir moins",
+    "present": "Présent",
+    "link": "Voir le projet"
+  },
+  "about": {
+    "title": "À propos",
+    "subtitle": "Passionné par la technologie, animé par la transmission.",
+    "description": "Développeur freelance basé en France, je conçois et développe des solutions numériques sur mesure depuis plusieurs années. Mon approche : comprendre d'abord, coder ensuite. Je m'investis dans chaque projet comme si c'était le mien, avec rigueur et pragmatisme.",
+    "description2": "Au-delà du code, je partage ma passion pour la tech via ma chaîne YouTube AyLabs — smart home, 3D printing, homelab et bien plus.",
+    "stats": {
+      "missions": "Missions réalisées",
+      "technologies": "Technologies maîtrisées",
+      "years": "Années d'expérience"
+    },
+    "skills_title": "Technologies"
+  },
+  "aylabs": {
+    "title": "AyLabs",
+    "subtitle": "Ma chaîne YouTube",
+    "description": "Contenu tech, smart home, 3D printing et homelab. Des projets concrets, des tutoriels accessibles.",
+    "cta": "Voir la chaîne"
+  },
+  "contact": {
+    "title": "Travaillons ensemble",
+    "subtitle": "Un projet en tête ? Une question ? Je suis disponible pour en discuter.",
+    "email_label": "Email",
+    "linkedin_label": "LinkedIn",
+    "github_label": "GitHub",
+    "cv_label": "Curriculum Vitae"
+  },
+  "footer": {
+    "copyright": "© 2026 Aymeric Le Feyer. Tous droits réservés.",
+    "cv": "CV",
+    "made_with": "Fait avec passion"
+  },
+  "loading": "Chargement...",
+  "error": "Une erreur est survenue. Veuillez réessayer.",
+  "lang_switch": "EN"
+}
