@@ -7,9 +7,9 @@
     "cta": "Me contacter"
   },
   "hero": {
-    "badge": "Disponible pour de nouvelles missions",
+    "badge": "Disponible pour de nouvelles aventures",
     "title": "Je conçois des solutions numériques qui font la différence.",
-    "subtitle": "Software Engineer & Développeur Freelance. Je transforme vos idées en produits web et mobile robustes, du prototype au déploiement.",
+    "subtitle": "En tant qu'Ingénieur logiciel, je transforme vos idées en produits web et mobile robustes, du prototype au déploiement.",
     "cta_missions": "Voir mes missions",
     "cta_contact": "Me contacter"
   },
@@ -29,17 +29,17 @@
         "title": "Sites vitrines",
         "description": "Présence en ligne moderne, rapide et optimisée SEO pour mettre en valeur votre activité."
       },
-      "missions": {
-        "title": "Projets courts & longs",
-        "description": "Missions ponctuelles ou accompagnement durable, je m'adapte à votre rythme."
+      "support": {
+        "title": "Accompagnement technique",
+        "description": "Présent à chaque étape : cadrage, développement, mise en production et au-delà."
+      },
+      "mobile_web": {
+        "title": "Expertise mobile & web",
+        "description": "Applications natives, cross-platform et web — Flutter, React, Kotlin, TypeScript."
       },
       "consulting": {
         "title": "Écoute & conseil",
         "description": "Comprendre votre besoin avant de coder. Cadrage, architecture, recommandations techniques."
-      },
-      "aycore": {
-        "title": "AyCore",
-        "description": "Ma structure freelance pour un cadre clair, des contrats solides et une collaboration sereine."
       }
     }
   },
@@ -48,7 +48,7 @@
     "subtitle": "Des projets variés, des technologies modernes, une vraie valeur ajoutée.",
     "filters": {
       "all": "Tous",
-      "side_project": "Projets perso",
+      "side_project": "Perso",
       "pro": "Pro"
     },
     "badge_side_project": "Projet perso",
@@ -57,17 +57,23 @@
     "present": "Présent",
     "link": "Voir le projet"
   },
+  "testimonials": {
+    "title": "Ils me font confiance",
+    "subtitle": "Des collaborations variées, un engagement constant."
+  },
   "about": {
     "title": "À propos",
     "subtitle": "Passionné par la technologie, animé par la transmission.",
-    "description": "Développeur freelance basé en France, je conçois et développe des solutions numériques sur mesure depuis plusieurs années. Mon approche : comprendre d'abord, coder ensuite. Je m'investis dans chaque projet comme si c'était le mien, avec rigueur et pragmatisme.",
+    "description": "Ingénieur logiciel basé en France, je conçois et développe des solutions numériques sur mesure depuis plusieurs années. Mon approche : comprendre d'abord, coder ensuite. Je m'investis dans chaque projet comme si c'était le mien, avec rigueur et pragmatisme.",
     "description2": "Au-delà du code, je partage ma passion pour la tech via ma chaîne YouTube AyLabs — smart home, 3D printing, homelab et bien plus.",
     "stats": {
       "missions": "Missions réalisées",
-      "technologies": "Technologies maîtrisées",
+      "clients": "Clients satisfaits",
       "years": "Années d'expérience"
     },
-    "skills_title": "Technologies"
+    "skills_title": "Technologies",
+    "aycore": "Un cadre légal et solide pour collaborer en toute sérénité — contrats clairs et facturation pro.",
+    "link_cv": "Curriculum Vitae"
   },
   "aylabs": {
     "title": "AyLabs",
@@ -86,7 +92,7 @@
   "footer": {
     "copyright": "© 2026 Aymeric Le Feyer. Tous droits réservés.",
     "cv": "CV",
-    "made_with": "Fait avec passion"
+    "aycore_legal": "AyCore — SASU au capital de 1 024 € · SIRET 123 456 789 00010 · TVA FR 00 123456789"
   },
   "loading": "Chargement...",
   "error": "Une erreur est survenue. Veuillez réessayer.",

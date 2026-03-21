@@ -13,6 +13,12 @@ export interface Company {
   responsibilities: string[]
 }
 
+export interface Technology {
+  name: string
+  frequency: number
+  comments?: string
+}
+
 export interface Mission {
   title: string
   context: string
@@ -21,7 +27,7 @@ export interface Mission {
   end_date: string | null
   is_side_project: boolean
   link?: string
-  technologies: string[]
+  technologies: Technology[]
   tasks: string[]
 }
 

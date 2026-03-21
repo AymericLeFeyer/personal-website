@@ -1,13 +1,14 @@
 import { HelmetProvider, Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { useProfile } from '../hooks/useProfile'
+import { getYearsSince } from '../../shared/utils/date'
+import { useReferential } from '../hooks/useReferential'
 import { Navbar } from '../components/Navbar'
 import { HeroSection } from '../components/HeroSection'
 import { ServicesSection } from '../components/ServicesSection'
 import { MissionsSection } from '../components/MissionsSection'
 import { AboutSection } from '../components/AboutSection'
-import { AyLabsSection } from '../components/AyLabsSection'
-import { ContactSection } from '../components/ContactSection'
+import { TestimonialsSection } from '../components/TestimonialsSection'
 import { Footer } from '../components/Footer'
 import { LoadingScreen } from '../components/LoadingScreen'
 import { ErrorScreen } from '../components/ErrorScreen'
@@ -15,14 +16,22 @@ import { ErrorScreen } from '../components/ErrorScreen'
 export function HomePage() {
   const { t } = useTranslation()
   const { profile, loading, error } = useProfile()
+  const { techMap, companyMap } = useReferential()
 
-  const title = 'Aymeric Le Feyer — Développeur Freelance | Solutions Web & Mobile'
+  const title = 'Aymeric Le Feyer — Ingénieur Logiciel | Solutions Web & Mobile'
   const description = t('nav.services') === 'Services'
-    ? 'Aymeric Le Feyer, freelance developer specialized in web, mobile and software solutions. Design, development, showcase websites.'
-    : "Aymeric Le Feyer, développeur freelance spécialisé en solutions web, mobile et logicielles. Conception, développement, sites vitrines."
+    ? 'Aymeric Le Feyer, software engineer specialized in web, mobile and software solutions. Design, development, showcase websites.'
+    : "Aymeric Le Feyer, ingénieur logiciel spécialisé en solutions web, mobile et logicielles. Conception, développement, sites vitrines."
 
   if (loading) return <LoadingScreen />
   if (error || !profile) return <ErrorScreen />
+
+  const proMissions = profile.missions.filter((m) => !m.is_side_project)
+  const heroStats = {
+    missions: proMissions.length,
+    clients: new Set(proMissions.map((m) => m.company)).size,
+    years: getYearsSince('2020-09-01'),
+  }
 
   return (
     <HelmetProvider>
@@ -36,14 +45,14 @@ export function HomePage() {
       <div className="min-h-screen bg-background text-foreground antialiased">
         <Navbar />
         <main>
-          <HeroSection />
+          <HeroSection stats={heroStats} />
           <ServicesSection />
-          <MissionsSection missions={profile.missions} />
-          <AboutSection profile={profile} />
-          <AyLabsSection />
-          <ContactSection contacts={profile.contacts} />
+          <TestimonialsSection />
+          <MissionsSection missions={profile.missions} techMap={techMap} companyMap={companyMap} />
+          <AboutSection profile={profile} companyMap={companyMap} />
+
         </main>
-        <Footer contacts={profile.contacts} />
+        <Footer />
       </div>
     </HelmetProvider>
   )

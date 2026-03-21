@@ -32,29 +32,28 @@ export function Navbar() {
     { label: t('nav.services'), id: 'services' },
     { label: t('nav.missions'), id: 'missions' },
     { label: t('nav.about'), id: 'about' },
-    { label: t('nav.contact'), id: 'contact' },
   ]
 
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b',
         scrolled
-          ? 'bg-background/80 backdrop-blur-md border-b border-border shadow-sm'
-          : 'bg-transparent'
+          ? 'navbar-scrolled backdrop-blur-md border-border shadow-sm'
+          : 'bg-transparent border-transparent'
       )}
     >
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between relative">
         {/* Logo */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="text-xl font-bold text-foreground tracking-tight hover:text-primary transition-colors"
+          className="text-base font-bold text-foreground tracking-tight hover:text-primary transition-colors shrink-0"
         >
-          Aymeric
+          Aymeric Le Feyer
         </button>
 
-        {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-8">
+        {/* Desktop links — centered absolutely */}
+        <ul className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => (
             <li key={link.id}>
               <button
@@ -68,20 +67,20 @@ export function Navbar() {
         </ul>
 
         {/* Desktop actions */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3 shrink-0">
           <button
             onClick={toggleLanguage}
             className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded-md hover:bg-accent"
             aria-label="Switch language"
           >
-            {currentLang === 'fr' ? 'EN' : 'FR'}
+            {currentLang === 'fr' ? 'FR' : 'EN'}
           </button>
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
             aria-label="Toggle theme"
           >
-            {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+            {theme === 'dark' ? <Moon size={16} /> : <Sun size={16} />}
           </button>
           <button
             onClick={() => scrollTo('contact')}
@@ -103,7 +102,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border">
+        <div className="md:hidden navbar-scrolled backdrop-blur-md border-b border-border">
           <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <button
@@ -119,14 +118,14 @@ export function Navbar() {
                 onClick={toggleLanguage}
                 className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors"
               >
-                {currentLang === 'fr' ? 'EN' : 'FR'}
+                {currentLang === 'fr' ? 'FR' : 'EN'}
               </button>
               <button
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
                 aria-label="Toggle theme"
               >
-                {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+                {theme === 'dark' ? <Moon size={16} /> : <Sun size={16} />}
               </button>
               <button
                 onClick={() => { scrollTo('contact'); setMenuOpen(false) }}

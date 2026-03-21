@@ -18,5 +18,10 @@ export function formatRange(
 export function getYearsSince(dateStr: string): number {
   const start = new Date(dateStr)
   const now = new Date()
-  return now.getFullYear() - start.getFullYear()
+  let years = now.getFullYear() - start.getFullYear()
+  const hasPassedAnniversary =
+    now.getMonth() > start.getMonth() ||
+    (now.getMonth() === start.getMonth() && now.getDate() >= start.getDate())
+  if (!hasPassedAnniversary) years--
+  return years
 }
