@@ -3,10 +3,10 @@ import { Globe, Code2, Layout, Wrench, Headphones, Smartphone } from 'lucide-rea
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { cn } from '../../shared/utils/cn'
 
-const SERVICE_ICONS = [Globe, Code2, Layout, Smartphone, Wrench, Headphones]
+const SERVICE_ICONS = [Smartphone, Code2, Globe, Wrench, Headphones, Layout]
 
 type ServiceKey = 'digital' | 'design_dev' | 'showcase' | 'mobile_web' | 'support' | 'consulting'
-const SERVICE_KEYS: ServiceKey[] = ['digital', 'design_dev', 'showcase', 'mobile_web', 'support', 'consulting']
+const SERVICE_KEYS: ServiceKey[] = ['mobile_web', 'design_dev', 'digital', 'support', 'consulting', 'showcase']
 
 export function ServicesSection() {
   const { t } = useTranslation()

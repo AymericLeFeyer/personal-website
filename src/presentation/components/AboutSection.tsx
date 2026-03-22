@@ -19,7 +19,7 @@ export function AboutSection({ profile, companyMap }: Props) {
 
   const links = [
     { icon: FileText, label: t('about.link_cv'), href: 'https://cv.aymeric.lefeyer.fr' },
-    { icon: Clock, label: 'TimeLife', href: 'https://timelife.aymeric.lefeyer.fr' },
+    { icon: Clock, label: 'Time Life', href: 'https://timelife.aymeric.lefeyer.fr' },
     { icon: Youtube, label: 'AyLabs', href: 'https://www.youtube.com/channel/UClCAe7FyrIwpkt9H56XRndA' },
     { icon: Linkedin, label: 'LinkedIn', href: contacts.linkedin },
     { icon: Github, label: 'GitHub', href: `https://github.com/${contacts.github}` },
