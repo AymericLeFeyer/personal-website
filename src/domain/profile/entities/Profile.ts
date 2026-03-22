@@ -45,6 +45,13 @@ export interface ProfileEvent {
   description: string
 }
 
+export interface Testimonial {
+  name: string
+  role: string
+  company: string
+  message: string
+}
+
 export interface Profile {
   name: string
   role: string
@@ -53,4 +60,5 @@ export interface Profile {
   missions: Mission[]
   education: Education[]
   events: ProfileEvent[]
+  testimonials: Testimonial[]
 }

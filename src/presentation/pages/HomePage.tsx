@@ -47,7 +47,7 @@ export function HomePage() {
         <main>
           <HeroSection stats={heroStats} />
           <ServicesSection />
-          <TestimonialsSection />
+          <TestimonialsSection testimonials={profile.testimonials} />
           <MissionsSection missions={profile.missions} techMap={techMap} companyMap={companyMap} />
           <AboutSection profile={profile} companyMap={companyMap} />
 
