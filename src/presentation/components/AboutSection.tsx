@@ -29,11 +29,11 @@ export function AboutSection({ profile, companyMap }: Props) {
     <section
       id="about"
       ref={ref as React.RefObject<HTMLElement>}
-      className="py-24"
+      className="py-24 px-4 sm:px-6"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className={cn('text-center mb-16 px-4 sm:px-6 transition-all duration-700', isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')}>
+        <div className={cn('text-center mb-16 transition-all duration-700', isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')}>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">{t('about.title')}</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">{t('about.subtitle')}</p>
         </div>

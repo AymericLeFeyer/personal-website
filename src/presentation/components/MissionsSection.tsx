@@ -18,7 +18,8 @@ interface Props {
   companyMap: Map<string, string>
 }
 
-const INITIAL_COUNT = 6
+const INITIAL_COUNT_MOBILE = 3
+const INITIAL_COUNT_DESKTOP = 6
 
 export function MissionsSection({ missions, techMap, companyMap }: Props) {
   const { t, i18n } = useTranslation()
@@ -30,6 +31,9 @@ export function MissionsSection({ missions, techMap, companyMap }: Props) {
 
   const locale = i18n.language.startsWith('en') ? 'en-GB' : 'fr-FR'
   const presentLabel = t('missions.present')
+
+  const isMobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 639px)').matches
+  const initialCount = isMobile ? INITIAL_COUNT_MOBILE : INITIAL_COUNT_DESKTOP
 
   const sorted = useMemo(
     () => [...missions].sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime()),
@@ -48,7 +52,7 @@ export function MissionsSection({ missions, techMap, companyMap }: Props) {
     })
   }, [sorted, filter, techFilter])
 
-  const displayed = showAll ? filtered : filtered.slice(0, INITIAL_COUNT)
+  const displayed = showAll ? filtered : filtered.slice(0, initialCount)
 
   return (
     <section
@@ -124,7 +128,7 @@ export function MissionsSection({ missions, techMap, companyMap }: Props) {
           ))}
         </div>
 
-        {filtered.length > INITIAL_COUNT && (
+        {filtered.length > initialCount && (
           <div className="text-center mt-10">
             <button
               onClick={() => setShowAll(!showAll)}
