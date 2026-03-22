@@ -41,18 +41,27 @@ export function AboutSection({ profile, companyMap }: Props) {
         {/* Bio */}
         <div className={cn('flex gap-10 items-start max-w-4xl mx-auto mb-12 transition-all duration-700 delay-100', isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')}>
           {companyIcon && (
-            <img src={companyIcon} alt={personalCompany} className="shrink-0 object-contain rounded-3xl w-48" />
+            <img src={companyIcon} alt={personalCompany} className="shrink-0 object-contain rounded-3xl w-20 sm:w-48" />
           )}
           <div className="flex-1">
             <p className="text-muted-foreground leading-relaxed mb-10 text-base">{t('about.description')}</p>
-            <p className="flex gap-2 text-xs text-muted-foreground/60">
+            <p className="hidden sm:flex gap-2 text-xs text-muted-foreground/60">
               <Building2 size={13} className="shrink-0" />
-              <div className="flex flex-col gap-1">
-               <p> {t('about.aycore')}</p>
-               <p> {t('footer.aycore_legal')}</p>
-              </div>
+              <span className="flex flex-col gap-1">
+                <span>{t('about.aycore')}</span>
+                <span>{t('footer.aycore_legal')}</span>
+              </span>
             </p>
           </div>
+        </div>
+
+        {/* Mentions légales — mobile only, pleine largeur */}
+        <div className={cn('sm:hidden mb-8 flex gap-2 text-xs text-muted-foreground/60 transition-all duration-700 delay-150', isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')}>
+          <Building2 size={13} className="shrink-0 mt-0.5" />
+          <span className="flex flex-col gap-1">
+            <span>{t('about.aycore')}</span>
+            <span>{t('footer.aycore_legal')}</span>
+          </span>
         </div>
 
         {/* Links — centered */}
@@ -76,7 +85,6 @@ export function AboutSection({ profile, companyMap }: Props) {
             className="flex items-center gap-2 px-8 py-3 mt-4 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/25"
           >
             <Mail size={18} />
-           {/* {contacts.email} */}
             contact@aycore.fr
           </a>
         </div>
