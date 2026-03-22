@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useTheme } from 'next-themes'
-import { Menu, X, Sun, Moon } from 'lucide-react'
+import { Sun, Moon } from 'lucide-react'
 import { useLanguage } from '../hooks/useLanguage'
 import { cn } from '../../shared/utils/cn'
 
@@ -9,7 +9,6 @@ export function Navbar() {
   const { t } = useTranslation()
   const { theme, setTheme } = useTheme()
   const { currentLang, toggleLanguage } = useLanguage()
-  const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -21,7 +20,6 @@ export function Navbar() {
   }, [])
 
   function scrollTo(id: string) {
-    setMenuOpen(false)
     const el = document.getElementById(id)
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' })
@@ -90,53 +88,24 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Mobile burger */}
-        <button
-          className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
-      </nav>
-
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden navbar-scrolled backdrop-blur-md border-b border-border">
-          <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollTo(link.id)}
-                className="text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
-              >
-                {link.label}
-              </button>
-            ))}
-            <div className="flex items-center gap-3 pt-2 border-t border-border">
-              <button
-                onClick={toggleLanguage}
-                className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {currentLang === 'fr' ? 'FR' : 'EN'}
-              </button>
-              <button
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
-                aria-label="Toggle theme"
-              >
-                {theme === 'dark' ? <Moon size={16} /> : <Sun size={16} />}
-              </button>
-              <button
-                onClick={() => { scrollTo('contact'); setMenuOpen(false) }}
-                className="ml-auto px-4 py-2 text-sm font-semibold bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
-              >
-                {t('nav.cta')}
-              </button>
-            </div>
-          </div>
+        {/* Mobile actions */}
+        <div className="md:hidden flex items-center gap-2">
+          <button
+            onClick={toggleLanguage}
+            className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded-md hover:bg-accent"
+            aria-label="Switch language"
+          >
+            {currentLang === 'fr' ? 'FR' : 'EN'}
+          </button>
+          <button
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? <Moon size={16} /> : <Sun size={16} />}
+          </button>
         </div>
-      )}
+      </nav>
     </header>
   )
 }
