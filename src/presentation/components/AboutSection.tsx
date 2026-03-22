@@ -39,7 +39,7 @@ export function AboutSection({ profile, companyMap }: Props) {
         </div>
 
         {/* Bio */}
-        <div className={cn('flex gap-10 items-start max-w-4xl mx-auto mb-4 sm:mb-12 transition-all duration-700 delay-100', isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')}>
+        <div className={cn('flex gap-5 items-start max-w-4xl mx-auto mb-4 sm:mb-12 transition-all duration-700 delay-100', isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')}>
           {companyIcon && (
             <img src={companyIcon} alt={personalCompany} className="shrink-0 object-contain rounded-3xl w-20 sm:w-48" />
           )}
