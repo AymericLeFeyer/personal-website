@@ -31,16 +31,18 @@ export function ServicesSection() {
               <div
                 key={key}
                 className={cn(
-                  'group p-6 rounded-2xl border border-border bg-card hover:border-primary/40 hover:bg-accent transition-all duration-500 hover:-translate-y-1',
+                  'transition-all duration-700',
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 )}
                 style={{ transitionDelay: `${index * 80}ms` }}
               >
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+              <div className="group h-full p-6 rounded-2xl border border-border bg-card hover:border-primary/40 hover:bg-accent transition-all duration-300 hover:-translate-y-1">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300">
                   <Icon size={20} className="text-primary" />
                 </div>
                 <h3 className="text-base font-semibold text-foreground mb-2">{t(`services.items.${key}.title`)}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{t(`services.items.${key}.description`)}</p>
+              </div>
               </div>
             )
           })}

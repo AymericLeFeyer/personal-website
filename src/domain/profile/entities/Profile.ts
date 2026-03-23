@@ -26,7 +26,7 @@ export interface Mission {
   start_date: string
   end_date: string | null
   is_side_project: boolean
-  link?: string
+  link?: { url: string; text: string }
   technologies: Technology[]
   tasks: string[]
 }

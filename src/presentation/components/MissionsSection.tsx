@@ -178,13 +178,16 @@ function MissionCard({ mission, locale, presentLabel, badgeLabel, isVisible, del
   const companyIcon = companyMap.get(mission.company)
 
   return (
-    <article
-      onClick={onClick}
+    <div
       className={cn(
-        'group flex flex-col p-6 rounded-2xl border border-border bg-card hover:border-primary/40 transition-all duration-500 hover:-translate-y-1 cursor-pointer',
+        'transition-all duration-700',
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       )}
       style={{ transitionDelay: `${delay}ms` }}
+    >
+    <article
+      onClick={onClick}
+      className="group flex flex-col h-full p-6 rounded-2xl border border-border bg-card hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
     >
       {/* Header */}
       <div className="flex items-start justify-between gap-3 mb-3">
@@ -206,7 +209,7 @@ function MissionCard({ mission, locale, presentLabel, badgeLabel, isVisible, del
         <h3 className="text-base font-semibold text-foreground leading-snug">{mission.title}</h3>
         {mission.link && (
           <a
-            href={mission.link}
+            href={mission.link.url}
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
@@ -250,6 +253,7 @@ function MissionCard({ mission, locale, presentLabel, badgeLabel, isVisible, del
         </div>
       </div>
     </article>
+    </div>
   )
 }
 
@@ -334,12 +338,12 @@ function MissionModal({ mission, locale, presentLabel, badgeLabel, techMap, comp
       {/* Link */}
       {mission.link && (
         <a
-          href={mission.link}
+          href={mission.link.url}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm font-semibold rounded-xl hover:bg-primary/90 transition-colors"
         >
-          Voir le projet
+          {mission.link.text}
           <ExternalLink size={14} />
         </a>
       )}
