@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ExternalLink, Calendar, CheckSquare, Briefcase, Rocket } from 'lucide-react'
+import { SmartLink } from './ExternalLink'
 import type { Mission } from '../../domain/profile/entities/Profile'
 import { formatRange } from '../../shared/utils/date'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
@@ -208,15 +209,13 @@ function MissionCard({ mission, locale, presentLabel, badgeLabel, isVisible, del
       <div className="flex items-start justify-between gap-2 mb-2">
         <h3 className="text-base font-semibold text-foreground leading-snug">{mission.title}</h3>
         {mission.link && (
-          <a
+          <SmartLink
             href={mission.link.url}
-            target="_blank"
-            rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
             className="shrink-0 mt-0.5 p-1 rounded-md text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
           >
             <ExternalLink size={14} />
-          </a>
+          </SmartLink>
         )}
       </div>
 
@@ -337,15 +336,13 @@ function MissionModal({ mission, locale, presentLabel, badgeLabel, techMap, comp
 
       {/* Link */}
       {mission.link && (
-        <a
+        <SmartLink
           href={mission.link.url}
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm font-semibold rounded-xl hover:bg-primary/90 transition-colors"
         >
           {mission.link.text}
           <ExternalLink size={14} />
-        </a>
+        </SmartLink>
       )}
     </DialogContent>
   )

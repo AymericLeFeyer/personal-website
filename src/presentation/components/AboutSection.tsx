@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Building2, FileText, Clock, Linkedin, Github, Mail, Youtube } from 'lucide-react'
+import { SmartLink } from './ExternalLink'
 import type { Profile } from '../../domain/profile/entities/Profile'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { cn } from '../../shared/utils/cn'
@@ -68,16 +69,14 @@ export function AboutSection({ profile, companyMap }: Props) {
         <div id="contact" className={cn('flex flex-col items-center gap-4 transition-all duration-700 delay-200', isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')}>
           <div className="flex flex-wrap items-center justify-center gap-3">
             {links.map(({ icon: Icon, label, href }) => (
-              <a
+              <SmartLink
                 key={label}
                 href={href}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors"
               >
                 <Icon size={14} />
                 {label}
-              </a>
+              </SmartLink>
             ))}
           </div>
           <a
