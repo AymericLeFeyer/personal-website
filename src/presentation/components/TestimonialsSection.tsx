@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
@@ -25,10 +25,6 @@ export function TestimonialsSection({ testimonials }: Props) {
     }, 200)
   }
 
-  useEffect(() => {
-    const timer = setInterval(() => go(index + 1), 5000)
-    return () => clearInterval(timer)
-  }, [index])
 
   return (
     <section ref={ref as React.RefObject<HTMLElement>} className="py-24 px-4 sm:px-6">
