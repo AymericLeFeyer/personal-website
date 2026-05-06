@@ -7,7 +7,9 @@
     "cta": "Me contacter"
   },
   "hero": {
-    "badge": "Disponible pour de nouvelles aventures",
+    "badge_available": "Disponible pour de nouvelles aventures",
+    "badge_soon": "Bientôt disponible",
+    "badge_unavailable": "Actuellement indisponible",
     "title": "Je conçois des solutions numériques qui font la différence.",
     "subtitle": "En tant qu'Ingénieur logiciel, je transforme vos idées en produits web et mobile robustes, du prototype au déploiement.",
     "cta_missions": "Voir mes missions",

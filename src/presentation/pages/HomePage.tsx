@@ -45,7 +45,7 @@ export function HomePage() {
       <div className="min-h-screen bg-background text-foreground antialiased">
         <Navbar />
         <main>
-          <HeroSection stats={heroStats} />
+          <HeroSection stats={heroStats} availability={profile.availability} />
           <ServicesSection />
           <TestimonialsSection testimonials={profile.testimonials} />
           <MissionsSection missions={profile.missions} techMap={techMap} companyMap={companyMap} />

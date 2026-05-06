@@ -29,6 +29,7 @@ export interface Mission {
   link?: { url: string; text: string }
   technologies: Technology[]
   tasks: string[]
+  images?: string[]
 }
 
 export interface Education {
@@ -50,11 +51,15 @@ export interface Testimonial {
   role: string
   company: string
   message: string
+  link?: string
 }
+
+export type Availability = 'available' | 'soon' | 'unavailable'
 
 export interface Profile {
   name: string
   role: string
+  availability?: Availability
   contacts: Contacts
   companies: Company[]
   missions: Mission[]

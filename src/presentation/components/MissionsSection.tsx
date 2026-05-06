@@ -1,8 +1,10 @@
-import { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect, useCallback } from 'react'
+import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { useTranslation } from 'react-i18next'
-import { ExternalLink, Calendar, CheckSquare, Briefcase, Rocket } from 'lucide-react'
+import { ExternalLink, Calendar, CheckSquare, Briefcase, Rocket, ChevronLeft, ChevronRight, X } from 'lucide-react'
 import { SmartLink } from './ExternalLink'
 import type { Mission } from '../../domain/profile/entities/Profile'
+import { iconUrl } from '../../infrastructure/profile/api/profileApiClient'
 import { formatRange } from '../../shared/utils/date'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { cn } from '../../shared/utils/cn'
@@ -29,6 +31,7 @@ export function MissionsSection({ missions, techMap, companyMap }: Props) {
   const [techFilter, setTechFilter] = useState<string | null>(null)
   const [showAll, setShowAll] = useState(false)
   const [selected, setSelected] = useState<Mission | null>(null)
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
 
   const locale = i18n.language.startsWith('en') ? 'en-GB' : 'fr-FR'
   const presentLabel = t('missions.present')
@@ -148,12 +151,30 @@ export function MissionsSection({ missions, techMap, companyMap }: Props) {
             mission={selected}
             locale={locale}
             presentLabel={presentLabel}
+            onImageClick={(i) => setLightboxIndex(i)}
             techMap={techMap}
             companyMap={companyMap}
             badgeLabel={t('missions.badge_side_project')}
           />
         )}
       </Dialog>
+
+      {/* Lightbox modal — dialog Radix séparé, empilé par-dessus */}
+      <DialogPrimitive.Root
+        open={lightboxIndex !== null && !!selected}
+        onOpenChange={(open) => { if (!open) setLightboxIndex(null) }}
+      >
+        {selected && lightboxIndex !== null && (selected.images?.length ?? 0) > 0 && (
+          <LightboxModal
+            images={selected.images!}
+            index={lightboxIndex}
+            title={selected.title}
+            onPrev={() => setLightboxIndex((lightboxIndex - 1 + selected.images!.length) % selected.images!.length)}
+            onNext={() => setLightboxIndex((lightboxIndex + 1) % selected.images!.length)}
+            onClose={() => setLightboxIndex(null)}
+          />
+        )}
+      </DialogPrimitive.Root>
     </section>
   )
 }
@@ -265,12 +286,38 @@ interface MissionModalProps {
   badgeLabel: string
   techMap: Map<string, string>
   companyMap: Map<string, string>
+  onImageClick: (index: number) => void
 }
 
-function MissionModal({ mission, locale, presentLabel, badgeLabel, techMap, companyMap }: MissionModalProps) {
+function MissionModal({ mission, locale, presentLabel, badgeLabel, techMap, companyMap, onImageClick }: MissionModalProps) {
   const range = formatRange(mission.start_date, mission.end_date, locale, presentLabel)
   const sortedTechs = [...mission.technologies].sort((a, b) => b.frequency - a.frequency)
   const companyIcon = companyMap.get(mission.company)
+  const images = mission.images ?? []
+
+  const [carouselIndex, setCarouselIndex] = useState(0)
+  const [direction, setDirection] = useState<'left' | 'right'>('right')
+  const [animating, setAnimating] = useState(false)
+
+  function slide(nextIndex: number, dir: 'left' | 'right') {
+    if (animating) return
+    setDirection(dir)
+    setAnimating(true)
+    setTimeout(() => {
+      setCarouselIndex(nextIndex)
+      setAnimating(false)
+    }, 300)
+  }
+
+  const prev = useCallback((e?: React.MouseEvent) => {
+    e?.stopPropagation()
+    slide((carouselIndex - 1 + images.length) % images.length, 'right')
+  }, [carouselIndex, images.length, animating])
+
+  const next = useCallback((e?: React.MouseEvent) => {
+    e?.stopPropagation()
+    slide((carouselIndex + 1) % images.length, 'left')
+  }, [carouselIndex, images.length, animating])
 
   return (
     <DialogContent>
@@ -334,6 +381,63 @@ function MissionModal({ mission, locale, presentLabel, badgeLabel, techMap, comp
         </div>
       )}
 
+      {/* Images carousel */}
+      {images.length > 0 && (
+        <div className="mb-6">
+          <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Aperçu</h4>
+          <div className="relative rounded-xl overflow-hidden border border-border bg-muted group">
+            <div
+              key={carouselIndex}
+              className={cn(
+                'w-full h-56',
+                animating
+                  ? direction === 'left'
+                    ? 'animate-slide-out-left'
+                    : 'animate-slide-out-right'
+                  : direction === 'left'
+                    ? 'animate-slide-in-right'
+                    : 'animate-slide-in-left'
+              )}
+            >
+              <img
+                src={iconUrl(images[carouselIndex])}
+                alt={`${mission.title} ${carouselIndex + 1}`}
+                onClick={() => onImageClick(carouselIndex)}
+                className="w-full h-56 object-cover cursor-zoom-in"
+              />
+            </div>
+            {images.length > 1 && (
+              <>
+                <button
+                  onClick={prev}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-background/70 backdrop-blur-sm text-foreground hover:bg-background transition-colors"
+                >
+                  <ChevronLeft size={18} />
+                </button>
+                <button
+                  onClick={next}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-background/70 backdrop-blur-sm text-foreground hover:bg-background transition-colors"
+                >
+                  <ChevronRight size={18} />
+                </button>
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+                  {images.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={(e) => { e.stopPropagation(); setCarouselIndex(i) }}
+                      className={cn(
+                        'h-1.5 rounded-full transition-all duration-300',
+                        i === carouselIndex ? 'w-4 bg-white' : 'w-1.5 bg-white/50'
+                      )}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Link */}
       {mission.link && (
         <SmartLink
@@ -345,5 +449,79 @@ function MissionModal({ mission, locale, presentLabel, badgeLabel, techMap, comp
         </SmartLink>
       )}
     </DialogContent>
+  )
+}
+
+/* ── Lightbox modal (Radix Dialog imbriqué) ─────────────────── */
+
+interface LightboxModalProps {
+  images: string[]
+  index: number
+  title: string
+  onClose: () => void
+  onPrev: () => void
+  onNext: () => void
+}
+
+function LightboxModal({ images, index, title, onClose, onPrev, onNext }: LightboxModalProps) {
+  // Flèches clavier — Escape est géré nativement par Radix Dialog
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); onPrev() }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); onNext() }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onPrev, onNext])
+
+  return (
+    <DialogPrimitive.Portal>
+      <DialogPrimitive.Overlay className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm data-[state=open]:animate-fade-in" />
+      <DialogPrimitive.Content
+        onClick={onClose}
+        className="fixed inset-0 z-[100] flex items-center justify-center focus:outline-none"
+        aria-describedby={undefined}
+      >
+        <DialogPrimitive.Title className="sr-only">{title}</DialogPrimitive.Title>
+
+        <img
+          src={iconUrl(images[index])}
+          alt={`${title} ${index + 1}`}
+          onClick={(e) => e.stopPropagation()}
+          className="max-h-[90vh] max-w-[90vw] object-contain rounded-xl shadow-2xl"
+        />
+
+        <button
+          onClick={(e) => { e.stopPropagation(); onClose() }}
+          className="absolute top-4 right-4 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+          aria-label="Fermer"
+        >
+          <X size={20} />
+        </button>
+
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={(e) => { e.stopPropagation(); onPrev() }}
+              className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+              aria-label="Précédent"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button
+              onClick={(e) => { e.stopPropagation(); onNext() }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+              aria-label="Suivant"
+            >
+              <ChevronRight size={24} />
+            </button>
+          </>
+        )}
+
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/60 text-sm pointer-events-none">
+          {index + 1} / {images.length}
+        </div>
+      </DialogPrimitive.Content>
+    </DialogPrimitive.Portal>
   )
 }

@@ -7,7 +7,9 @@
     "cta": "Get in touch"
   },
   "hero": {
-    "badge": "Available for new projects",
+    "badge_available": "Available for new projects",
+    "badge_soon": "Available soon",
+    "badge_unavailable": "Currently unavailable",
     "title": "I build digital solutions that make a difference.",
     "subtitle": "As a Software Engineer, I turn your ideas into robust web and mobile products, from prototype to deployment.",
     "cta_missions": "See my work",

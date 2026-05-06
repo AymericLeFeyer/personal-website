@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { ArrowDown, Mail } from 'lucide-react'
 import { useState, useEffect } from 'react'
+import type { Availability } from '../../domain/profile/entities/Profile'
 
 function useCount(target: number, delay = 600) {
   const [count, setCount] = useState(0)
@@ -21,12 +22,20 @@ function useCount(target: number, delay = 600) {
   return count
 }
 
-interface Props {
-  stats: { missions: number; clients: number; years: number }
+const AVAILABILITY_CONFIG: Record<Availability, { dot: string; key: string }> = {
+  available: { dot: 'bg-green-400', key: 'hero.badge_available' },
+  soon: { dot: 'bg-orange-400', key: 'hero.badge_soon' },
+  unavailable: { dot: 'bg-red-500', key: 'hero.badge_unavailable' },
 }
 
-export function HeroSection({ stats }: Props) {
+interface Props {
+  stats: { missions: number; clients: number; years: number }
+  availability?: Availability
+}
+
+export function HeroSection({ stats, availability = 'available' }: Props) {
   const { t } = useTranslation()
+  const avail = AVAILABILITY_CONFIG[availability]
   const missions = useCount(stats.missions)
   const clients = useCount(stats.clients)
   const years = useCount(stats.years)
@@ -47,8 +56,8 @@ export function HeroSection({ stats }: Props) {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-32 text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8 animate-fade-in-down">
-          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-          {t('hero.badge')}
+          <span className={`w-2 h-2 rounded-full animate-pulse ${avail.dot}`} />
+          {t(avail.key)}
         </div>
 
         {/* Title */}

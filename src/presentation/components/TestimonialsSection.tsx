@@ -42,7 +42,18 @@ export function TestimonialsSection({ testimonials }: Props) {
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
             )}>
               <p className="text-muted-foreground text-base leading-relaxed mb-8 italic">"{current.message}"</p>
-              <div className="text-sm font-semibold text-foreground">{current.name}</div>
+              {current.link ? (
+                <a
+                  href={current.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-foreground hover:text-primary transition-colors"
+                >
+                  {current.name}
+                </a>
+              ) : (
+                <div className="text-sm font-semibold text-foreground">{current.name}</div>
+              )}
               <div className="text-xs text-muted-foreground mt-1">{current.role} · {current.company}</div>
             </div>
 
