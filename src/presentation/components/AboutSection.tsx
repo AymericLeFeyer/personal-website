@@ -84,7 +84,7 @@ export function AboutSection({ profile, companyMap }: Props) {
             className="flex items-center gap-2 px-8 py-3 mt-4 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/25"
           >
             <Mail size={18} />
-            contact@aycore.fr
+            ${contacts.email}
           </a>
         </div>
       </div>
