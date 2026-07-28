@@ -40,7 +40,12 @@ export function MissionsSection({ missions, techMap, companyMap }: Props) {
   const initialCount = isMobile ? INITIAL_COUNT_MOBILE : INITIAL_COUNT_DESKTOP
 
   const sorted = useMemo(
-    () => [...missions].sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime()),
+    () =>
+      [...missions].sort((a, b) => {
+        const dateA = a.end_date ? new Date(a.end_date).getTime() : Infinity
+        const dateB = b.end_date ? new Date(b.end_date).getTime() : Infinity
+        return dateB - dateA
+      }),
     [missions]
   )
 

@@ -46,13 +46,13 @@ export function AboutSection({ profile, companyMap }: Props) {
           )}
           <div className="flex-1">
             <p className="text-muted-foreground leading-relaxed mb-4 sm:mb-10 text-base">{t('about.description')}</p>
-            <p className="hidden sm:flex gap-2 text-xs text-muted-foreground/60">
+            {/* <p className="hidden sm:flex gap-2 text-xs text-muted-foreground/60">
               <Building2 size={13} className="shrink-0" />
               <span className="flex flex-col gap-1">
                 <span>{t('about.aycore')}</span>
                 <span>{t('footer.aycore_legal')}</span>
               </span>
-            </p>
+            </p> */}
           </div>
         </div>
 
