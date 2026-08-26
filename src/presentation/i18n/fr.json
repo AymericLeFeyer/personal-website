@@ -19,12 +19,12 @@
     "title": "Ce que je fais",
     "subtitle": "Des solutions adaptées à chaque besoin, du projet ponctuel à l'accompagnement long terme.",
     "items": {
-      "digital": {
-        "title": "Solutions numériques",
-        "description": "Des produits sur mesure conçus pour répondre à vos objectifs métier, de A à Z."
+      "devops": {
+        "title": "DevOps & Self-Hosting",
+        "description": "Une vraie appétence pour le DevOps, nourrie par mon expérience Homelab et self-host que je partage sur YouTube : déploiement de services et configuration de machines."
       },
       "design_dev": {
-        "title": "Conception & développement",
+        "title": "Conception & Développement",
         "description": "De l'idée au produit livré — architecture, code, déploiement."
       },
       "showcase": {
@@ -36,11 +36,11 @@
         "description": "Présent à chaque étape : cadrage, développement, mise en production et au-delà."
       },
       "mobile_web": {
-        "title": "Expertise mobile & web",
+        "title": "Expertise Mobile & Web",
         "description": "Applications natives, cross-platform et web — Flutter, React, Kotlin, TypeScript."
       },
       "consulting": {
-        "title": "Écoute & conseil",
+        "title": "Écoute & Conseil",
         "description": "Comprendre votre besoin avant de coder. Cadrage, architecture, recommandations techniques."
       }
     }

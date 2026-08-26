@@ -19,12 +19,12 @@
     "title": "What I do",
     "subtitle": "Tailored solutions for every need, from short-term projects to long-term partnerships.",
     "items": {
-      "digital": {
-        "title": "Digital solutions",
-        "description": "Tailor-made products designed to meet your business goals, end to end."
+      "devops": {
+        "title": "DevOps & Self-Hosting",
+        "description": "A genuine taste for DevOps, fueled by my homelab and self-hosting experience shared on YouTube: service deployment and machine configuration."
       },
       "design_dev": {
-        "title": "Design & development",
+        "title": "Design & Development",
         "description": "From idea to shipped product — architecture, code, deployment."
       },
       "showcase": {
@@ -36,11 +36,11 @@
         "description": "With you at every step: scoping, development, production and beyond."
       },
       "mobile_web": {
-        "title": "Mobile & web expertise",
+        "title": "Mobile & Web expertise",
         "description": "Native, cross-platform and web apps — Flutter, React, Kotlin, TypeScript."
       },
       "consulting": {
-        "title": "Listening & consulting",
+        "title": "Listening & Consulting",
         "description": "Understanding your needs before coding. Scoping, architecture, technical recommendations."
       }
     }

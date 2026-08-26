@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next'
-import { Globe, Code2, Layout, Wrench, Headphones, Smartphone } from 'lucide-react'
+import { Server, Code2, Layout, Wrench, Headphones, Smartphone } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { cn } from '../../shared/utils/cn'
 
-const SERVICE_ICONS = [Smartphone, Code2, Globe, Wrench, Headphones, Layout]
+const SERVICE_ICONS = [Smartphone, Code2, Server, Wrench, Headphones, Layout]
 
-type ServiceKey = 'digital' | 'design_dev' | 'showcase' | 'mobile_web' | 'support' | 'consulting'
-const SERVICE_KEYS: ServiceKey[] = ['mobile_web', 'design_dev', 'digital', 'support', 'consulting', 'showcase']
+type ServiceKey = 'devops' | 'design_dev' | 'showcase' | 'mobile_web' | 'support' | 'consulting'
+const SERVICE_KEYS: ServiceKey[] = ['mobile_web', 'design_dev', 'devops', 'support', 'consulting', 'showcase']
 
 export function ServicesSection() {
   const { t } = useTranslation()
