@@ -19,29 +19,35 @@
     "title": "Ce que je fais",
     "subtitle": "Des solutions adaptées à chaque besoin, du projet ponctuel à l'accompagnement long terme.",
     "items": {
-      "devops": {
-        "title": "DevOps & Self-Hosting",
-        "description": "Une vraie appétence pour le DevOps, nourrie par mon expérience Homelab et self-host que je partage sur YouTube : déploiement de services et configuration de machines."
-      },
-      "design_dev": {
-        "title": "Conception & Développement",
-        "description": "De l'idée au produit livré — architecture, code, déploiement."
-      },
-      "showcase": {
-        "title": "Sites vitrines",
-        "description": "Présence en ligne moderne, rapide et optimisée SEO pour mettre en valeur votre activité."
-      },
-      "support": {
-        "title": "Accompagnement technique",
-        "description": "Présent à chaque étape : cadrage, développement, mise en production et au-delà."
-      },
       "mobile_web": {
         "title": "Expertise Mobile & Web",
-        "description": "Applications natives, cross-platform et web — Flutter, React, Kotlin, TypeScript."
+        "description": "Applications natives, cross-platform et interfaces web — Kotlin, Flutter, React, Vue, TypeScript. Des produits pensés pour durer, du premier écran jusqu'à la publication sur les stores."
       },
-      "consulting": {
-        "title": "Écoute & Conseil",
-        "description": "Comprendre votre besoin avant de coder. Cadrage, architecture, recommandations techniques."
+      "devops": {
+        "title": "DevOps & Self-Hosting",
+        "description": "Une vraie appétence pour le DevOps, nourrie par mon expérience Homelab et self-host que je partage sur YouTube : déploiement de services, CI/CD et configuration de machines."
+      },
+      "projects": {
+        "title": "Projets ponctuels",
+        "description": "Un besoin précis, un périmètre clair, une livraison rapide : site vitrine moderne et optimisé SEO, automatisation, migration technique ou renfort sur un projet déjà lancé."
+      }
+    },
+    "process": {
+      "title": "Comment je travaille",
+      "subtitle": "Trois étapes, du premier échange jusqu'à bien après la mise en production.",
+      "steps": {
+        "consulting": {
+          "title": "Écoute & Conseil",
+          "description": "On commence par comprendre le besoin réel, pas seulement la demande initiale. Cadrage, contraintes, budget et arbitrages techniques : je pose les bonnes questions avant d'écrire la moindre ligne de code."
+        },
+        "design_dev": {
+          "title": "Conception & Développement",
+          "description": "De l'idée au produit livré : architecture, choix technologiques, développement itératif et déploiement. Des points réguliers pour valider la direction ensemble, plutôt qu'un effet tunnel de plusieurs mois."
+        },
+        "support": {
+          "title": "Accompagnement technique",
+          "description": "Le projet ne s'arrête pas à la mise en production. Corrections, évolutions, supervision et transfert de connaissances à vos équipes : vous n'êtes jamais laissé seul avec le code."
+        }
       }
     }
   },
@@ -94,7 +100,7 @@
   "footer": {
     "copyright": "© 2026 Aymeric Le Feyer. Tous droits réservés.",
     "cv": "CV",
-    "aycore_legal": "AyCore — SASU au capital de 1 024 € · SIRET 123 456 789 00010 · TVA FR 00 123456789"
+    "aycore_legal": "AyCorp — SASU en cours de création"
   },
   "loading": "Chargement...",
   "error": "Une erreur est survenue. Veuillez réessayer.",

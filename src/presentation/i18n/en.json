@@ -17,31 +17,37 @@
   },
   "services": {
     "title": "What I do",
-    "subtitle": "Tailored solutions for every need, from short-term projects to long-term partnerships.",
+    "subtitle": "Tailored solutions for every need, from one-off projects to long-term partnerships.",
     "items": {
-      "devops": {
-        "title": "DevOps & Self-Hosting",
-        "description": "A genuine taste for DevOps, fueled by my homelab and self-hosting experience shared on YouTube: service deployment and machine configuration."
-      },
-      "design_dev": {
-        "title": "Design & Development",
-        "description": "From idea to shipped product — architecture, code, deployment."
-      },
-      "showcase": {
-        "title": "Showcase websites",
-        "description": "Modern, fast, SEO-optimized online presence to showcase your business."
-      },
-      "support": {
-        "title": "Technical support",
-        "description": "With you at every step: scoping, development, production and beyond."
-      },
       "mobile_web": {
         "title": "Mobile & Web expertise",
-        "description": "Native, cross-platform and web apps — Flutter, React, Kotlin, TypeScript."
+        "description": "Native and cross-platform apps, modern web interfaces — Kotlin, Flutter, React, Vue, TypeScript. Products built to last, from the very first screen to store release."
       },
-      "consulting": {
-        "title": "Listening & Consulting",
-        "description": "Understanding your needs before coding. Scoping, architecture, technical recommendations."
+      "devops": {
+        "title": "DevOps & Self-Hosting",
+        "description": "A genuine taste for DevOps, fueled by my homelab and self-hosting experience shared on YouTube: service deployment, CI/CD pipelines and machine configuration."
+      },
+      "projects": {
+        "title": "One-off projects",
+        "description": "A clear scope and a fast delivery: modern SEO-optimized showcase website, automation, technical migration or extra hands on a project already under way."
+      }
+    },
+    "process": {
+      "title": "How I work",
+      "subtitle": "Three steps, from our first conversation to long after going live.",
+      "steps": {
+        "consulting": {
+          "title": "Listening & Consulting",
+          "description": "We start by understanding the real need, not just the initial request. Scoping, constraints, budget and technical trade-offs: I ask the right questions before writing a single line of code."
+        },
+        "design_dev": {
+          "title": "Design & Development",
+          "description": "From idea to shipped product: architecture, technology choices, iterative development and deployment. Regular check-ins to validate the direction together, rather than months of radio silence."
+        },
+        "support": {
+          "title": "Technical support",
+          "description": "The project does not end at go-live. Fixes, new features, monitoring and knowledge transfer to your teams: you are never left alone with the code."
+        }
       }
     }
   },
@@ -74,7 +80,7 @@
       "years": "Years of experience"
     },
     "skills_title": "Technologies",
-    "aycore": "Operating through AyCore, a SASU with €1,024 capital. A solid legal framework for a smooth collaboration — clear contracts, professional invoicing, zero risk on your end.",
+    "aycore": "A solid legal framework for a smooth collaboration — clear contracts and professional invoicing.",
     "link_cv": "Resume"
   },
   "aylabs": {
@@ -94,7 +100,7 @@
   "footer": {
     "copyright": "© 2026 Aymeric Le Feyer. All rights reserved.",
     "cv": "Resume",
-    "aycore_legal": "AyCore — SASU, share capital €1,024 · SIRET 123 456 789 00010 · VAT FR 00 123456789"
+    "aycore_legal": "AyCorp — SASU currently being incorporated"
   },
   "loading": "Loading...",
   "error": "An error occurred. Please try again.",
