@@ -2,9 +2,10 @@
 FROM node:22-alpine AS build
 WORKDIR /app
 
-COPY package*.json ./
-# `npm install` et non `npm ci` : le package-lock.json est généré sous Windows et
-# ne contient pas les binaires natifs Linux de rollup (bug npm npm/cli#4828).
+# Le package-lock.json est généré sous Windows : il ne référence que les binaires
+# natifs @rollup/rollup-win32-*, et npm refuse d'installer la variante Linux
+# (bug npm npm/cli#4828). On résout donc l'arbre depuis package.json uniquement.
+COPY package.json ./
 RUN npm install --no-audit --no-fund
 
 COPY . .

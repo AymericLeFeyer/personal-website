@@ -9,3 +9,4 @@ firebase.json
 .idea
 Dockerfile
 .dockerignore
+package-lock.json
