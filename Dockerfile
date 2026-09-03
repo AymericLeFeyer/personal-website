@@ -3,7 +3,9 @@ FROM node:22-alpine AS build
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci
+# `npm install` et non `npm ci` : le package-lock.json est généré sous Windows et
+# ne contient pas les binaires natifs Linux de rollup (bug npm npm/cli#4828).
+RUN npm install --no-audit --no-fund
 
 COPY . .
 RUN npm run build
