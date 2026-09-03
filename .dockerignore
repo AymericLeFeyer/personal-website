@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.github
+.firebaserc
+firebase.json
+*.log
+.vscode
+.idea
+Dockerfile
+.dockerignore
